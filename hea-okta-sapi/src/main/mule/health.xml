@@ -2,8 +2,8 @@
 
 <mule xmlns:ee="http://www.mulesoft.org/schema/mule/ee/core" xmlns="http://www.mulesoft.org/schema/mule/core"
 	xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
-http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd">
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/mule.xsd
+http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/mule-ee.xsd">
 	<sub-flow name="health-check-sub-flow" doc:id="9862f083-5605-4a37-b57f-f44bff1b5bf1" >
 		<logger level="INFO" doc:name="Start Logger" doc:id="227a93ba-0de6-403b-a685-c526ac66033b" message="Start health check" category="${logger.category}.health-check-sub-flow" />
 		<ee:transform doc:name="Status Message" doc:id="dc9ae6d9-2cf2-49bc-bd59-19e731f55ce3" >
