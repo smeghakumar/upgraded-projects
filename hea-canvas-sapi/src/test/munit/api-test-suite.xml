@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:munit="http://www.mulesoft.org/schema/mule/munit" xmlns:munit-tools="http://www.mulesoft.org/schema/mule/munit-tools"
+	xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xsi:schemaLocation="
+		http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/mule.xsd
+		http://www.mulesoft.org/schema/mule/munit http://www.mulesoft.org/schema/mule/munit/current/mule-munit.xsd
+		http://www.mulesoft.org/schema/mule/munit-tools  http://www.mulesoft.org/schema/mule/munit-tools/current/mule-munit-tools.xsd">
+	<munit:config name="api-test-suite.xml" />
+	<munit:test name="api-test-suite-hea-canvas-sapi-bad-request" doc:id="80fa6466-75e6-41cc-ac08-5a91e65a08bf" description="Test to implement bad request to Canvas Sapi" expectedErrorType="APIKIT:BAD_REQUEST">
+		<munit:behavior >
+			<munit:set-event doc:name="Set Input" doc:id="5f45ee75-6569-4f54-a6a1-4486c77b2ecc" >
+				<munit:payload value="#[readUrl('classpath://getuser/set-event_payload.dwl')]" encoding="UTF-8" />
+				<munit:attributes value="#[readUrl('classpath://getuser/set-event_attributes.dwl')]" />
+			</munit:set-event>
+			<munit-tools:mock-when doc:name="Mock when" doc:id="2f615ef1-2940-4d4d-846b-3c5281b0d8e8" processor="apikit:router">
+				<munit-tools:with-attributes >
+					<munit-tools:with-attribute whereValue="heaCanvasSapiConfig" attributeName="config-ref" />
+				</munit-tools:with-attributes>
+				<munit-tools:then-return >
+					<munit-tools:error typeId="APIKIT:BAD_REQUEST" />
+				</munit-tools:then-return>
+			</munit-tools:mock-when>
+		</munit:behavior>
+		<munit:execution >
+			<flow-ref doc:name="hea-canvas-sapi-main" doc:id="b0a6171b-e96a-47ff-9169-f7ef0b6199c3" name="hea-canvas-sapi-main"/>
+		</munit:execution>
+		<munit:validation >
+			<munit-tools:assert-equals doc:name="Assert equals" doc:id="e6ac49b7-b92b-4e9f-a3c6-4deb2e90ed89" actual="#[vars.httpStatus]" expected="#[400]"/>
+		</munit:validation>
+	</munit:test>
+	<munit:test name="api-test-suite-not-found" doc:id="8aabd012-9c23-434e-9853-73183bf7c41f" expectedErrorType="APIKIT:NOT_FOUND" description="Test to implement apikit not found for Canvas Sapi request">
+		<munit:behavior >
+			<munit-tools:mock-when doc:name="Mock when" doc:id="d95b61ce-3ca7-4fb7-af93-471de3dee256" processor="apikit:router" >
+				<munit-tools:with-attributes >
+					<munit-tools:with-attribute whereValue="heaCanvasSapiConfig" attributeName="config-ref" />
+				</munit-tools:with-attributes>
+				<munit-tools:then-return >
+					<munit-tools:error typeId="APIKIT:NOT_FOUND" />
+				</munit-tools:then-return>
+			</munit-tools:mock-when>
+			<munit:set-event doc:name="Set Input" doc:id="89581c3b-7d77-4e4a-88ea-83dadc85927b" >
+				<munit:payload value="#[readUrl('classpath://getuser/set-event_payload.dwl')]" encoding="UTF-8" />
+				<munit:attributes value="#[readUrl('classpath://getuser/set-event_attributes.dwl')]" />
+			</munit:set-event>
+		</munit:behavior>
+		<munit:execution >
+			<flow-ref doc:name="hea-canvas-sapi-main" doc:id="0bb6bf80-843a-422d-912e-57fd6191dc2e" name="hea-canvas-sapi-main" />
+		</munit:execution>
+		<munit:validation >
+			<munit-tools:assert-equals doc:name="Assert equals" doc:id="4a4f7f6f-dfd6-46b1-a278-a93faa25e13a" actual="#[vars.httpStatus]" expected="#[404]" />
+		</munit:validation>
+	</munit:test>
+	<munit:test name="api-test-suite-method-not-allowed" doc:id="301cc646-db18-4dc3-83af-3a099d43c807" expectedErrorType="APIKIT:METHOD_NOT_ALLOWED" description="Test to implement method not allowed for Canvas Sapi request">
+		<munit:behavior >
+			<munit:set-event doc:name="Set Input" doc:id="3c96f3f7-70ac-4b83-bce8-607aead4ce19" >
+				<munit:payload value="#[readUrl('classpath://getuser/set-event_payload.dwl')]" encoding="UTF-8" />
+				<munit:attributes value="#[readUrl('classpath://getuser/set-event_attributes.dwl')]" />
+			</munit:set-event>
+			<munit-tools:mock-when doc:name="Mock when" doc:id="8ca52c70-c993-4f9f-9076-1f57e0560449" processor="apikit:router" >
+				<munit-tools:with-attributes >
+					<munit-tools:with-attribute whereValue="heaCanvasSapiConfig" attributeName="config-ref" />
+				</munit-tools:with-attributes>
+				<munit-tools:then-return >
+					<munit-tools:error typeId="APIKIT:METHOD_NOT_ALLOWED" />
+				</munit-tools:then-return>
+			</munit-tools:mock-when>
+		</munit:behavior>
+		<munit:execution >
+			<flow-ref doc:name="hea-canvas-sapi-main" doc:id="fe1000f9-ac4a-4b90-96df-b98b8ebf6659" name="hea-canvas-sapi-main" />
+		</munit:execution>
+		<munit:validation >
+			<munit-tools:assert-equals doc:name="Assert equals" doc:id="375e4b93-410e-414c-a643-df649861ed9b" actual="#[vars.httpStatus]" expected="#[405]" />
+		</munit:validation>
+	</munit:test>
+	<munit:test name="api-test-suite-not-acceptable" doc:id="5f4b903e-a0a3-4b84-8351-fc6796106d1d" expectedErrorType="APIKIT:NOT_ACCEPTABLE" description="Test to implement apikit not acceptable for Canvas sapi request">
+		<munit:behavior >
+			<munit-tools:mock-when doc:name="Mock when" doc:id="49895636-33c5-49f4-a595-47ad59bd1c88" processor="apikit:router" >
+				<munit-tools:with-attributes >
+					<munit-tools:with-attribute whereValue="heaCanvasSapiConfig" attributeName="config-ref" />
+				</munit-tools:with-attributes>
+				<munit-tools:then-return >
+					<munit-tools:error typeId="APIKIT:NOT_ACCEPTABLE" />
+				</munit-tools:then-return>
+			</munit-tools:mock-when>
+			<munit:set-event doc:name="Set Input" doc:id="2ccc1725-b798-4e10-a042-311c34851d59" >
+				<munit:payload value="#[readUrl('classpath://getuser/set-event_payload.dwl')]" encoding="UTF-8" />
+				<munit:attributes value="#[readUrl('classpath://getuser/set-event_attributes.dwl')]" />
+			</munit:set-event>
+		</munit:behavior>
+		<munit:execution >
+			<flow-ref doc:name="hea-canvas-sapi-main" doc:id="6764b166-e72c-4cc6-9453-977a98b6ff89" name="hea-canvas-sapi-main" />
+		</munit:execution>
+		<munit:validation >
+			<munit-tools:assert-equals doc:name="Assert equals" doc:id="a0804cc8-7e9b-4a4d-9ef3-60fbd86f0191" actual="#[vars.httpStatus]" expected="#[406]" />
+		</munit:validation>
+	</munit:test>
+	<munit:test name="api-test-suite-not-implemented" doc:id="ecc333f4-39ea-45a3-ad65-efb0b9c75406" expectedErrorType="APIKIT:NOT_IMPLEMENTED" description="Test for not implemented method request to Canvas Sapi">
+		<munit:behavior >
+			<munit-tools:mock-when doc:name="Mock when" doc:id="0236e931-c779-4da1-a4d7-3c05f3b847dc" processor="apikit:router" >
+				<munit-tools:with-attributes >
+					<munit-tools:with-attribute whereValue="heaCanvasSapiConfig" attributeName="config-ref" />
+				</munit-tools:with-attributes>
+				<munit-tools:then-return >
+					<munit-tools:error typeId="APIKIT:NOT_IMPLEMENTED" />
+				</munit-tools:then-return>
+			</munit-tools:mock-when>
+			<munit:set-event doc:name="Set Input" doc:id="98a61262-64e7-4a29-8555-1b67e35b7d69" >
+				<munit:payload value="#[readUrl('classpath://getuser/set-event_payload.dwl')]" encoding="UTF-8" />
+				<munit:attributes value="#[readUrl('classpath://getuser/set-event_attributes.dwl')]" />
+			</munit:set-event>
+		</munit:behavior>
+		<munit:execution >
+			<flow-ref doc:name="hea-canvas-sapi-main" doc:id="9ff7401a-0781-465c-8c74-11fcfa829b26" name="hea-canvas-sapi-main" />
+		</munit:execution>
+		<munit:validation >
+			<munit-tools:assert-equals doc:name="Assert equals" doc:id="4f751181-48c5-45f0-80f9-3ecd5dac00fd" actual="#[vars.httpStatus]" expected="#[416]" />
+		</munit:validation>
+	</munit:test>
+	<munit:test name="api-test-suite-unsupported-media-type" doc:id="35fca9ef-c6f5-4a85-9e93-f4be403981fe" expectedErrorType="APIKIT:UNSUPPORTED_MEDIA_TYPE" description="Test for unsupported media type request to Canvas Sapi">
+		<munit:behavior >
+			<munit-tools:mock-when doc:name="Mock when" doc:id="ea5a367a-055f-4d54-bb80-b1278c6194d2" processor="apikit:router" >
+				<munit-tools:with-attributes >
+					<munit-tools:with-attribute whereValue="heaCanvasSapiConfig" attributeName="config-ref" />
+				</munit-tools:with-attributes>
+				<munit-tools:then-return >
+					<munit-tools:error typeId="APIKIT:UNSUPPORTED_MEDIA_TYPE" />
+				</munit-tools:then-return>
+			</munit-tools:mock-when>
+			<munit:set-event doc:name="Set Input" doc:id="09a3ec36-01d4-40f8-a490-d145682795db" >
+				<munit:payload value="#[readUrl('classpath://getuser/set-event_payload.dwl')]" encoding="UTF-8" />
+				<munit:attributes value="#[readUrl('classpath://getuser/set-event_attributes.dwl')]" />
+			</munit:set-event>
+		</munit:behavior>
+		<munit:execution >
+			<flow-ref doc:name="hea-canvas-sapi-main" doc:id="282d5248-6eb6-425a-85c9-096e8acd8da5" name="hea-canvas-sapi-main" />
+		</munit:execution>
+		<munit:validation >
+			<munit-tools:assert-equals doc:name="Assert equals" doc:id="b0c9b33e-485d-4d0b-afa0-114d2f02427d" actual="#[vars.httpStatus]" expected="#[415]" />
+		</munit:validation>
+	</munit:test>
+	<munit:test name="get-course-courseid-assignment" doc:id="da54286f-a70f-4b83-8a9e-208797b990e8" description="Test for successful execution of retrieving assignments by courseid">
+		<munit:behavior >
+			<munit-tools:mock-when doc:name="get-assignments-by-courseid-sub-flow" doc:id="73388f90-4a0b-4d5f-8f1c-4bb8adf0e2a9" processor="flow-ref">
+				<munit-tools:with-attributes >
+					<munit-tools:with-attribute whereValue="get-assignments-by-courseid-sub-flow" attributeName="doc:name" />
+					<munit-tools:with-attribute whereValue="f11b1073-aade-4c48-acc6-9ae370983b98" attributeName="doc:id" />
+				</munit-tools:with-attributes>
+			</munit-tools:mock-when>
+		</munit:behavior>
+		<munit:execution >
+			<flow-ref doc:name=" get-course-courseid-assignment" doc:id="8143318d-28a1-41b0-84d9-acc89175db11" name="get:\course\(courseid)\assignment:heaCanvasSapiConfig"/>
+		</munit:execution>
+	</munit:test>
+	<munit:test name="get-course-courseid-enrollment" doc:id="624142bd-3676-41cd-80cb-666c7fd57467" description="Test for successful execution of retrieving course enrollment by courseid">
+		<munit:behavior >
+			<munit-tools:mock-when doc:name="retrieve-course-enrollment-sub-flow" doc:id="fe378669-6e85-4a13-b268-73b5d1b0e18b" processor="flow-ref">
+				<munit-tools:with-attributes >
+					<munit-tools:with-attribute whereValue="retrieve-course-enrollment-sub-flow" attributeName="doc:name" />
+					<munit-tools:with-attribute whereValue="552fe410-9eaa-4487-8a31-6588baee923d" attributeName="doc:id" />
+				</munit-tools:with-attributes>
+			</munit-tools:mock-when>
+		</munit:behavior>
+		<munit:execution >
+			<flow-ref doc:name=" get-course-courseid-enrollment" doc:id="4aef534f-f99b-4751-afda-580d1d239cb6" name="get:\course\(courseid)\enrollment:heaCanvasSapiConfig"/>
+		</munit:execution>
+	</munit:test>
+	<munit:test name="post-course" doc:id="ebd9615a-f017-4156-8b81-7512eca3a8aa" description="Test for successful execution of creating a course">
+		<munit:behavior >
+			<munit-tools:mock-when doc:name="create-course-sub-flow" doc:id="8df5440c-73fd-418e-9332-d64651741657" processor="flow-ref">
+				<munit-tools:with-attributes >
+					<munit-tools:with-attribute whereValue="create-course-sub-flow" attributeName="doc:name" />
+					<munit-tools:with-attribute whereValue="163ec254-e2dc-4a07-a9d7-645ceeb644aa" attributeName="doc:id" />
+				</munit-tools:with-attributes>
+			</munit-tools:mock-when>
+		</munit:behavior>
+		<munit:execution >
+			<flow-ref doc:name=" post-course" doc:id="432aede8-497f-41e3-b3b0-0f0aae557137" name="post:\course:application\json:heaCanvasSapiConfig"/>
+		</munit:execution>
+	</munit:test>
+	<munit:test name="get-course" doc:id="f576ab43-156e-44f8-9a5b-1b98a939eb4e" description="Test for successful execution of retreiving a course">
+		<munit:behavior >
+			<munit-tools:mock-when doc:name="retrieve-course-by-field-sub-flow" doc:id="cd39b9c6-1a6f-42c9-adf1-edd7ffb19325" processor="flow-ref">
+				<munit-tools:with-attributes >
+					<munit-tools:with-attribute whereValue="retrieve-course-by-field-sub-flow" attributeName="doc:name" />
+					<munit-tools:with-attribute whereValue="4abfc415-8219-452e-9247-b76168030862" attributeName="doc:id" />
+				</munit-tools:with-attributes>
+			</munit-tools:mock-when>
+		</munit:behavior>
+		<munit:execution >
+			<flow-ref doc:name=" get-course" doc:id="aca75fdd-2767-494d-b62b-aceea16279e5" name="get:\course:heaCanvasSapiConfig"/>
+		</munit:execution>
+	</munit:test>
+
+</mule>

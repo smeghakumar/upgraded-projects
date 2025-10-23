@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule
+  xmlns:ee="http://www.mulesoft.org/schema/mule/ee/core"
+  xmlns="http://www.mulesoft.org/schema/mule/core"
+  xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="
+http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/mule-ee.xsd http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/mule.xsd">
+
+  <error-handler
+    name="global-error-handler"
+    doc:id="b1f1b1fe-ddc4-4798-9a5d-145634181614">
+
+    <on-error-propagate
+      enableNotifications="true"
+      logException="true"
+      doc:name="On Error Propagate"
+      doc:id="ffa1ccc5-1d9d-44dd-a2e9-039db779f7ed"
+      type="APIKIT:NOT_FOUND">
+      <logger
+        level="ERROR"
+        doc:name="errorLogger"
+        doc:id="f76b87d7-23fb-454a-96bc-d05b49f38449"
+        category="${logger.category}.global-error-handler"
+        message="Not Found" />
+      <set-variable
+        value="404"
+        doc:name="httpStatus"
+        doc:id="1cfaebb4-aa17-4935-a49d-6d0388e0c3b1"
+        variableName="httpStatus" />
+      <flow-ref
+        doc:name="error-sub-flow"
+        doc:id="07717686-d3b6-4cd9-9e53-499447b94bc9"
+        name="error-sub-flow" />
+    </on-error-propagate>
+    <on-error-propagate
+      enableNotifications="true"
+      logException="true"
+      doc:name="On Error Propagate"
+      doc:id="726f47f2-265a-43aa-a0de-6933aecec174"
+      type="APIKIT:METHOD_NOT_ALLOWED">
+      <logger
+        level="ERROR"
+        doc:name="errorLogger"
+        doc:id="61e13278-420c-4b58-ac31-92b9ef8e8d5a"
+        message="Method Not Allowed"
+        category="${logger.category}.global-error-handler" />
+      <set-variable
+        value="405"
+        doc:name="httpStatus"
+        doc:id="63ddb64e-fdd0-48e2-ab67-754eeca09611"
+        variableName="httpStatus" />
+      <flow-ref
+        doc:name="error-sub-flow"
+        doc:id="fe7e1b1d-eccc-4ffc-b980-464cb632106c"
+        name="error-sub-flow" />
+
+    </on-error-propagate>
+    <on-error-propagate
+      enableNotifications="true"
+      logException="true"
+      doc:name="On Error Propagate"
+      doc:id="2988488e-1043-4ff2-ab77-647284bdad7f"
+      type="APIKIT:NOT_ACCEPTABLE">
+      <logger
+        level="ERROR"
+        doc:name="errorLogger"
+        doc:id="2890d557-feff-40ee-973d-934cacc67d56"
+        message="Not Acceptable"
+        category="${logger.category}.global-error-handler" />
+      <set-variable
+        value="406"
+        doc:name="httpStatus"
+        doc:id="1da272f0-92da-453f-a54b-ab408d9bcbe9"
+        variableName="httpStatus" />
+      <flow-ref
+        doc:name="error-sub-flow"
+        doc:id="e9c29e5d-ed32-4d24-bee4-8badb6d4eb39"
+        name="error-sub-flow" />
+
+    </on-error-propagate>
+    <on-error-propagate
+      enableNotifications="true"
+      logException="true"
+      doc:name="On Error Propagate"
+      doc:id="7f55c13a-ec74-4427-80a1-3286bd7d81cc"
+      type="APIKIT:UNSUPPORTED_MEDIA_TYPE">
+      <logger
+        level="ERROR"
+        doc:name="errorLogger"
+        doc:id="9ac3c096-4584-4cf8-981b-2157aabeb11a"
+        message="Unsupported Media Type"
+        category="${logger.category}.global-error-handler" />
+      <set-variable
+        value="415"
+        doc:name="httpStatus"
+        doc:id="9ec81798-8646-4e0d-9f2d-e3fde27ddea0"
+        variableName="httpStatus" />
+      <flow-ref
+        doc:name="error-sub-flow"
+        doc:id="08eaeb64-10bc-483d-adbd-4168ccb92b24"
+        name="error-sub-flow" />
+
+    </on-error-propagate>
+    <on-error-propagate
+      enableNotifications="true"
+      logException="true"
+      doc:name="On Error Propagate"
+      doc:id="83127342-7330-4234-8117-7b68878f1c4a"
+      type="APIKIT:NOT_IMPLEMENTED">
+      <logger
+        level="ERROR"
+        doc:name="errorLogger"
+        doc:id="a60a98d3-7252-4e90-b14b-c59d5928d5f6"
+        message="Not Implemented"
+        category="${logger.category}.global-error-handler" />
+      <set-variable
+        value="416"
+        doc:name="httpStatus"
+        doc:id="d00e339f-38a5-4cb1-92ac-a7c9f212ae7e"
+        variableName="httpStatus" />
+      <flow-ref
+        doc:name="error-sub-flow"
+        doc:id="f1d881cd-1141-491e-8864-d8d1098f415d"
+        name="error-sub-flow" />
+
+    </on-error-propagate>
+    <on-error-propagate
+      enableNotifications="true"
+      logException="true"
+      doc:name="On Error Propagate"
+      doc:id="8d888a40-ec09-440a-828f-f63743272d63"
+      type="APIKIT:BAD_REQUEST">
+      <logger
+        level="ERROR"
+        doc:name="errorLogger"
+        doc:id="39e0d0a2-28b7-4a08-8c85-25fd2b5804ed"
+        message="Bad Request"
+        category="${logger.category}.global-error-handler" />
+      <set-variable
+        value="400"
+        doc:name="httpStatus"
+        doc:id="9d43db1f-a4a9-4119-8f97-1b7f587098b9"
+        variableName="httpStatus" />
+      <flow-ref
+        doc:name="error-sub-flow"
+        doc:id="bd5813ac-b0be-4454-82b3-2615d3f83429"
+        name="error-sub-flow" />
+
+    </on-error-propagate>
+    <on-error-propagate
+      enableNotifications="true"
+      logException="true"
+      doc:name="On Error Propagate"
+      doc:id="051f1c1a-5f4e-4c46-a674-daee5c4e85bd"
+      type="ANY">
+      <logger
+        level="ERROR"
+        doc:name="errorLogger"
+        doc:id="58440069-dce5-4b66-879f-ce61b1ad18e8"
+        message="ANY"
+        category="${logger.category}.global-error-handler" />
+      <set-variable
+        value="500"
+        doc:name="httpStatus"
+        doc:id="78615bc9-5015-4f0b-9806-56ba5ca4d520"
+        variableName="httpStatus" />
+      <flow-ref
+        doc:name="error-sub-flow"
+        doc:id="0619a649-5c6b-4fe8-9028-23abdb08d191"
+        name="error-sub-flow" />
+    </on-error-propagate>
+
+  </error-handler>
+  <sub-flow
+    name="error-sub-flow"
+    doc:id="74bf20c1-e520-4e27-99a2-f788e81c87ca">
+    <logger
+      level="INFO"
+      doc:name="Start Logger"
+      doc:id="6ce23ae6-4499-4d6c-9996-bb76427cd68f"
+      message="Start error-sub-flow"
+      category="${logger.category}.error-sub-flow" />
+    <ee:transform
+      doc:name="Error Json"
+      doc:id="be3948a7-db07-48e2-b44b-7628da2eb407">
+      <ee:message>
+        <ee:set-payload><![CDATA[output application/json
+var successful = vars.successful default true
+---
+{
+	statusCode: vars.httpStatus,
+	message: error.errorType.identifier,
+	description: error.description,
+	correlationId: correlationId
+}
+]]></ee:set-payload>
+      </ee:message>
+    </ee:transform>
+    <logger
+      level="INFO"
+      doc:name="End Logger"
+      doc:id="4fc4d807-2a5b-48cd-9c24-d69c971dff07"
+      message="End error-sub-flow"
+      category="${logger.category}.error-sub-flow" />
+
+  </sub-flow>
+
+
+</mule>

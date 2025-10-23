@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:ee="http://www.mulesoft.org/schema/mule/ee/core"
+	xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/mule-ee.xsd http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/mule.xsd">
+  
+  <sub-flow name="get-assignments-by-courseid-sub-flow" doc:id="48662faa-3b7f-4b2a-bfbc-6b84be39bfe6" >
+    <logger level="INFO" doc:name="Start Logger" doc:id="d32f7915-744c-46a4-aa38-3b1734a1f330" message="Start get-assignments-by-courseid-sub-flow" category="${logger.category}.get-assignments-by-courseid-sub-flow"/>
+    <ee:transform doc:name="Get Assignment Items By CourseId Payload" doc:id="338b5d2d-dc28-4bec-a009-b2b1f7afe635" >
+      <ee:message >
+      </ee:message>
+      <ee:variables >
+        <ee:set-variable variableName="method" ><![CDATA["GET"]]></ee:set-variable>
+        <ee:set-variable resource="dwl/get-course-assignment-request.dwl" variableName="canvasPath" />
+      </ee:variables>
+    </ee:transform>
+    <logger level="INFO" doc:name="Before Request Canvas Call" doc:id="97ccbf58-8d8d-443b-98e7-0a73d44ffcf9" message="Before Request Canvas Call" category="${logger.category}.get-assignments-by-courseid-sub-flow"/>
+    <logger level="DEBUG" doc:name="DEBUG: Before Request Canvas Call" doc:id="8a35978a-f71e-4b93-a926-4ba3ca394615" category="${logger.category}.get-assignments-by-courseid-sub-flow" message="#[payload]"/>
+    <flow-ref doc:name="request-canvas-sub-flow" doc:id="cef40410-3a08-457d-b88f-f1dbd4a46f76" name="request-canvas-sub-flow"/>
+    <logger level="INFO" doc:name="After Request Canvas Call" doc:id="a663a866-2f6b-48ac-8dd8-e581ff767362" message="After Request Canvas Call" category="${logger.category}.get-assignments-by-courseid-sub-flow"/>
+    <logger level="DEBUG" doc:name="DEBUG: After Request Canvas Call" doc:id="d8adc5a0-1de2-40ef-b424-1d443223468c" message="#[payload]" category="${logger.category}.get-assignments-by-courseid-sub-flow"/>
+    <choice doc:name="Is Error Check" doc:id="90915902-1af6-413c-8971-aed2919133a6" >
+      <when expression="#[vars.isError == true]">
+        <raise-error doc:name="CANVAS_SAPI:GET_ASSIGNMENTS_FAILED" doc:id="71687191-c166-4079-95ce-9ea9186f5df7" type="CANVAS_SAPI:GET_ASSIGNMENTS_FAILED" description="#[payload]"/>
+      </when>
+      <otherwise >
+        <logger level="INFO" doc:name="INFO Logger" doc:id="48d626d2-0686-4185-9ada-9bbad9fd1056" message="Assignment fetched successfully" category="${logger.category}.get-assignments-by-courseid-sub-flow"/>
+        <ee:transform doc:name="Response Payload" doc:id="33f8fd61-4b21-49d8-8714-71fd4a9ff84d" >
+          <ee:message >
+            <ee:set-payload resource="dwl/get-grade-items-by-courseid-response.dwl" />
+          </ee:message>
+        </ee:transform>
+      </otherwise>
+    </choice>
+    <logger level="INFO" doc:name="End Logger" doc:id="c1f6aac9-7c82-4ec5-9b1a-441f8e02efef" message="End get-assignments-by-courseid-sub-flow" category="${logger.category}.get-assignments-by-courseid-sub-flow" />
+  </sub-flow>
+  </mule>

@@ -1,0 +1,30 @@
+api:
+  id: "![FGCP/kWkUstNiYaxTpbP/g==]"
+
+retry:
+  delayMillisecs: "3000"
+  numRetries: "2"  
+
+tls:
+  type: "JKS"
+  path: "certs/hea-dev.jks"
+  alias: "hea-mule"  
+  password: "![gPOtTwee0lc=]"
+
+canvas:
+  host: "170.64.229.73"
+  path: "/api/v1"
+  token: "![nbZ4xKBDJmZsP4PAv6q8Ru6U08oCrQfE6HmU0vxmscvYLexT8n3xjbJklL966MunXNzfu2KlB55Lfh0NJ3Vdqzi2I/N9LdZo]"
+  institution: "NJC University"
+  user:
+    endpoint: "/accounts/1/users"
+    get-endpoint: "/users"
+  course:
+    endpoint: "/accounts/1/courses"
+  enrol:
+    get-endpoint: "/courses/{courseid}/enrollments"
+    post-endpoint: "/courses/{courseid}/enrollments"
+  assignment:
+    get-endpoint: "/courses/{courseid}/assignments"
+  grades:
+    get-endpoint: "/courses/{courseid}/gradebook_history/feed"

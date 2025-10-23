@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:ee="http://www.mulesoft.org/schema/mule/ee/core" xmlns="http://www.mulesoft.org/schema/mule/core"
+	xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/mule.xsd
+http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/mule-ee.xsd">
+  <sub-flow name="retrieve-course-enrollment-sub-flow" doc:id="26d5410a-9dc7-4250-83c5-c8b65a67a754" >
+    <logger level="INFO" doc:name="Start Logger" doc:id="90f3f519-08be-4f8f-9a5c-51558ffc9969" message="Start retrieve-course-enrollment-sub-flow" category="${logger.category}.retrieve-course-enrollment-sub-flow" />
+    <ee:transform doc:name="Retrieve Course  Enrollment Request Payload" doc:id="8de0af6a-89b2-4db4-abe5-d550f31d6de0" >
+      <ee:message />
+      <ee:variables >
+        <ee:set-variable variableName="method" ><![CDATA["GET"]]></ee:set-variable>
+        <ee:set-variable resource="dwl/retrieve-course-enrol-request.dwl" variableName="canvasPath" />
+      </ee:variables>
+    </ee:transform>
+    <logger level="INFO" doc:name="Before Canvas call" doc:id="75b77c82-51f5-46dd-9dc3-098c304229c5" message="Before retrieve-course-enrollment-sub-flow" category="${logger.category}.retrieve-course-enrollment-sub-flow" />
+    <logger level="DEBUG" doc:name="DEBUG: Before Canvas call" doc:id="68fc18f4-d03f-439f-ab70-d582b93545e7" message="#[payload]" category="${logger.category}.retrieve-course-enrollment-sub-flow" />
+    <flow-ref doc:name="request-canvas-sub-flow" doc:id="c752960d-ab50-4b1d-ae2c-7549dca99ec4" name="request-canvas-sub-flow" />
+    <logger level="INFO" doc:name="After Canvas call" doc:id="7ce04d41-ef3a-4c3b-a2df-3dde73c3cf32" message="After retrieve-course-enrollment-sub-flow" category="${logger.category}.retrieve-course-enrollment-sub-flow" />
+    <logger level="DEBUG" doc:name="DEBUG: After Canvas call" doc:id="cff8d015-86e0-409e-8f55-15f12c36deaf" message="#[payload]" category="${logger.category}.retrieve-course-enrollment-sub-flow" />
+    <choice doc:name="isError" doc:id="e61f8692-b10f-4c37-97ae-2a0bb59080a2" >
+      <when expression="#[vars.isError == true]" >
+        <raise-error doc:name="CANVAS_SAPI:ENROLLMENT_NOT_FOUND" doc:id="94ab2ea0-6397-4ebb-a8c1-d0e41de91ad8" type="CANVAS_SAPI:ENROLLMENT_NOT_FOUND" description="#[payload]" />
+      </when>
+      <otherwise >
+        <logger level="INFO" doc:name="INFO Logger" doc:id="e9fc2c2a-8c23-4971-bbe6-fc1cc7b0cf48" message="Course retrieved successfully" category="${logger.category}.retrieve-course-enrollment-sub-flow" />
+        <ee:transform doc:name="Response Payload" doc:id="1192a3c9-6f88-4a09-87ba-f5e3fdbebca1" >
+          <ee:message >
+            <ee:set-payload resource="dwl/retrieve-course-enrol-response.dwl" />
+          </ee:message>
+        </ee:transform>
+      </otherwise>
+    </choice>
+    <logger level="INFO" doc:name="End Logger" doc:id="b47d3f98-9639-4811-a140-bbe7f14b9d73" message="End retrieve-course-enrollment-sub-flow" category="${logger.category}.retrieve-course-enrollment-sub-flow" />
+  </sub-flow>
+  <sub-flow name="create-course-enrollment-sub-flow" doc:id="6f871409-a62f-4a8f-a75c-426600b5ca61">
+    <logger level="INFO" doc:name="Start Logger" doc:id="7d66566a-bae8-4052-80a6-88efc1aa9cf0" message="Start create-course-enrollment-sub-flow" category="${logger.category}.create-course-enrollment-sub-flow" />
+    <ee:transform doc:name="Create Course  Enrollment Request Payload" doc:id="d462406f-b36e-47da-90d0-306a10e8533f">
+      <ee:message>
+        <ee:set-payload resource="dwl/create-course-enrollment-request.dwl" />
+      </ee:message>
+      <ee:variables>
+        <ee:set-variable variableName="method"><![CDATA["POST"]]></ee:set-variable>
+        <ee:set-variable resource="dwl/create-course-enrol-endpoint.dwl" variableName="canvasPath" />
+      </ee:variables>
+    </ee:transform>
+    <logger level="INFO" doc:name="Before Canvas call" doc:id="de4602e8-a599-49d3-8eaa-71cc4fe4ee2f" message="Before create-course-enrollment-sub-flow" category="${logger.category}.create-course-enrollment-sub-flow" />
+    <logger level="DEBUG" doc:name="DEBUG: Before Canvas call" doc:id="81091f6b-c300-4dbe-a1b2-fe0ec1bc865e" message="#[payload]" category="${logger.category}.create-course-enrollment-sub-flow" />
+    <flow-ref doc:name="request-canvas-sub-flow" doc:id="83b62f01-c431-4439-b383-c88030f2f5de" name="request-canvas-sub-flow" />
+    <logger level="INFO" doc:name="After Canvas call" doc:id="dfb63f09-129c-453b-9e54-07789573c415" message="After create-course-enrollment-sub-flow" category="${logger.category}.create-course-enrollment-sub-flow" />
+    <logger level="DEBUG" doc:name="DEBUG: After Canvas call" doc:id="aef7dc55-1079-4005-befa-450e59d6c694" message="#[payload]" category="${logger.category}.create-course-enrollment-sub-flow" />
+    <choice doc:name="isError" doc:id="6ac3b304-c13b-4f53-9dd9-55505d4a1ba8">
+      <when expression="#[vars.isError == true]">
+        <raise-error doc:name="CANVAS_SAPI:ENROLLMENT_NOT_CREATED" doc:id="347fda16-b80a-4612-b217-33e6315bf860" type="CANVAS_SAPI:ENROLLMENT_NOT_CREATED" description="#[payload]" />
+      </when>
+      <otherwise>
+        <logger level="INFO" doc:name="INFO Logger" doc:id="d6390698-086c-40f4-b6d1-c778c3cd3e98" message="Course enrolled successfully" category="${logger.category}.create-course-enrollment-sub-flow" />
+        <ee:transform doc:name="Response Payload" doc:id="c8ea7e01-9c6c-4ed1-a729-d7f8c844cd2f">
+          <ee:message>
+            <ee:set-payload resource="dwl/create-course-enrol-response.dwl" />
+          </ee:message>
+        </ee:transform>
+      </otherwise>
+    </choice>
+    <logger level="INFO" doc:name="End Logger" doc:id="04854e76-01a6-4396-973b-02b89ecc4da4" message="End create-course-enrollment-sub-flow" category="${logger.category}.create-course-enrollment-sub-flow" />
+  </sub-flow>
+</mule>

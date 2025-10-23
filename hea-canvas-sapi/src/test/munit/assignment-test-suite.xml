@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:munit="http://www.mulesoft.org/schema/mule/munit" xmlns:munit-tools="http://www.mulesoft.org/schema/mule/munit-tools"
+	xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xsi:schemaLocation="
+		http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/mule.xsd
+		http://www.mulesoft.org/schema/mule/munit http://www.mulesoft.org/schema/mule/munit/current/mule-munit.xsd
+		http://www.mulesoft.org/schema/mule/munit-tools  http://www.mulesoft.org/schema/mule/munit-tools/current/mule-munit-tools.xsd">
+	<munit:config name="assignment-test-suite.xml" />
+	<munit:test name="get-assignments-by-courseid-sub-flow-test" doc:id="00a6e1fd-c49f-47db-8850-2f1b68986493" description="Test to validate the successfull execution of get assignments by courseid">
+		<munit:behavior >
+			<munit-tools:mock-when doc:name="request-canvas-sub-flow" doc:id="24193cbf-2c3c-4cda-a26a-cd91541bf2e9" processor="flow-ref">
+				<munit-tools:with-attributes >
+					<munit-tools:with-attribute whereValue="request-canvas-sub-flow" attributeName="doc:name" />
+					<munit-tools:with-attribute whereValue="cef40410-3a08-457d-b88f-f1dbd4a46f76" attributeName="doc:id" />
+				</munit-tools:with-attributes>
+				<munit-tools:then-return >
+					<munit-tools:payload value="#[output application/json  --- readUrl('classpath://getassignments/get_assignments_response_payload.dwl')]" mediaType="application/json" />
+				</munit-tools:then-return>
+			</munit-tools:mock-when>
+		</munit:behavior>
+		<munit:execution >
+			<munit:set-event doc:name="courseid" doc:id="a088b76e-ff6c-45e2-bca1-22f9aa217c3e">
+				<munit:variables >
+					<munit:variable key="courseid" value="#[output application/json --- readUrl('classpath://getassignments/get_assignments_mock_variable.dwl')]&#10;" mediaType="application/json" />
+				</munit:variables>
+			</munit:set-event>
+			<flow-ref doc:name=" get-assignments-by-courseid-sub-flow" doc:id="b16be5b8-1c01-4dbb-a5dc-dfdb59a59c87" name="get-assignments-by-courseid-sub-flow"/>
+		</munit:execution>
+		<munit:validation>
+			<munit-tools:assert doc:name="Response Payload" doc:id="df118fa3-3db1-417c-966c-2d5d9e72f8ff" >
+				<munit-tools:that ><![CDATA[#[%dw 2.0
+import getassignments::assert_expression_payload
+---
+assert_expression_payload::main({payload: payload, attributes: attributes, vars: vars})]]]></munit-tools:that>
+			</munit-tools:assert>
+		</munit:validation>
+	</munit:test>
+	<munit:test name="get-assignments-exception-test" doc:id="7682c485-ce2e-4a14-9616-1bdb8be5a155" expectedErrorType="CANVAS_SAPI:GET_ASSIGNMENTS_FAILED" description="Test to validate the negative scenario of get assignments by courseid">
+		<munit:behavior >
+			<munit-tools:mock-when doc:name="request-canvas-sub-flow" doc:id="4d7aa5da-f838-4bf6-8182-1fbff47f9372" processor="flow-ref" >
+				<munit-tools:with-attributes >
+					<munit-tools:with-attribute whereValue="request-canvas-sub-flow" attributeName="doc:name" />
+					<munit-tools:with-attribute whereValue="cef40410-3a08-457d-b88f-f1dbd4a46f76" attributeName="doc:id" />
+				</munit-tools:with-attributes>
+				<munit-tools:then-return >
+					<munit-tools:payload value='#["Error"]' mediaType="text/plain" />
+					<munit-tools:variables >
+						<munit-tools:variable key="isError" value="#[true]" />
+					</munit-tools:variables>
+				</munit-tools:then-return>
+			</munit-tools:mock-when>
+		</munit:behavior>
+		<munit:execution >
+			<munit:set-event doc:name="courseid" doc:id="a59ed9d4-e88a-4902-ab43-e4186136e774" >
+				<munit:variables >
+					<munit:variable key="courseid" value="#[output application/json --- readUrl('classpath://getassignments/get_assignments_mock_variable.dwl')]&#10;" mediaType="application/json" />
+				</munit:variables>
+			</munit:set-event>
+			<flow-ref doc:name=" get-assignments-by-courseid-sub-flow" doc:id="935ee673-6eae-49de-b5b5-b2bd5d4ad0c8" name="get-assignments-by-courseid-sub-flow" />
+		</munit:execution>
+	</munit:test>
+
+</mule>

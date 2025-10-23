@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mule
+  xmlns="http://www.mulesoft.org/schema/mule/core"
+  xmlns:apikit="http://www.mulesoft.org/schema/mule/mule-apikit"
+  xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+  xmlns:ee="http://www.mulesoft.org/schema/mule/ee/core"
+  xmlns:http="http://www.mulesoft.org/schema/mule/http"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/mule.xsd http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/mule-http.xsd http://www.mulesoft.org/schema/mule/mule-apikit http://www.mulesoft.org/schema/mule/mule-apikit/current/mule-apikit.xsd http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/mule-ee.xsd ">
+  <flow name="hea-canvas-sapi-main">
+    <http:listener
+      config-ref="httpsListenerConfig"
+      path="/api/${api.majorVersion}/*">
+      <http:response statusCode="#[vars.httpStatus default 200]">
+        <http:headers><![CDATA[#[vars.outboundHeaders default {}]]]></http:headers>
+      </http:response>
+      <http:error-response statusCode="#[vars.httpStatus default 500]">
+        <http:body><![CDATA[#[payload]]]></http:body>
+        <http:headers><![CDATA[#[vars.outboundHeaders default {}]]]></http:headers>
+      </http:error-response>
+    </http:listener>
+    <apikit:router config-ref="heaCanvasSapiConfig" />
+    <error-handler ref="global-error-handler" />
+  </flow>
+  <flow name="put:\user:application\json:heaCanvasSapiConfig">
+    <ee:transform doc:name="Transform Message">
+      <ee:message>
+        <ee:set-payload><![CDATA[%dw 2.0
+output application/json
+---
+{
+  id: "9",
+  loginId: "johndoe@example.com",
+  firstName: "John",
+  lastName: "Doe",
+  email: "johndoe@example.com",
+  contactId: "0033z00003QA1hXAAT"
+} as Object {encoding: "UTF-8", mediaType: "application/json"}]]></ee:set-payload>
+      </ee:message>
+    </ee:transform>
+  </flow>
+  <flow
+    name="get:\health:heaCanvasSapiConfig"
+    doc:id="b7e82903-1832-4026-848c-0512bcd6e635">
+    <flow-ref
+      doc:name="health-check-sub-flow"
+      doc:id="f3f2a23d-c9e3-4061-be24-49c2c4479d1d"
+      name="health-check-sub-flow" />
+  </flow>
+  <flow
+    name="get:\user:heaCanvasSapiConfig"
+    doc:id="acf6ae10-5fac-4801-abcf-613a8fe3063b">
+    <flow-ref
+      doc:name="get-user-by-criteria-sub-flow"
+      doc:id="e67a163c-152b-4b9d-af9e-f5c4610a28b3"
+      name="get-user-by-criteria-sub-flow" />
+  </flow>
+  <flow
+    name="get:\user\(userid):heaCanvasSapiConfig"
+    doc:id="3240455b-742a-4d65-8df7-b6b67440b37e">
+    <ee:transform doc:name="Transform Message">
+      <ee:variables>
+        <ee:set-variable variableName="userid">attributes.uriParams.'userid'</ee:set-variable>
+      </ee:variables>
+    </ee:transform>
+    <flow-ref
+      doc:name="get-user-by-userid-sub-flow"
+      doc:id="158e6d58-473b-4270-98e9-c2b6e6fc6efc"
+      name="get-user-by-userid-sub-flow" />
+  </flow>
+  <flow
+    name="post:\user:application\json:heaCanvasSapiConfig"
+    doc:id="523e1ba2-6040-4de7-ba71-21a2c2c18e4b">
+    <flow-ref
+      doc:name="create-user-sub-flow"
+      doc:id="d9b2994a-0a88-44f7-9f39-17966f2c9c6a"
+      name="create-user-sub-flow" />
+  </flow>
+  <flow name="get:\course:heaCanvasSapiConfig">
+    <flow-ref
+      doc:name="retrieve-course-by-field-sub-flow"
+      doc:id="4abfc415-8219-452e-9247-b76168030862"
+      name="retrieve-course-by-field-sub-flow" />
+  </flow>
+  <flow name="post:\course:application\json:heaCanvasSapiConfig">
+    <flow-ref
+      doc:name="create-course-sub-flow"
+      doc:id="163ec254-e2dc-4a07-a9d7-645ceeb644aa"
+      name="create-course-sub-flow" />
+  </flow>
+  <flow name="get:\course\(courseid)\assignment:heaCanvasSapiConfig">
+    <ee:transform doc:name="Set courseid">
+      <ee:variables>
+        <ee:set-variable variableName="courseid">attributes.uriParams.'courseid'</ee:set-variable>
+      </ee:variables>
+    </ee:transform>
+    <flow-ref
+      doc:name="get-assignments-by-courseid-sub-flow"
+      doc:id="f11b1073-aade-4c48-acc6-9ae370983b98"
+      name="get-assignments-by-courseid-sub-flow" />
+  </flow>
+  <flow name="get:\course\(courseid)\enrollment:heaCanvasSapiConfig">
+    <ee:transform doc:name="Set courseId">
+      <ee:variables>
+        <ee:set-variable variableName="courseid">attributes.uriParams.'courseid'</ee:set-variable>
+      </ee:variables>
+    </ee:transform>
+    <flow-ref
+      doc:name="retrieve-course-enrollment-sub-flow"
+      doc:id="552fe410-9eaa-4487-8a31-6588baee923d"
+      name="retrieve-course-enrollment-sub-flow" />
+  </flow>
+  <flow name="post:\enrol:application\json:heaCanvasSapiConfig">
+    <ee:transform doc:name="Set courseId">
+      <ee:message />
+      <ee:variables>
+        <ee:set-variable variableName="courseId"><![CDATA[payload.courseId]]></ee:set-variable>
+      </ee:variables>
+    </ee:transform>
+    <flow-ref
+      doc:name="create-course-enrollment-sub-flow"
+      doc:id="50069ed4-5f7d-4b9f-a092-8e48e81e77d9"
+      name="create-course-enrollment-sub-flow" />
+  </flow>
+  <flow name="get:\course\(courseid)\gradebook:heaCanvasSapiConfig">
+    <ee:transform doc:name="Set courseId">
+      <ee:variables>
+        <ee:set-variable variableName="courseId" ><![CDATA[attributes.uriParams.'courseid']]></ee:set-variable>
+      </ee:variables>
+    </ee:transform>
+    <flow-ref doc:name="get-course-grades-by-courseid-sub-flow" doc:id="8db63522-d3c8-4cb4-8d5b-3a01f13cbeac" name="get-course-grades-by-courseid-sub-flow"/>
+  </flow>
+</mule>
