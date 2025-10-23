@@ -1,0 +1,10 @@
+target/
+.mule/**
+.mule/**/*
+*.classpath
+*.project
+.DS_Store
+velocity.log
+reports/
+src/main/resources/weave
+src/main/resources/application-types.xml
