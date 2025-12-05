@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:http="http://www.mulesoft.org/schema/mule/http"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:munit="http://www.mulesoft.org/schema/mule/munit" xmlns:munit-tools="http://www.mulesoft.org/schema/mule/munit-tools"
+	xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xsi:schemaLocation="
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd 
+		http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+		http://www.mulesoft.org/schema/mule/munit http://www.mulesoft.org/schema/mule/munit/current/mule-munit.xsd
+		http://www.mulesoft.org/schema/mule/munit-tools  http://www.mulesoft.org/schema/mule/munit-tools/current/mule-munit-tools.xsd">
+	<munit:config name="user-identity-mgmt-sys-api-test-suite.xml" />
+	<munit:test name="user-identity-mgmt-sys-api-test-suite-put:\users\(userId):application\json:User-Identity-Mgmt-System-API-configTest" doc:id="805b9522-be27-4f5a-8fbb-84297ab03218" description="Test">
+		<munit:behavior >
+			<set-variable value="${http.request.header.clientId}" doc:name="Set Client Id" doc:id="6e9e9aa2-edaf-44ee-86ec-5c83524fdaac" variableName="clientId" />
+			<set-variable value="${http.request.header.clientSecret}" doc:name="Set Client Secret" doc:id="4f1208f5-f540-4037-a513-ba59431a48c6" variableName="clientSecret"/>
+			<munit-tools:mock-when doc:name="Mock when" doc:id="d271398c-b605-4d97-ac60-4d8137b84681" processor="http:request">
+				<munit-tools:with-attributes >
+					<munit-tools:with-attribute whereValue="POST" attributeName="method" />
+					<munit-tools:with-attribute whereValue="OKTA Update User Password" attributeName="doc:name" />
+				</munit-tools:with-attributes>
+				<munit-tools:then-return >
+					<munit-tools:payload value="#[MunitTools::getResourceAsString('examples/responses/post-change-password-response.json')]" mediaType="application/json" />
+					<munit-tools:attributes value="#[{uriParams : {'userId' :'00ucy32qlrJPhVP9g4x6'}}]
+" />
+				</munit-tools:then-return>
+			
+</munit-tools:mock-when>
+		</munit:behavior>
+		<munit:execution >
+		<munit:set-event doc:name="Set Event" doc:id="1f1f8cef-ef32-447d-a692-dc14c88a4d5b" >
+				<munit:payload value="#[MunitTools::getResourceAsString('examples/requests/post-change-password-request.json')]" mediaType="application/json" />
+				<munit:attributes value="#[{uriParams : {'userId' :'00ucy32qlrJPhVP9g4x6'}, headers:{'X-API-ClientKey':'2f9f2d34-cf0d-44d0-bac3-636182f402db','X-API-ClientSecret':'921867d0-f78f-4137-aa21-b21bdf0590bc'}}]" />
+			
+</munit:set-event>
+			<flow-ref doc:name="Flow-ref to put:\users\(userId):application\json:User-Identity-Mgmt-System-API-config" doc:id="4e0daeff-233a-4382-bd09-afbf9f76fc53" name="put:\users\(userId):application\json:User-Identity-Mgmt-System-API-config"/>
+		</munit:execution>
+		<munit:validation >
+			<munit-tools:assert-that doc:name="Assert that" doc:id="fbc1cef7-82a3-49fd-8a25-ea8ea8e79e04" is="#[MunitTools::equalTo('Password updated successfully.')]" expression="#[payload.status]" message='#["Failed"]'/>
+		</munit:validation>
+	</munit:test>
+	<munit:test name="user-identity-mgmt-sys-api-test-suite-delete:\users\(userId):User-Identity-Mgmt-System-API-configTest" doc:id="08dc76ea-bc4e-445d-af72-48c35ca7bc18" description="Test">
+		<munit:behavior >
+			<set-variable value="${http.request.header.clientId}" doc:name="Set Client Id" doc:id="b154d3af-7afa-400d-93d6-034823d4e6f8" variableName="clientId" />
+			<set-variable value="${http.request.header.clientSecret}" doc:name="Set Client Secret" doc:id="3113ece8-927a-436b-8d69-e657be74a1bd" variableName="clientSecret"/>
+			<munit-tools:mock-when doc:name="Mock when" doc:id="ca8e6391-3426-48dd-ae59-4848a2864a73" processor="http:request">
+				<munit-tools:with-attributes >
+					<munit-tools:with-attribute whereValue="POST" attributeName="method" />
+					<munit-tools:with-attribute whereValue="OKTA Deactivate User" attributeName="doc:name" />
+				</munit-tools:with-attributes>
+				<munit-tools:then-return >
+					<munit-tools:attributes value="#[{uriParams : {'userId' :'00ucy32qlrJPhVP9g4x6'}}]
+" />
+				</munit-tools:then-return>
+			
+
+</munit-tools:mock-when>
+		</munit:behavior>
+		<munit:execution >
+			<munit:set-event doc:name="Set Event" doc:id="c6e099b5-e6f3-4801-90a6-580ae240f04e" >
+				<munit:attributes value="#[{uriParams : {'userId' :'00ucy32qlrJPhVP9g4x6'}, headers:{'X-API-ClientKey':'2f9f2d34-cf0d-44d0-bac3-636182f402db','X-API-ClientSecret':'921867d0-f78f-4137-aa21-b21bdf0590bc'}}]" />
+			</munit:set-event>
+			<flow-ref doc:name="Flow-ref to delete:\users\(userId):User-Identity-Mgmt-System-API-config" doc:id="7e8ecea8-f4d3-49c3-94c6-454bc327eebc" name="delete:\users\(userId):User-Identity-Mgmt-System-API-config"/>
+		</munit:execution>
+		<munit:validation >
+			<munit-tools:assert-that doc:name="Assert that" doc:id="c4f1d2e5-ef23-40a6-8267-d2a19a9d807e" is="#[MunitTools::equalTo('User has been deleted.')]" expression="#[payload.status]" message='#["Failed"]'/>
+		</munit:validation>
+	</munit:test>
+	<munit:test name="user-identity-mgmt-sys-api-test-suite-get:\users\(userId):User-Identity-Mgmt-System-API-configTest" doc:id="d585327f-8e9d-48a1-bb47-3cf811979962" description="Test" ignore="true">
+		<munit:execution >
+			<flow-ref doc:name="Flow-ref to get:\users\(userId):User-Identity-Mgmt-System-API-config" doc:id="974a262d-3ad3-449c-8b82-2f28e6f02a63" name="get:\users\(userId):User-Identity-Mgmt-System-API-config"/>
+		</munit:execution>
+	</munit:test>
+	<munit:test name="user-identity-mgmt-sys-api-test-suite-post:\users\authenticateUser:application\json:User-Identity-Mgmt-System-API-configTest" doc:id="79c95045-08eb-4803-9a57-9fe9cb5571c2" description="Test">
+		<munit:behavior >
+			<set-variable value="${http.request.header.clientId}" doc:name="Set Client Id" doc:id="43e8c275-6a5c-43e7-84a3-40c97a2a9f0d" variableName="clientId" />
+			<set-variable value="${http.request.header.clientSecret}" doc:name="Set Client Secret" doc:id="42c2ba41-f1f1-4a89-ab21-7518d484aea6" variableName="clientSecret"/>
+			<munit-tools:mock-when doc:name="Mock when" doc:id="1b0e53de-cc4c-4a3c-8c51-7916e053f946" processor="http:request">
+				<munit-tools:with-attributes >
+					<munit-tools:with-attribute whereValue="POST" attributeName="method" />
+					<munit-tools:with-attribute whereValue="OKTA User Authentication Request- POST" attributeName="doc:name" />
+				</munit-tools:with-attributes>
+				<munit-tools:then-return >
+					<munit-tools:payload value="#[MunitTools::getResourceAsString('examples/responses/post-authenticate-user-response.json')]" mediaType="application/json" />
+					<munit-tools:attributes value="#[{'statusCode' :200}]
+" />
+				</munit-tools:then-return>
+			
+
+
+</munit-tools:mock-when>
+			<munit-tools:mock-when doc:name="Mock when" doc:id="9429b1d9-ce1d-47ba-b265-549a88974f50" processor="http:request">
+				<munit-tools:with-attributes >
+					<munit-tools:with-attribute whereValue="POST" attributeName="method" />
+					<munit-tools:with-attribute whereValue="Request" attributeName="doc:name" />
+				</munit-tools:with-attributes>
+				<munit-tools:then-return >
+					<munit-tools:payload value="#[MunitTools::getResourceAsString('examples/responses/post-retrieve-access-token-response.json')]" mediaType="application/json" />
+				</munit-tools:then-return>
+			</munit-tools:mock-when>
+		
+</munit:behavior>
+		<munit:execution >
+			<munit:set-event doc:name="Set Event" doc:id="5aebb4c4-6cf4-4a6d-ab3b-8067eefc8cc8" >
+				<munit:payload value="#[MunitTools::getResourceAsString('examples/requests/post-authenticate-user-request.json')]" mediaType="application/json" />
+				<munit:attributes value="#[{headers:{'X-API-ClientKey':'2f9f2d34-cf0d-44d0-bac3-636182f402db','X-API-ClientSecret':'921867d0-f78f-4137-aa21-b21bdf0590bc', 'OKTA-ClientKey':'0oaam2ymcSSrvuWM94x6','OKTA-ClientSecret':'g9Sw0N_ZO_embX9nAX3GwX_6vhFNgiGQUiPjQsx3'}}]" />
+			</munit:set-event>
+			<flow-ref doc:name="Flow-ref to post:\users\authenticateUser:application\json:User-Identity-Mgmt-System-API-config" doc:id="925fb88b-f571-408a-bbda-ff104ab2f976" name="post:\users\authenticateUser:application\json:User-Identity-Mgmt-System-API-config"/>
+		</munit:execution>
+		<munit:validation >
+			<munit-tools:assert-that doc:name="Assert that" doc:id="1389b17e-6b08-4d08-ad7c-85e496023e1e" is="#[MunitTools::equalTo('Bearer')]" message='#["Failed"]' expression='#[payload."token_type"]'/>
+		</munit:validation>
+	</munit:test>
+	<munit:test name="user-identity-mgmt-sys-api-test-suite-post:\users\createUser:application\json:User-Identity-Mgmt-System-API-configTest" doc:id="576de1c4-d691-4dea-8360-760f36dcb316" description="Test">
+		<munit:behavior >
+			<set-variable value="${http.request.header.clientId}" doc:name="Set Client Id" doc:id="12f32e8e-2390-4f39-a33e-087d7eae2c73" variableName="clientId" />
+			<set-variable value="${http.request.header.clientSecret}" doc:name="Set Client Secret" doc:id="233213a5-0118-4dfe-a254-d241b1874054" variableName="clientSecret"/>
+			<munit-tools:mock-when doc:name="Mock when" doc:id="61cfa166-6b6b-4b12-aa1b-e4b15cc2711f" processor="http:request">
+				<munit-tools:with-attributes >
+					<munit-tools:with-attribute whereValue="POST" attributeName="method" />
+					<munit-tools:with-attribute whereValue="OKTA User Creation POST Request" attributeName="doc:name" />
+				</munit-tools:with-attributes>
+				<munit-tools:then-return >
+					<munit-tools:payload value="#[MunitTools::getResourceAsString('examples/responses/post-create-user-example-response.json')]" mediaType="application/json" />
+					<munit-tools:attributes value="#[{headers:{'X-API-ClientKey':vars.clientId,'X-API-ClientSecret':vars.clientSecret}}]
+" />
+				</munit-tools:then-return>
+			</munit-tools:mock-when>
+		</munit:behavior>
+		<munit:execution >
+			<munit:set-event doc:name="Set Event" doc:id="c15d1eae-9ea8-47d3-9f41-7de47cc80c27" >
+				<munit:payload value="#[MunitTools::getResourceAsString('examples/requests/post-create-user-example-request.json')]" mediaType="application/json" />
+				<munit:attributes value="#[{headers:{'X-API-ClientKey':vars.clientId,'X-API-ClientSecret':vars.clientSecret}}]" />
+			</munit:set-event>
+			<flow-ref doc:name="Flow-ref to post:\users\createUser:application\json:User-Identity-Mgmt-System-API-config" doc:id="1a6b8419-a9d2-402b-82d1-c70b6291411c" name="post:\users\createUser:application\json:User-Identity-Mgmt-System-API-config"/>
+		</munit:execution>
+		<munit:validation>
+			<munit-tools:assert-that doc:name="Assert that" doc:id="7a3ab9ba-c4a7-4b01-9ee4-5600cfacf86c" is="#[MunitTools::equalTo('ACTIVE')]" message='#["failed"]' expression="#[payload.status]"/>
+		</munit:validation>
+	</munit:test>
+	
+<munit:test name="user-identity-mgmt-sys-api-test-suite-400" doc:id="fd080f64-012e-46dd-8b73-d9bc40a5c63f" description="Verifying functionality of [post:\claims:application\json:fmg-experience-api-config-405-application\json]">
+<munit:behavior>
+<munit-tools:mock-when doc:name="Mock when" doc:id="ce7fd4a2-61cc-4394-80c1-8acaac0b7508" processor="apikit:router">
+<munit-tools:with-attributes >
+					<munit-tools:with-attribute whereValue="User-Identity-Mgmt-System-API-config" attributeName="config-ref" />
+				</munit-tools:with-attributes>
+				<munit-tools:then-return >
+<munit-tools:error typeId="APIKIT:BAD_REQUEST" />
+</munit-tools:then-return>
+</munit-tools:mock-when>
+</munit:behavior>
+<munit:execution>
+<munit:set-event doc:name="Set Event" doc:id="c8a01f3b-5eaf-42ee-b4fb-1ab070c9db21">
+<munit:payload value="#[MunitTools::getResourceAsString('examples/requests/post-create-user-example-request.json')]" mediaType="application/json" />
+				<munit:attributes value="#[{headers:{'ClientId':vars.clientId,'ClientSecret':vars.clientSecret}}]" />
+
+</munit:set-event>
+<try doc:name="Try" doc:id="1a11b2d3-0996-470b-894d-75897e160cfc">
+<flow-ref doc:name="Flow Reference" doc:id="6b577964-80fa-4844-817c-a0aecfef0931" name="User-Identity-Mgmt-System-API-main" />
+<error-handler>
+<on-error-continue enableNotifications="true" logException="true" doc:name="On Error Continue" doc:id="49ccf55a-bd0f-4ff0-ba81-dd6727737d78" >
+<logger level="INFO" doc:name="Logger" doc:id="8011b9d9-67f1-4917-85fd-1a1a0fb6518c" />
+</on-error-continue>
+</error-handler>
+</try>
+</munit:execution>
+<munit:validation>
+<munit-tools:assert-that doc:name="Assert That Status Code is 400" doc:id="73ac12a8-4d26-4801-ad54-9a238bf8ed03" expression="#[vars.httpStatus]" is="#[MunitTools::equalTo(400)]" message="The HTTP Status code is not correct!" />
+</munit:validation>
+</munit:test>
+
+
+<munit:test name="user-identity-mgmt-sys-api-test-suite-404" doc:id="053bb82c-3ae8-4884-a9e5-923860803f12" description="Verifying functionality of [post:\claims:application\json:fmg-experience-api-config-405-application\json]">
+<munit:behavior>
+<munit-tools:mock-when doc:name="Mock when" doc:id="6a65edf0-c280-4ede-b91e-8e652e737275" processor="apikit:router">
+<munit-tools:with-attributes >
+					<munit-tools:with-attribute whereValue="User-Identity-Mgmt-System-API-config" attributeName="config-ref" />
+				</munit-tools:with-attributes>
+				<munit-tools:then-return >
+<munit-tools:error typeId="APIKIT:NOT_FOUND" />
+</munit-tools:then-return>
+</munit-tools:mock-when>
+</munit:behavior>
+<munit:execution>
+<munit:set-event doc:name="Set Event" doc:id="ffb54d89-58e6-46ac-b1a5-e48a378e8391">
+<munit:payload value="#[MunitTools::getResourceAsString('examples/requests/post-create-user-example-request.json')]" mediaType="application/json" />
+				<munit:attributes value="#[{headers:{'ClientId':vars.clientId,'ClientSecret':vars.clientSecret}}]" />
+
+</munit:set-event>
+<try doc:name="Try" doc:id="9ad20899-8d97-4421-975e-593bd36f6ff9">
+<flow-ref doc:name="Flow Reference" doc:id="78e46f9a-961d-45cb-8198-aa8c553d14a9" name="User-Identity-Mgmt-System-API-main" />
+<error-handler>
+<on-error-continue enableNotifications="true" logException="true" doc:name="On Error Continue" doc:id="dad9a348-0e36-4f5f-91c4-4776a5af26f8" >
+<logger level="INFO" doc:name="Logger" doc:id="e178a83f-3784-44aa-a9e7-d78a99ebf067" />
+</on-error-continue>
+</error-handler>
+</try>
+</munit:execution>
+<munit:validation>
+<munit-tools:assert-that doc:name="Assert That Status Code is 404" doc:id="8247840e-6825-4655-84a6-dfa8b0f0736d" expression="#[vars.httpStatus]" is="#[MunitTools::equalTo(404)]" message="The HTTP Status code is not correct!" />
+</munit:validation>
+</munit:test>
+
+<munit:test name="user-identity-mgmt-sys-api-test-suite-405" doc:id="01163ef8-13d0-4249-96e3-6308b0dcb86a" description="Verifying functionality of [post:\claims:application\json:fmg-experience-api-config-405-application\json]">
+<munit:behavior>
+<munit-tools:mock-when doc:name="Mock when" doc:id="0c5c6f5b-aae4-4e21-804a-e5cbf2c289fb" processor="apikit:router">
+<munit-tools:with-attributes >
+					<munit-tools:with-attribute whereValue="User-Identity-Mgmt-System-API-config" attributeName="config-ref" />
+				</munit-tools:with-attributes>
+				<munit-tools:then-return >
+<munit-tools:error typeId="APIKIT:METHOD_NOT_ALLOWED" />
+</munit-tools:then-return>
+</munit-tools:mock-when>
+</munit:behavior>
+<munit:execution>
+<munit:set-event doc:name="Set Event" doc:id="b8af9ae6-01a1-4e7f-a8b9-550b98a00f92">
+<munit:payload value="#[MunitTools::getResourceAsString('examples/requests/post-create-user-example-request.json')]" mediaType="application/json" />
+				<munit:attributes value="#[{headers:{'ClientId':vars.clientId,'ClientSecret':vars.clientSecret}}]" />
+
+</munit:set-event>
+<try doc:name="Try" doc:id="4f33eb0f-19e3-4c98-ba2f-39a8417a9bdc">
+<flow-ref doc:name="Flow Reference" doc:id="6c5f8443-9df6-467a-893c-461803b53830" name="User-Identity-Mgmt-System-API-main" />
+<error-handler>
+<on-error-continue enableNotifications="true" logException="true" doc:name="On Error Continue" doc:id="39dfe9b9-3ebd-4829-8742-2f155df87c3c" >
+<logger level="INFO" doc:name="Logger" doc:id="87c029e1-7216-48e2-a5d6-522487d64be7" />
+</on-error-continue>
+</error-handler>
+</try>
+</munit:execution>
+<munit:validation>
+<munit-tools:assert-that doc:name="Assert That Status Code is 405" doc:id="9ea5f5ea-f02f-4115-ac9c-f1555371d916" expression="#[vars.httpStatus]" is="#[MunitTools::equalTo(405)]" message="The HTTP Status code is not correct!" />
+</munit:validation>
+</munit:test>
+
+
+<munit:test name="user-identity-mgmt-sys-api-test-suite-406" doc:id="1a1d5b87-0690-45c5-befd-c07ec30a4b59" description="Verifying functionality of [post:\claims:application\json:fmg-experience-api-config-405-application\json]">
+<munit:behavior>
+<munit-tools:mock-when doc:name="Mock when" doc:id="a6ff4a42-6b55-4549-affb-2f1f46e3c1d3" processor="apikit:router">
+<munit-tools:with-attributes >
+					<munit-tools:with-attribute whereValue="User-Identity-Mgmt-System-API-config" attributeName="config-ref" />
+				</munit-tools:with-attributes>
+				<munit-tools:then-return >
+<munit-tools:error typeId="APIKIT:NOT_ACCEPTABLE" />
+</munit-tools:then-return>
+</munit-tools:mock-when>
+</munit:behavior>
+<munit:execution>
+<munit:set-event doc:name="Set Event" doc:id="9b8813ea-c136-4bf6-94e9-8ffa94c6e860">
+<munit:payload value="#[MunitTools::getResourceAsString('examples/requests/post-create-user-example-request.json')]" mediaType="application/json" />
+				<munit:attributes value="#[{headers:{'ClientId':vars.clientId,'ClientSecret':vars.clientSecret}}]" />
+
+</munit:set-event>
+<try doc:name="Try" doc:id="6186113b-d07d-4b9f-a2fd-73ffd876cdb5">
+<flow-ref doc:name="Flow Reference" doc:id="6eaf8ab8-66bc-4901-a572-4924e80abaac" name="User-Identity-Mgmt-System-API-main" />
+<error-handler>
+<on-error-continue enableNotifications="true" logException="true" doc:name="On Error Continue" doc:id="5645367f-5df3-4c02-a39e-040a596f785c" >
+<logger level="INFO" doc:name="Logger" doc:id="1ec11653-192c-499c-a447-7c72d1353d34" />
+</on-error-continue>
+</error-handler>
+</try>
+</munit:execution>
+<munit:validation>
+<munit-tools:assert-that doc:name="Assert That Status Code is 406" doc:id="1f70e58a-39b7-4d9e-b394-889261cc955a" expression="#[vars.httpStatus]" is="#[MunitTools::equalTo(406)]" message="The HTTP Status code is not correct!" />
+</munit:validation>
+</munit:test>
+
+
+<munit:test name="user-identity-mgmt-sys-api-test-suite-415" doc:id="561bd748-1efb-44d6-afe0-e94c8069faeb" description="Verifying functionality of [post:\claims:application\json:fmg-experience-api-config-405-application\json]">
+<munit:behavior>
+<munit-tools:mock-when doc:name="Mock when" doc:id="5bed8e7c-41fe-4910-b07e-598af7b08c1a" processor="apikit:router">
+<munit-tools:with-attributes >
+					<munit-tools:with-attribute whereValue="User-Identity-Mgmt-System-API-config" attributeName="config-ref" />
+				</munit-tools:with-attributes>
+				<munit-tools:then-return >
+<munit-tools:error typeId="APIKIT:UNSUPPORTED_MEDIA_TYPE" />
+</munit-tools:then-return>
+</munit-tools:mock-when>
+</munit:behavior>
+<munit:execution>
+<munit:set-event doc:name="Set Event" doc:id="f98a2570-e2ef-492a-8209-8971d2a1e59b">
+<munit:payload value="#[MunitTools::getResourceAsString('examples/requests/post-create-user-example-request.json')]" mediaType="application/json" />
+				<munit:attributes value="#[{headers:{'ClientId':vars.clientId,'ClientSecret':vars.clientSecret}}]" />
+
+</munit:set-event>
+<try doc:name="Try" doc:id="f9651510-f8f0-47ce-994e-37b69ad7b1af">
+<flow-ref doc:name="Flow Reference" doc:id="e4ee72d5-ea6d-4d0e-bec2-09fc27c2fa32" name="User-Identity-Mgmt-System-API-main" />
+<error-handler>
+<on-error-continue enableNotifications="true" logException="true" doc:name="On Error Continue" doc:id="3afd342e-e07d-47f7-b946-13d547af22e7" >
+<logger level="INFO" doc:name="Logger" doc:id="875d4ef3-252a-4a2f-bf2e-a7ab20657cba" />
+</on-error-continue>
+</error-handler>
+</try>
+</munit:execution>
+<munit:validation>
+<munit-tools:assert-that doc:name="Assert That Status Code is 415" doc:id="6836fb68-b72d-4c98-ba92-71e7f65d0bc2" expression="#[vars.httpStatus]" is="#[MunitTools::equalTo(415)]" message="The HTTP Status code is not correct!" />
+</munit:validation>
+</munit:test>
+
+
+<munit:test name="user-identity-mgmt-sys-api-test-suite-501" doc:id="ba00b424-3490-42e2-81fe-9201bd5dab45" description="Verifying functionality of [post:\claims:application\json:fmg-experience-api-config-405-application\json]">
+<munit:behavior>
+<munit-tools:mock-when doc:name="Mock when" doc:id="f61b4ab9-34af-408e-94ea-462273542ba5" processor="apikit:router">
+<munit-tools:with-attributes >
+					<munit-tools:with-attribute whereValue="User-Identity-Mgmt-System-API-config" attributeName="config-ref" />
+				</munit-tools:with-attributes>
+				<munit-tools:then-return >
+<munit-tools:error typeId="APIKIT:NOT_IMPLEMENTED" />
+</munit-tools:then-return>
+</munit-tools:mock-when>
+</munit:behavior>
+<munit:execution>
+<munit:set-event doc:name="Set Event" doc:id="edf2089e-8724-41e1-8454-b6fecc7f1c28">
+<munit:payload value="#[MunitTools::getResourceAsString('examples/requests/post-create-user-example-request.json')]" mediaType="application/json" />
+				<munit:attributes value="#[{headers:{'ClientId':vars.clientId,'ClientSecret':vars.clientSecret}}]" />
+
+</munit:set-event>
+<try doc:name="Try" doc:id="6d741fb4-09ee-4cec-9de3-dcd076160feb">
+<flow-ref doc:name="Flow Reference" doc:id="32e8e0f1-3ef4-4aa5-a79a-8552526aef6c" name="User-Identity-Mgmt-System-API-main" />
+<error-handler>
+<on-error-continue enableNotifications="true" logException="true" doc:name="On Error Continue" doc:id="2befd2a4-2797-4931-a7f1-f2dbb12bb5e3" >
+<logger level="INFO" doc:name="Logger" doc:id="56e21f1d-9e6b-4eb8-809e-0d164cdf1977" />
+</on-error-continue>
+</error-handler>
+</try>
+</munit:execution>
+<munit:validation>
+<munit-tools:assert-that doc:name="Assert That Status Code is 501" doc:id="7e8f50bb-7938-4b94-9d3b-1fd0a28b6af5" expression="#[vars.httpStatus]" is="#[MunitTools::equalTo(501)]" message="The HTTP Status code is not correct!" />
+</munit:validation>
+</munit:test>
+
+
+<munit:test name="user-identity-mgmt-sys-api-test-suite-console-404" doc:id="8645016c-848d-4dfe-9065-e3f6ea7166f6" description="Verifying functionality of [post:\claims:application\json:fmg-experience-api-config-405-application\json]">
+<munit:behavior>
+<munit-tools:mock-when doc:name="Mock when" doc:id="0bb38339-8def-4be6-8eab-9655f54d587e" processor="apikit:console">
+				<munit-tools:with-attributes >
+					<munit-tools:with-attribute whereValue="User-Identity-Mgmt-System-API-config" attributeName="config-ref" />
+				</munit-tools:with-attributes>
+				<munit-tools:then-return >
+<munit-tools:error typeId="APIKIT:NOT_FOUND" />
+</munit-tools:then-return>
+</munit-tools:mock-when>
+</munit:behavior>
+<munit:execution>
+<munit:set-event doc:name="Set Event" doc:id="f27d724b-88c6-4528-b762-52ebea50ca3a">
+<munit:payload value="#[MunitTools::getResourceAsString('examples/requests/post-create-user-example-request.json')]" mediaType="application/json" />
+				<munit:attributes value="#[{headers:{'ClientId':vars.clientId,'ClientSecret':vars.clientSecret}}]" />
+
+</munit:set-event>
+<try doc:name="Try" doc:id="971fab2e-34d8-4bf8-8697-2d2580d39427">
+<flow-ref doc:name="Flow Reference" doc:id="211f23ab-02a3-43fe-8f3a-bc824fbb6140" name="User-Identity-Mgmt-System-API-console" />
+<error-handler>
+<on-error-continue enableNotifications="true" logException="true" doc:name="On Error Continue" doc:id="9181ff7a-abf3-4ff4-99c1-54855b49b310" >
+<logger level="INFO" doc:name="Logger" doc:id="3e4f67c3-9781-46f2-998b-c325c724b99b" />
+</on-error-continue>
+</error-handler>
+</try>
+</munit:execution>
+<munit:validation>
+<munit-tools:assert-that doc:name="Assert That Status Code is 404" doc:id="4ef3dca4-9ed0-411b-aca1-2c6ec868a7ad" expression="#[vars.httpStatus]" is="#[MunitTools::equalTo(404)]" message="The HTTP Status code is not correct!" />
+</munit:validation>
+</munit:test>
+
+</mule>

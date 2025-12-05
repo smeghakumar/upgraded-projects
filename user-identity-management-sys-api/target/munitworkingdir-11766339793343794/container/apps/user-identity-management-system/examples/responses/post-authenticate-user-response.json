@@ -1,0 +1,28 @@
+{
+    "expiresAt": "2020-05-25T15:08:07.000Z",
+    "status": "SUCCESS",
+    "sessionToken": "201116cp2DEKxocO9QGb4unb2SyKYz2v58hPr1_-l0zktFyl8QoJZ9T",
+    "_embedded": {
+        "user": {
+            "id": "00ucy32qlrJPhVP9g4x6",
+            "passwordChanged": "2020-05-25T12:52:16.000Z",
+            "profile": {
+                "login": "testuser@gmail.com",
+                "firstName": "test",
+                "lastName": "user",
+                "locale": "en",
+                "timeZone": "America/Los_Angeles"
+            }
+        }
+    },
+    "_links": {
+        "cancel": {
+            "href": "https://dev-938428.okta.com/api/v1/authn/cancel",
+            "hints": {
+                "allow": [
+                    "POST"
+                ]
+            }
+        }
+    }
+}

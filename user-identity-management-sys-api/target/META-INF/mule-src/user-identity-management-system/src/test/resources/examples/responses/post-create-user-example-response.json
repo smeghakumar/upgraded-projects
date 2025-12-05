@@ -1,0 +1,70 @@
+{
+    "id": "00ucy32qlrJPhVP9g4x6",
+    "status": "ACTIVE",
+    "created": "2020-05-22T16:36:11.000Z",
+    "activated": "2020-05-22T16:36:12.000Z",
+    "statusChanged": "2020-05-22T16:36:12.000Z",
+    "lastLogin": null,
+    "lastUpdated": "2020-05-22T16:36:12.000Z",
+    "passwordChanged": "2020-05-22T16:36:11.000Z",
+    "type": {
+        "id": "oty9659tbObs5GeGd4x6"
+    },
+    "profile": {
+        "firstName": "test",
+        "lastName": "user",
+        "mobilePhone": "123456789",
+        "secondEmail": null,
+        "login": "testuser@gmail.com",
+        "email": "testuser@gmail.com"
+    },
+    "credentials": {
+        "password": {},
+        "emails": [
+            {
+                "value": "testuser@gmail.com",
+                "status": "VERIFIED",
+                "type": "PRIMARY"
+            }
+        ],
+        "provider": {
+            "type": "OKTA",
+            "name": "OKTA"
+        }
+    },
+    "_links": {
+        "suspend": {
+            "href": "https://dev-938428.okta.com/api/v1/users/00ucy32qlrJPhVP9g4x6/lifecycle/suspend",
+            "method": "POST"
+        },
+        "schema": {
+            "href": "https://dev-938428.okta.com/api/v1/meta/schemas/user/osc9659tbObs5GeGd4x6"
+        },
+        "resetPassword": {
+            "href": "https://dev-938428.okta.com/api/v1/users/00ucy32qlrJPhVP9g4x6/lifecycle/reset_password",
+            "method": "POST"
+        },
+        "expirePassword": {
+            "href": "https://dev-938428.okta.com/api/v1/users/00ucy32qlrJPhVP9g4x6/lifecycle/expire_password",
+            "method": "POST"
+        },
+        "changeRecoveryQuestion": {
+            "href": "https://dev-938428.okta.com/api/v1/users/00ucy32qlrJPhVP9g4x6/credentials/change_recovery_question",
+            "method": "POST"
+        },
+        "self": {
+            "href": "https://dev-938428.okta.com/api/v1/users/00ucy32qlrJPhVP9g4x6"
+        },
+        "type": {
+            "href": "https://dev-938428.okta.com/api/v1/meta/types/user/oty9659tbObs5GeGd4x6"
+        },
+        "changePassword": {
+            "href": "https://dev-938428.okta.com/api/v1/users/00ucy32qlrJPhVP9g4x6/credentials/change_password",
+            "method": "POST"
+        },
+        "deactivate": {
+            "href": "https://dev-938428.okta.com/api/v1/users/00ucy32qlrJPhVP9g4x6/lifecycle/deactivate",
+            "method": "POST"
+        }
+    }
+}
