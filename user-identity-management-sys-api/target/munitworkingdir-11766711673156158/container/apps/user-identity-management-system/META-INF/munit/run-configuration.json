@@ -1,0 +1,80 @@
+{
+  "runToken": "50035e9d-dcbd-48f5-b7a3-9b4e0fd1efcf",
+  "projectName": "user-identity-management-system",
+  "domainLocation": "",
+  "tags": [],
+  "testNames": [],
+  "testNamesWithSuite": [],
+  "suitePaths": [
+    "user-identity-mgmt-sys-api-test-suite.xml"
+  ],
+  "allSuitePaths": [
+    "user-identity-mgmt-sys-api-test-suite.xml"
+  ],
+  "skipAfterFailure": false,
+  "mmvs": [],
+  "notifierConfigurations": [
+    {
+      "clazz": "org.mule.munit.remote.notifiers.ConsoleNotifier",
+      "parameters": [
+        {
+          "name": "runToken",
+          "type": "java.lang.String",
+          "value": "50035e9d-dcbd-48f5-b7a3-9b4e0fd1efcf"
+        }
+      ]
+    }
+  ],
+  "coverageConfiguration": {
+    "runCoverage": true,
+    "randomizeCoveragePort": true,
+    "suitePaths": [
+      "user-identity-mgmt-sys-api-test-suite.xml"
+    ],
+    "ignoredFiles": [],
+    "ignoredFlowNames": []
+  },
+  "containerConfiguration": {
+    "value": {
+      "mavenConfiguration": {
+        "settingsXmlFilePath": "/root/.m2/settings.xml",
+        "globalSettingsXmlFilePath": "/opt/maven/conf/settings.xml",
+        "mavenRepositoryDirectoryPath": "/root/.m2/repository",
+        "activeProfiles": [
+          "mulesoft"
+        ],
+        "offlineMode": false,
+        "forcePolicyUpdate": true,
+        "ignoreArtifactDescriptorRepositories": false,
+        "remoteRepositories": [
+          {
+            "id": "mule-public",
+            "url": "https://repository.mulesoft.org/nexus/content/repositories/public"
+          },
+          {
+            "id": "mulesoft-releases",
+            "url": "https://repository.mulesoft.org/releases/"
+          },
+          {
+            "id": "central",
+            "url": "https://repo.maven.apache.org/maven2"
+          }
+        ]
+      },
+      "serverPluginConfigurations": [
+        {
+          "groupId": "com.mulesoft.munit.plugins",
+          "artifactId": "munit-coverage-plugin",
+          "version": "3.6.2",
+          "type": "jar",
+          "classifier": "mule-server-plugin"
+        }
+      ],
+      "runtimeId": "4.9.3",
+      "product": "MULE_EE",
+      "munitWorkingDirectoryPath": "/root/intelog-be/upgraded-projects/archive/user-identity-management-sys-api_work/target/munitworkingdir-11766711673156158",
+      "log4JConfigurationFilePath": "/root/intelog-be/upgraded-projects/archive/user-identity-management-sys-api_work/target/test-classes/log4j2-test.xml"
+    }
+  },
+  "clearParameters": false
+}
