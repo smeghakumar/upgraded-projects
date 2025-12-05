@@ -12,5 +12,5 @@ SUCCESS - Test user-identity-mgmt-sys-api-test-suite-404 finished Successfully.
 SUCCESS - Test user-identity-mgmt-sys-api-test-suite-post:\users\authenticateUser:application\json:User-Identity-Mgmt-System-API-configTest finished Successfully.
 
 ==============================================================================
-Tests run: 12 - Failures: 0 - Errors: 0 - Skipped: 1 - Time elapsed: 0.619 sec
+Tests run: 12 - Failures: 0 - Errors: 0 - Skipped: 1 - Time elapsed: 0.673 sec
 ==============================================================================

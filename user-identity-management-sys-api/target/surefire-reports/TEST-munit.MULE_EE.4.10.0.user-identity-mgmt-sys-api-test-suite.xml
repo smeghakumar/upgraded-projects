@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="MULE_EE.4.10.0.user-identity-mgmt-sys-api-test-suite" time="0.619" failures="0" errors="0" skipped="1" tests="12">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="MULE_EE.4.10.0.user-identity-mgmt-sys-api-test-suite" time="0.673" failures="0" errors="0" skipped="1" tests="12">
   <properties>
     <property key="java.specification.version" value="17"/>
     <property key="sun.jnu.encoding" value="UTF-8"/>
@@ -66,18 +66,18 @@
     <property key="munit.system.properties.file" value="/Users/megha/Documents/Demo/MuleUpgradeProjects/upgraded-projects/archive/user-identity-management-sys-api_work/target/user.system.properties"/>
     <property key="org.glassfish.grizzly.DEFAULT_MEMORY_MANAGER" value="org.glassfish.grizzly.memory.HeapMemoryManager"/>
   </properties>
-  <testcase time="0.017" name="user-identity-mgmt-sys-api-test-suite-400" classname="MULE_EE.4.10.0.user-identity-mgmt-sys-api-test-suite"/>
-  <testcase time="0.017" name="user-identity-mgmt-sys-api-test-suite-console-404" classname="MULE_EE.4.10.0.user-identity-mgmt-sys-api-test-suite"/>
-  <testcase time="0.099" name="user-identity-mgmt-sys-api-test-suite-post:\users\createUser:application\json:User-Identity-Mgmt-System-API-configTest" classname="MULE_EE.4.10.0.user-identity-mgmt-sys-api-test-suite"/>
-  <testcase time="0.018" name="user-identity-mgmt-sys-api-test-suite-406" classname="MULE_EE.4.10.0.user-identity-mgmt-sys-api-test-suite"/>
+  <testcase time="0.022" name="user-identity-mgmt-sys-api-test-suite-400" classname="MULE_EE.4.10.0.user-identity-mgmt-sys-api-test-suite"/>
+  <testcase time="0.018" name="user-identity-mgmt-sys-api-test-suite-console-404" classname="MULE_EE.4.10.0.user-identity-mgmt-sys-api-test-suite"/>
+  <testcase time="0.114" name="user-identity-mgmt-sys-api-test-suite-post:\users\createUser:application\json:User-Identity-Mgmt-System-API-configTest" classname="MULE_EE.4.10.0.user-identity-mgmt-sys-api-test-suite"/>
+  <testcase time="0.019" name="user-identity-mgmt-sys-api-test-suite-406" classname="MULE_EE.4.10.0.user-identity-mgmt-sys-api-test-suite"/>
   <testcase time="0.0" name="user-identity-mgmt-sys-api-test-suite-get:\users\(userId):User-Identity-Mgmt-System-API-configTest" classname="MULE_EE.4.10.0.user-identity-mgmt-sys-api-test-suite">
     <skipped/>
   </testcase>
-  <testcase time="0.031" name="user-identity-mgmt-sys-api-test-suite-delete:\users\(userId):User-Identity-Mgmt-System-API-configTest" classname="MULE_EE.4.10.0.user-identity-mgmt-sys-api-test-suite"/>
-  <testcase time="0.04" name="user-identity-mgmt-sys-api-test-suite-put:\users\(userId):application\json:User-Identity-Mgmt-System-API-configTest" classname="MULE_EE.4.10.0.user-identity-mgmt-sys-api-test-suite"/>
-  <testcase time="0.016" name="user-identity-mgmt-sys-api-test-suite-501" classname="MULE_EE.4.10.0.user-identity-mgmt-sys-api-test-suite"/>
-  <testcase time="0.017" name="user-identity-mgmt-sys-api-test-suite-405" classname="MULE_EE.4.10.0.user-identity-mgmt-sys-api-test-suite"/>
-  <testcase time="0.244" name="user-identity-mgmt-sys-api-test-suite-415" classname="MULE_EE.4.10.0.user-identity-mgmt-sys-api-test-suite"/>
-  <testcase time="0.018" name="user-identity-mgmt-sys-api-test-suite-404" classname="MULE_EE.4.10.0.user-identity-mgmt-sys-api-test-suite"/>
+  <testcase time="0.036" name="user-identity-mgmt-sys-api-test-suite-delete:\users\(userId):User-Identity-Mgmt-System-API-configTest" classname="MULE_EE.4.10.0.user-identity-mgmt-sys-api-test-suite"/>
+  <testcase time="0.045" name="user-identity-mgmt-sys-api-test-suite-put:\users\(userId):application\json:User-Identity-Mgmt-System-API-configTest" classname="MULE_EE.4.10.0.user-identity-mgmt-sys-api-test-suite"/>
+  <testcase time="0.019" name="user-identity-mgmt-sys-api-test-suite-501" classname="MULE_EE.4.10.0.user-identity-mgmt-sys-api-test-suite"/>
+  <testcase time="0.019" name="user-identity-mgmt-sys-api-test-suite-405" classname="MULE_EE.4.10.0.user-identity-mgmt-sys-api-test-suite"/>
+  <testcase time="0.258" name="user-identity-mgmt-sys-api-test-suite-415" classname="MULE_EE.4.10.0.user-identity-mgmt-sys-api-test-suite"/>
+  <testcase time="0.02" name="user-identity-mgmt-sys-api-test-suite-404" classname="MULE_EE.4.10.0.user-identity-mgmt-sys-api-test-suite"/>
   <testcase time="0.087" name="user-identity-mgmt-sys-api-test-suite-post:\users\authenticateUser:application\json:User-Identity-Mgmt-System-API-configTest" classname="MULE_EE.4.10.0.user-identity-mgmt-sys-api-test-suite"/>
 </testsuite>

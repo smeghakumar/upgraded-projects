@@ -8,46 +8,58 @@
   "coveredProcessorCount": 55,
   "files": [
     {
-      "name": "user-identity-mgmt-sys-api.xml",
+      "name": "implementation.xml",
       "flowCount": 7,
-      "coverage": 86.66666666666667,
-      "processorCount": 15,
-      "weight": 20.54794520547945,
+      "coverage": 97.67441860465117,
+      "processorCount": 43,
+      "weight": 58.9041095890411,
       "flows": [
         {
-          "name": "User-Identity-Mgmt-System-API-console",
+          "name": "deactivate-user-flow",
           "type": "FLOW",
           "coverage": 100.0,
-          "messageProcessorCount": 2,
-          "coveredProcessorCount": 2,
+          "messageProcessorCount": 6,
+          "coveredProcessorCount": 6,
           "lines": [
             {
-              "lineNumber": 109,
+              "lineNumber": 231,
               "covered": true
             },
             {
-              "lineNumber": 106,
+              "lineNumber": 213,
+              "covered": true
+            },
+            {
+              "lineNumber": 230,
+              "covered": true
+            },
+            {
+              "lineNumber": 214,
+              "covered": true
+            },
+            {
+              "lineNumber": 215,
+              "covered": true
+            },
+            {
+              "lineNumber": 216,
               "covered": true
             }
           ]
         },
         {
-          "name": "User-Identity-Mgmt-System-API-main",
+          "name": "validate-client-credentials-flow",
           "type": "FLOW",
-          "coverage": 100.0,
-          "messageProcessorCount": 7,
-          "coveredProcessorCount": 7,
+          "coverage": 75.0,
+          "messageProcessorCount": 4,
+          "coveredProcessorCount": 3,
           "lines": [
             {
-              "lineNumber": 17,
-              "covered": true
+              "lineNumber": 20,
+              "covered": false
             },
             {
-              "lineNumber": 69,
-              "covered": true
-            },
-            {
-              "lineNumber": 56,
+              "lineNumber": 13,
               "covered": true
             },
             {
@@ -55,32 +67,197 @@
               "covered": true
             },
             {
-              "lineNumber": 82,
-              "covered": true
-            },
-            {
-              "lineNumber": 30,
-              "covered": true
-            },
-            {
-              "lineNumber": 43,
+              "lineNumber": 17,
               "covered": true
             }
           ]
         },
         {
-          "name": "put:\\users\\(userId):application\\json:User-Identity-Mgmt-System-API-config",
+          "name": "create-user-flow",
           "type": "FLOW",
           "coverage": 100.0,
-          "messageProcessorCount": 1,
-          "coveredProcessorCount": 1,
+          "messageProcessorCount": 9,
+          "coveredProcessorCount": 9,
           "lines": [
             {
-              "lineNumber": 124,
+              "lineNumber": 83,
+              "covered": true
+            },
+            {
+              "lineNumber": 59,
+              "covered": true
+            },
+            {
+              "lineNumber": 25,
+              "covered": true
+            },
+            {
+              "lineNumber": 51,
+              "covered": true
+            },
+            {
+              "lineNumber": 26,
+              "covered": true
+            },
+            {
+              "lineNumber": 60,
+              "covered": true
+            },
+            {
+              "lineNumber": 27,
+              "covered": true
+            },
+            {
+              "lineNumber": 50,
+              "covered": true
+            },
+            {
+              "lineNumber": 49,
               "covered": true
             }
           ]
         },
+        {
+          "name": "user-authentication-flow",
+          "type": "FLOW",
+          "coverage": 100.0,
+          "messageProcessorCount": 11,
+          "coveredProcessorCount": 11,
+          "lines": [
+            {
+              "lineNumber": 105,
+              "covered": true
+            },
+            {
+              "lineNumber": 86,
+              "covered": true
+            },
+            {
+              "lineNumber": 89,
+              "covered": true
+            },
+            {
+              "lineNumber": 124,
+              "covered": true
+            },
+            {
+              "lineNumber": 102,
+              "covered": true
+            },
+            {
+              "lineNumber": 87,
+              "covered": true
+            },
+            {
+              "lineNumber": 106,
+              "covered": true
+            },
+            {
+              "lineNumber": 88,
+              "covered": true
+            },
+            {
+              "lineNumber": 90,
+              "covered": true
+            },
+            {
+              "lineNumber": 101,
+              "covered": true
+            },
+            {
+              "lineNumber": 127,
+              "covered": true
+            }
+          ]
+        },
+        {
+          "name": "set-variables-flow",
+          "type": "FLOW",
+          "coverage": 100.0,
+          "messageProcessorCount": 2,
+          "coveredProcessorCount": 2,
+          "lines": [
+            {
+              "lineNumber": 162,
+              "covered": true
+            },
+            {
+              "lineNumber": 165,
+              "covered": true
+            }
+          ]
+        },
+        {
+          "name": "change-user-password-flow",
+          "type": "FLOW",
+          "coverage": 100.0,
+          "messageProcessorCount": 8,
+          "coveredProcessorCount": 8,
+          "lines": [
+            {
+              "lineNumber": 173,
+              "covered": true
+            },
+            {
+              "lineNumber": 185,
+              "covered": true
+            },
+            {
+              "lineNumber": 199,
+              "covered": true
+            },
+            {
+              "lineNumber": 171,
+              "covered": true
+            },
+            {
+              "lineNumber": 200,
+              "covered": true
+            },
+            {
+              "lineNumber": 170,
+              "covered": true
+            },
+            {
+              "lineNumber": 186,
+              "covered": true
+            },
+            {
+              "lineNumber": 172,
+              "covered": true
+            }
+          ]
+        },
+        {
+          "name": "authorization-sub-flow",
+          "type": "SUB_FLOW",
+          "coverage": 100.0,
+          "messageProcessorCount": 3,
+          "coveredProcessorCount": 3,
+          "lines": [
+            {
+              "lineNumber": 147,
+              "covered": true
+            },
+            {
+              "lineNumber": 132,
+              "covered": true
+            },
+            {
+              "lineNumber": 146,
+              "covered": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "user-identity-mgmt-sys-api.xml",
+      "flowCount": 7,
+      "coverage": 86.66666666666667,
+      "processorCount": 15,
+      "weight": 20.54794520547945,
+      "flows": [
         {
           "name": "get:\\users\\(userId):User-Identity-Mgmt-System-API-config",
           "type": "FLOW",
@@ -89,24 +266,24 @@
           "coveredProcessorCount": 0,
           "lines": [
             {
-              "lineNumber": 130,
+              "lineNumber": 135,
               "covered": false
             },
             {
-              "lineNumber": 135,
+              "lineNumber": 130,
               "covered": false
             }
           ]
         },
         {
-          "name": "post:\\users\\authenticateUser:application\\json:User-Identity-Mgmt-System-API-config",
+          "name": "delete:\\users\\(userId):User-Identity-Mgmt-System-API-config",
           "type": "FLOW",
           "coverage": 100.0,
           "messageProcessorCount": 1,
           "coveredProcessorCount": 1,
           "lines": [
             {
-              "lineNumber": 160,
+              "lineNumber": 127,
               "covered": true
             }
           ]
@@ -125,258 +302,81 @@
           ]
         },
         {
-          "name": "delete:\\users\\(userId):User-Identity-Mgmt-System-API-config",
+          "name": "put:\\users\\(userId):application\\json:User-Identity-Mgmt-System-API-config",
           "type": "FLOW",
           "coverage": 100.0,
           "messageProcessorCount": 1,
           "coveredProcessorCount": 1,
           "lines": [
             {
-              "lineNumber": 127,
-              "covered": true
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "implementation.xml",
-      "flowCount": 7,
-      "coverage": 97.67441860465117,
-      "processorCount": 43,
-      "weight": 58.9041095890411,
-      "flows": [
-        {
-          "name": "deactivate-user-flow",
-          "type": "FLOW",
-          "coverage": 100.0,
-          "messageProcessorCount": 6,
-          "coveredProcessorCount": 6,
-          "lines": [
-            {
-              "lineNumber": 215,
-              "covered": true
-            },
-            {
-              "lineNumber": 214,
-              "covered": true
-            },
-            {
-              "lineNumber": 230,
-              "covered": true
-            },
-            {
-              "lineNumber": 213,
-              "covered": true
-            },
-            {
-              "lineNumber": 231,
-              "covered": true
-            },
-            {
-              "lineNumber": 216,
-              "covered": true
-            }
-          ]
-        },
-        {
-          "name": "authorization-sub-flow",
-          "type": "SUB_FLOW",
-          "coverage": 100.0,
-          "messageProcessorCount": 3,
-          "coveredProcessorCount": 3,
-          "lines": [
-            {
-              "lineNumber": 147,
-              "covered": true
-            },
-            {
-              "lineNumber": 146,
-              "covered": true
-            },
-            {
-              "lineNumber": 132,
-              "covered": true
-            }
-          ]
-        },
-        {
-          "name": "user-authentication-flow",
-          "type": "FLOW",
-          "coverage": 100.0,
-          "messageProcessorCount": 11,
-          "coveredProcessorCount": 11,
-          "lines": [
-            {
-              "lineNumber": 87,
-              "covered": true
-            },
-            {
-              "lineNumber": 89,
-              "covered": true
-            },
-            {
-              "lineNumber": 88,
-              "covered": true
-            },
-            {
-              "lineNumber": 106,
-              "covered": true
-            },
-            {
-              "lineNumber": 101,
-              "covered": true
-            },
-            {
-              "lineNumber": 90,
-              "covered": true
-            },
-            {
-              "lineNumber": 105,
-              "covered": true
-            },
-            {
-              "lineNumber": 86,
-              "covered": true
-            },
-            {
               "lineNumber": 124,
               "covered": true
-            },
-            {
-              "lineNumber": 102,
-              "covered": true
-            },
-            {
-              "lineNumber": 127,
-              "covered": true
             }
           ]
         },
         {
-          "name": "set-variables-flow",
+          "name": "User-Identity-Mgmt-System-API-console",
           "type": "FLOW",
           "coverage": 100.0,
           "messageProcessorCount": 2,
           "coveredProcessorCount": 2,
           "lines": [
             {
-              "lineNumber": 165,
+              "lineNumber": 106,
               "covered": true
             },
             {
-              "lineNumber": 162,
+              "lineNumber": 109,
               "covered": true
             }
           ]
         },
         {
-          "name": "create-user-flow",
+          "name": "post:\\users\\authenticateUser:application\\json:User-Identity-Mgmt-System-API-config",
           "type": "FLOW",
           "coverage": 100.0,
-          "messageProcessorCount": 9,
-          "coveredProcessorCount": 9,
+          "messageProcessorCount": 1,
+          "coveredProcessorCount": 1,
           "lines": [
             {
-              "lineNumber": 50,
-              "covered": true
-            },
-            {
-              "lineNumber": 26,
-              "covered": true
-            },
-            {
-              "lineNumber": 59,
-              "covered": true
-            },
-            {
-              "lineNumber": 27,
-              "covered": true
-            },
-            {
-              "lineNumber": 60,
-              "covered": true
-            },
-            {
-              "lineNumber": 51,
-              "covered": true
-            },
-            {
-              "lineNumber": 25,
-              "covered": true
-            },
-            {
-              "lineNumber": 49,
-              "covered": true
-            },
-            {
-              "lineNumber": 83,
+              "lineNumber": 160,
               "covered": true
             }
           ]
         },
         {
-          "name": "validate-client-credentials-flow",
+          "name": "User-Identity-Mgmt-System-API-main",
           "type": "FLOW",
-          "coverage": 75.0,
-          "messageProcessorCount": 4,
-          "coveredProcessorCount": 3,
+          "coverage": 100.0,
+          "messageProcessorCount": 7,
+          "coveredProcessorCount": 7,
           "lines": [
-            {
-              "lineNumber": 13,
-              "covered": true
-            },
-            {
-              "lineNumber": 20,
-              "covered": false
-            },
             {
               "lineNumber": 14,
               "covered": true
             },
             {
+              "lineNumber": 43,
+              "covered": true
+            },
+            {
+              "lineNumber": 82,
+              "covered": true
+            },
+            {
+              "lineNumber": 56,
+              "covered": true
+            },
+            {
+              "lineNumber": 30,
+              "covered": true
+            },
+            {
+              "lineNumber": 69,
+              "covered": true
+            },
+            {
               "lineNumber": 17,
-              "covered": true
-            }
-          ]
-        },
-        {
-          "name": "change-user-password-flow",
-          "type": "FLOW",
-          "coverage": 100.0,
-          "messageProcessorCount": 8,
-          "coveredProcessorCount": 8,
-          "lines": [
-            {
-              "lineNumber": 186,
-              "covered": true
-            },
-            {
-              "lineNumber": 200,
-              "covered": true
-            },
-            {
-              "lineNumber": 199,
-              "covered": true
-            },
-            {
-              "lineNumber": 172,
-              "covered": true
-            },
-            {
-              "lineNumber": 185,
-              "covered": true
-            },
-            {
-              "lineNumber": 173,
-              "covered": true
-            },
-            {
-              "lineNumber": 171,
-              "covered": true
-            },
-            {
-              "lineNumber": 170,
               "covered": true
             }
           ]
@@ -398,15 +398,7 @@
           "coveredProcessorCount": 0,
           "lines": [
             {
-              "lineNumber": 52,
-              "covered": false
-            },
-            {
-              "lineNumber": 68,
-              "covered": false
-            },
-            {
-              "lineNumber": 28,
+              "lineNumber": 80,
               "covered": false
             },
             {
@@ -414,11 +406,11 @@
               "covered": false
             },
             {
-              "lineNumber": 80,
+              "lineNumber": 69,
               "covered": false
             },
             {
-              "lineNumber": 69,
+              "lineNumber": 68,
               "covered": false
             },
             {
@@ -426,7 +418,15 @@
               "covered": false
             },
             {
+              "lineNumber": 28,
+              "covered": false
+            },
+            {
               "lineNumber": 27,
+              "covered": false
+            },
+            {
+              "lineNumber": 52,
               "covered": false
             }
           ]
@@ -439,15 +439,15 @@
           "coveredProcessorCount": 0,
           "lines": [
             {
-              "lineNumber": 107,
-              "covered": false
-            },
-            {
               "lineNumber": 96,
               "covered": false
             },
             {
               "lineNumber": 99,
+              "covered": false
+            },
+            {
+              "lineNumber": 107,
               "covered": false
             }
           ]
