@@ -1,0 +1,4321 @@
+{
+  "version": "1.2.0",
+  "artifactCoordinates": {
+    "groupId": "com.mulesoft.munit",
+    "artifactId": "munit-runner",
+    "version": "3.6.2",
+    "type": "jar",
+    "classifier": "mule-plugin"
+  },
+  "dependencies": [
+    {
+      "artifactCoordinates": {
+        "groupId": "jakarta.activation",
+        "artifactId": "jakarta.activation-api",
+        "version": "2.0.1",
+        "type": "jar"
+      },
+      "uri": "file:/Users/megha/.m2/repository/jakarta/activation/jakarta.activation-api/2.0.1/jakarta.activation-api-2.0.1.jar",
+      "packages": [
+        "jakarta.activation"
+      ],
+      "resources": [
+        "META-INF/LICENSE.md",
+        "META-INF/MANIFEST.MF",
+        "META-INF/NOTICE.md",
+        "META-INF/maven/jakarta.activation/jakarta.activation-api/pom.properties",
+        "META-INF/maven/jakarta.activation/jakarta.activation-api/pom.xml"
+      ]
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.mulesoft.munit",
+        "artifactId": "munit-common",
+        "version": "3.6.2",
+        "type": "jar"
+      },
+      "uri": "file:/Users/megha/.m2/repository/com/mulesoft/munit/munit-common/3.6.2/munit-common-3.6.2.jar",
+      "packages": [
+        "org.mule.munit.common.behavior",
+        "org.mule.munit.common.exception",
+        "org.mule.munit.common.properties",
+        "org.mule.munit.common.protocol.listeners",
+        "org.mule.munit.common.protocol.message",
+        "org.mule.munit.common.protocol.notifiers",
+        "org.mule.munit.common.util"
+      ],
+      "resources": [
+        "META-INF/MANIFEST.MF",
+        "META-INF/maven/com.mulesoft.munit/munit-common/pom.properties",
+        "META-INF/maven/com.mulesoft.munit/munit-common/pom.xml"
+      ]
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "org.mule.tools.maven",
+        "artifactId": "mule-classloader-model",
+        "version": "4.1.0",
+        "type": "jar"
+      },
+      "uri": "file:/Users/megha/.m2/repository/org/mule/tools/maven/mule-classloader-model/4.1.0/mule-classloader-model-4.1.0.jar",
+      "packages": [
+        "org.mule.tools.api.classloader",
+        "org.mule.tools.api.classloader.model"
+      ],
+      "resources": [
+        "META-INF/MANIFEST.MF",
+        "META-INF/maven/org.mule.tools.maven/mule-classloader-model/pom.properties",
+        "META-INF/maven/org.mule.tools.maven/mule-classloader-model/pom.xml"
+      ]
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "org.slf4j",
+        "artifactId": "slf4j-api",
+        "version": "2.0.7",
+        "type": "jar"
+      },
+      "uri": "file:/Users/megha/.m2/repository/org/slf4j/slf4j-api/2.0.7/slf4j-api-2.0.7.jar",
+      "packages": [
+        "META-INF.versions.9",
+        "org.slf4j",
+        "org.slf4j.event",
+        "org.slf4j.helpers",
+        "org.slf4j.spi"
+      ],
+      "resources": [
+        "META-INF/LICENSE.txt",
+        "META-INF/MANIFEST.MF",
+        "META-INF/maven/org.slf4j/slf4j-api/pom.properties",
+        "META-INF/maven/org.slf4j/slf4j-api/pom.xml"
+      ]
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "org.slf4j",
+        "artifactId": "slf4j-simple",
+        "version": "2.0.7",
+        "type": "jar"
+      },
+      "uri": "file:/Users/megha/.m2/repository/org/slf4j/slf4j-simple/2.0.7/slf4j-simple-2.0.7.jar",
+      "packages": [
+        "META-INF.versions.9",
+        "org.slf4j.simple"
+      ],
+      "resources": [
+        "META-INF/LICENSE.txt",
+        "META-INF/MANIFEST.MF",
+        "META-INF/maven/org.slf4j/slf4j-simple/pom.properties",
+        "META-INF/maven/org.slf4j/slf4j-simple/pom.xml",
+        "META-INF/services/org.slf4j.spi.SLF4JServiceProvider"
+      ]
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.google.guava",
+        "artifactId": "guava",
+        "version": "32.0.0-jre",
+        "type": "jar"
+      },
+      "uri": "file:/Users/megha/.m2/repository/com/google/guava/guava/32.0.0-jre/guava-32.0.0-jre.jar",
+      "packages": [
+        "com.google.common.annotations",
+        "com.google.common.base",
+        "com.google.common.base.internal",
+        "com.google.common.cache",
+        "com.google.common.collect",
+        "com.google.common.escape",
+        "com.google.common.eventbus",
+        "com.google.common.graph",
+        "com.google.common.hash",
+        "com.google.common.html",
+        "com.google.common.io",
+        "com.google.common.math",
+        "com.google.common.net",
+        "com.google.common.primitives",
+        "com.google.common.reflect",
+        "com.google.common.util.concurrent",
+        "com.google.common.xml",
+        "com.google.thirdparty.publicsuffix"
+      ],
+      "resources": [
+        "META-INF/LICENSE",
+        "META-INF/MANIFEST.MF",
+        "META-INF/maven/com.google.guava/guava/pom.properties",
+        "META-INF/maven/com.google.guava/guava/pom.xml",
+        "META-INF/proguard/base.pro",
+        "META-INF/proguard/cache.pro",
+        "META-INF/proguard/collect.pro",
+        "META-INF/proguard/concurrent.pro",
+        "META-INF/proguard/hash.pro",
+        "META-INF/proguard/io.pro",
+        "META-INF/proguard/primitives.pro",
+        "META-INF/proguard/reflect.pro"
+      ]
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.google.guava",
+        "artifactId": "failureaccess",
+        "version": "1.0.1",
+        "type": "jar"
+      },
+      "uri": "file:/Users/megha/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar",
+      "packages": [
+        "com.google.common.util.concurrent.internal"
+      ],
+      "resources": [
+        "META-INF/MANIFEST.MF",
+        "META-INF/maven/com.google.guava/failureaccess/pom.properties",
+        "META-INF/maven/com.google.guava/failureaccess/pom.xml"
+      ]
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.google.guava",
+        "artifactId": "listenablefuture",
+        "version": "9999.0-empty-to-avoid-conflict-with-guava",
+        "type": "jar"
+      },
+      "uri": "file:/Users/megha/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar",
+      "resources": [
+        "META-INF/MANIFEST.MF",
+        "META-INF/maven/com.google.guava/listenablefuture/pom.properties",
+        "META-INF/maven/com.google.guava/listenablefuture/pom.xml"
+      ]
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.google.code.findbugs",
+        "artifactId": "jsr305",
+        "version": "3.0.2",
+        "type": "jar"
+      },
+      "uri": "file:/Users/megha/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar",
+      "packages": [
+        "javax.annotation",
+        "javax.annotation.concurrent",
+        "javax.annotation.meta"
+      ],
+      "resources": [
+        "META-INF/MANIFEST.MF",
+        "META-INF/maven/com.google.code.findbugs/jsr305/pom.properties",
+        "META-INF/maven/com.google.code.findbugs/jsr305/pom.xml"
+      ]
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "org.checkerframework",
+        "artifactId": "checker-qual",
+        "version": "3.33.0",
+        "type": "jar"
+      },
+      "uri": "file:/Users/megha/.m2/repository/org/checkerframework/checker-qual/3.33.0/checker-qual-3.33.0.jar",
+      "packages": [
+        "org.checkerframework.checker.builder.qual",
+        "org.checkerframework.checker.calledmethods.qual",
+        "org.checkerframework.checker.compilermsgs.qual",
+        "org.checkerframework.checker.fenum.qual",
+        "org.checkerframework.checker.formatter.qual",
+        "org.checkerframework.checker.guieffect.qual",
+        "org.checkerframework.checker.i18n.qual",
+        "org.checkerframework.checker.i18nformatter.qual",
+        "org.checkerframework.checker.index.qual",
+        "org.checkerframework.checker.initialization.qual",
+        "org.checkerframework.checker.interning.qual",
+        "org.checkerframework.checker.lock.qual",
+        "org.checkerframework.checker.mustcall.qual",
+        "org.checkerframework.checker.nullness.qual",
+        "org.checkerframework.checker.optional.qual",
+        "org.checkerframework.checker.propkey.qual",
+        "org.checkerframework.checker.regex.qual",
+        "org.checkerframework.checker.signature.qual",
+        "org.checkerframework.checker.signedness.qual",
+        "org.checkerframework.checker.tainting.qual",
+        "org.checkerframework.checker.units.qual",
+        "org.checkerframework.common.aliasing.qual",
+        "org.checkerframework.common.initializedfields.qual",
+        "org.checkerframework.common.reflection.qual",
+        "org.checkerframework.common.returnsreceiver.qual",
+        "org.checkerframework.common.subtyping.qual",
+        "org.checkerframework.common.util.report.qual",
+        "org.checkerframework.common.value.qual",
+        "org.checkerframework.dataflow.qual",
+        "org.checkerframework.framework.qual"
+      ],
+      "resources": [
+        "META-INF/LICENSE.txt",
+        "META-INF/MANIFEST.MF"
+      ]
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.google.j2objc",
+        "artifactId": "j2objc-annotations",
+        "version": "2.8",
+        "type": "jar"
+      },
+      "uri": "file:/Users/megha/.m2/repository/com/google/j2objc/j2objc-annotations/2.8/j2objc-annotations-2.8.jar",
+      "packages": [
+        "com.google.j2objc.annotations"
+      ],
+      "resources": [
+        "META-INF/MANIFEST.MF",
+        "META-INF/maven/com.google.j2objc/j2objc-annotations/pom.properties",
+        "META-INF/maven/com.google.j2objc/j2objc-annotations/pom.xml"
+      ]
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "org.mule.runtime",
+        "artifactId": "mule-api",
+        "version": "1.6.0",
+        "type": "jar"
+      },
+      "uri": "file:/Users/megha/.m2/repository/org/mule/runtime/mule-api/1.6.0/mule-api-1.6.0.jar",
+      "packages": [
+        "META-INF.versions.11.org.mule.runtime.internal.util",
+        "org.mule.runtime.api.app.declaration.serialization",
+        "org.mule.runtime.api.artifact",
+        "org.mule.runtime.api.bulk",
+        "org.mule.runtime.api.cluster",
+        "org.mule.runtime.api.component",
+        "org.mule.runtime.api.component.execution",
+        "org.mule.runtime.api.component.location",
+        "org.mule.runtime.api.config",
+        "org.mule.runtime.api.config.custom",
+        "org.mule.runtime.api.connection",
+        "org.mule.runtime.api.connection.serialization",
+        "org.mule.runtime.api.connectivity",
+        "org.mule.runtime.api.deployment.management",
+        "org.mule.runtime.api.deployment.meta",
+        "org.mule.runtime.api.deployment.persistence",
+        "org.mule.runtime.api.dsl",
+        "org.mule.runtime.api.el",
+        "org.mule.runtime.api.el.persistence",
+        "org.mule.runtime.api.el.validation",
+        "org.mule.runtime.api.event",
+        "org.mule.runtime.api.exception",
+        "org.mule.runtime.api.functional",
+        "org.mule.runtime.api.healthcheck",
+        "org.mule.runtime.api.i18n",
+        "org.mule.runtime.api.interception",
+        "org.mule.runtime.api.ioc",
+        "org.mule.runtime.api.legacy.exception",
+        "org.mule.runtime.api.lifecycle",
+        "org.mule.runtime.api.lock",
+        "org.mule.runtime.api.memory.management",
+        "org.mule.runtime.api.memory.provider",
+        "org.mule.runtime.api.memory.provider.type",
+        "org.mule.runtime.api.message",
+        "org.mule.runtime.api.message.error.matcher",
+        "org.mule.runtime.api.meta",
+        "org.mule.runtime.api.meta.model",
+        "org.mule.runtime.api.meta.model.config",
+        "org.mule.runtime.api.meta.model.connection",
+        "org.mule.runtime.api.meta.model.construct",
+        "org.mule.runtime.api.meta.model.data.sample",
+        "org.mule.runtime.api.meta.model.declaration.fluent",
+        "org.mule.runtime.api.meta.model.declaration.fluent.util",
+        "org.mule.runtime.api.meta.model.deprecated",
+        "org.mule.runtime.api.meta.model.display",
+        "org.mule.runtime.api.meta.model.error",
+        "org.mule.runtime.api.meta.model.function",
+        "org.mule.runtime.api.meta.model.nested",
+        "org.mule.runtime.api.meta.model.notification",
+        "org.mule.runtime.api.meta.model.operation",
+        "org.mule.runtime.api.meta.model.parameter",
+        "org.mule.runtime.api.meta.model.source",
+        "org.mule.runtime.api.meta.model.stereotype",
+        "org.mule.runtime.api.meta.model.util",
+        "org.mule.runtime.api.meta.model.version",
+        "org.mule.runtime.api.meta.type",
+        "org.mule.runtime.api.metadata",
+        "org.mule.runtime.api.metadata.descriptor",
+        "org.mule.runtime.api.metadata.resolving",
+        "org.mule.runtime.api.notification",
+        "org.mule.runtime.api.parameterization",
+        "org.mule.runtime.api.sampledata",
+        "org.mule.runtime.api.scheduler",
+        "org.mule.runtime.api.security",
+        "org.mule.runtime.api.serialization",
+        "org.mule.runtime.api.service",
+        "org.mule.runtime.api.source",
+        "org.mule.runtime.api.store",
+        "org.mule.runtime.api.streaming",
+        "org.mule.runtime.api.streaming.bytes",
+        "org.mule.runtime.api.streaming.exception",
+        "org.mule.runtime.api.streaming.object",
+        "org.mule.runtime.api.time",
+        "org.mule.runtime.api.tls",
+        "org.mule.runtime.api.transformation",
+        "org.mule.runtime.api.tx",
+        "org.mule.runtime.api.util",
+        "org.mule.runtime.api.util.collection",
+        "org.mule.runtime.api.util.concurrent",
+        "org.mule.runtime.api.util.xmlsecurity",
+        "org.mule.runtime.api.value",
+        "org.mule.runtime.internal.app.declaration.serialization",
+        "org.mule.runtime.internal.config.custom",
+        "org.mule.runtime.internal.connectivity",
+        "org.mule.runtime.internal.dsl",
+        "org.mule.runtime.internal.event",
+        "org.mule.runtime.internal.exception",
+        "org.mule.runtime.internal.meta.type",
+        "org.mule.runtime.internal.parameterization",
+        "org.mule.runtime.internal.util",
+        "org.mule.runtime.internal.util.collection",
+        "org.mule.runtime.internal.util.xmlsecurity"
+      ],
+      "resources": [
+        "META-INF/MANIFEST.MF",
+        "META-INF/maven/org.mule.runtime/mule-api/pom.properties",
+        "META-INF/maven/org.mule.runtime/mule-api/pom.xml",
+        "META-INF/mule-module.properties"
+      ]
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "org.mule.runtime",
+        "artifactId": "mule-metadata-model-api",
+        "version": "1.6.1",
+        "type": "jar"
+      },
+      "uri": "file:/Users/megha/.m2/repository/org/mule/runtime/mule-metadata-model-api/1.6.1/mule-metadata-model-api-1.6.1.jar",
+      "packages": [
+        "org.mule.metadata.api",
+        "org.mule.metadata.api.annotation",
+        "org.mule.metadata.api.builder",
+        "org.mule.metadata.api.model",
+        "org.mule.metadata.api.model.impl",
+        "org.mule.metadata.api.serialization",
+        "org.mule.metadata.api.utils",
+        "org.mule.metadata.api.visitor",
+        "org.mule.metadata.internal.utils"
+      ],
+      "resources": [
+        "META-INF/MANIFEST.MF",
+        "META-INF/maven/org.mule.runtime/mule-metadata-model-api/pom.properties",
+        "META-INF/maven/org.mule.runtime/mule-metadata-model-api/pom.xml",
+        "META-INF/mule-module.properties"
+      ]
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "org.mule.runtime",
+        "artifactId": "mule-message-metadata-model",
+        "version": "1.6.1",
+        "type": "jar"
+      },
+      "uri": "file:/Users/megha/.m2/repository/org/mule/runtime/mule-message-metadata-model/1.6.1/mule-message-metadata-model-1.6.1.jar",
+      "packages": [
+        "org.mule.metadata.message.api",
+        "org.mule.metadata.message.api.el"
+      ],
+      "resources": [
+        "META-INF/MANIFEST.MF",
+        "META-INF/maven/org.mule.runtime/mule-message-metadata-model/pom.properties",
+        "META-INF/maven/org.mule.runtime/mule-message-metadata-model/pom.xml",
+        "META-INF/mule-module.properties"
+      ]
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "jakarta.inject",
+        "artifactId": "jakarta.inject-api",
+        "version": "1.0.5",
+        "type": "jar"
+      },
+      "uri": "file:/Users/megha/.m2/repository/jakarta/inject/jakarta.inject-api/1.0.5/jakarta.inject-api-1.0.5.jar",
+      "packages": [
+        "META-INF.versions.9",
+        "javax.inject"
+      ],
+      "resources": [
+        "META-INF/LICENSE.txt",
+        "META-INF/MANIFEST.MF",
+        "META-INF/NOTICE.md",
+        "META-INF/maven/jakarta.inject/jakarta.inject-api/pom.properties",
+        "META-INF/maven/jakarta.inject/jakarta.inject-api/pom.xml"
+      ]
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.github.ben-manes.caffeine",
+        "artifactId": "caffeine",
+        "version": "2.8.0",
+        "type": "jar"
+      },
+      "uri": "file:/Users/megha/.m2/repository/com/github/ben-manes/caffeine/caffeine/2.8.0/caffeine-2.8.0.jar",
+      "packages": [
+        "com.github.benmanes.caffeine",
+        "com.github.benmanes.caffeine.base",
+        "com.github.benmanes.caffeine.cache",
+        "com.github.benmanes.caffeine.cache.stats"
+      ],
+      "resources": [
+        "META-INF/LICENSE",
+        "META-INF/MANIFEST.MF"
+      ]
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.sun.activation",
+        "artifactId": "jakarta.activation",
+        "version": "1.2.2",
+        "type": "jar"
+      },
+      "uri": "file:/Users/megha/.m2/repository/com/sun/activation/jakarta.activation/1.2.2/jakarta.activation-1.2.2.jar",
+      "packages": [
+        "com.sun.activation.registries",
+        "com.sun.activation.viewers",
+        "javax.activation"
+      ],
+      "resources": [
+        "META-INF/LICENSE.md",
+        "META-INF/MANIFEST.MF",
+        "META-INF/NOTICE.md",
+        "META-INF/mailcap.default",
+        "META-INF/maven/com.sun.activation/jakarta.activation/pom.properties",
+        "META-INF/maven/com.sun.activation/jakarta.activation/pom.xml",
+        "META-INF/mimetypes.default"
+      ]
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "org.mule.runtime",
+        "artifactId": "mule-artifact-declaration",
+        "version": "1.6.0",
+        "type": "jar"
+      },
+      "uri": "file:/Users/megha/.m2/repository/org/mule/runtime/mule-artifact-declaration/1.6.0/mule-artifact-declaration-1.6.0.jar",
+      "packages": [
+        "org.mule.runtime.app.declaration.api",
+        "org.mule.runtime.app.declaration.api.component.location",
+        "org.mule.runtime.app.declaration.api.fluent",
+        "org.mule.runtime.app.declaration.internal.utils"
+      ],
+      "resources": [
+        "META-INF/MANIFEST.MF",
+        "META-INF/maven/org.mule.runtime/mule-artifact-declaration/pom.properties",
+        "META-INF/maven/org.mule.runtime/mule-artifact-declaration/pom.xml",
+        "META-INF/mule-module.properties"
+      ]
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "org.mule.runtime",
+        "artifactId": "mule-artifact-declaration-persistence",
+        "version": "1.6.0",
+        "type": "jar"
+      },
+      "uri": "file:/Users/megha/.m2/repository/org/mule/runtime/mule-artifact-declaration-persistence/1.6.0/mule-artifact-declaration-persistence-1.6.0.jar",
+      "packages": [
+        "org.mule.runtime.app.declaration.serialization.api",
+        "org.mule.runtime.app.declaration.serialization.impl.gson",
+        "org.mule.runtime.app.declaration.serialization.impl.gson.adapter"
+      ],
+      "resources": [
+        "META-INF/MANIFEST.MF",
+        "META-INF/maven/org.mule.runtime/mule-artifact-declaration-persistence/pom.properties",
+        "META-INF/maven/org.mule.runtime/mule-artifact-declaration-persistence/pom.xml"
+      ]
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "org.mule.runtime",
+        "artifactId": "api-annotations",
+        "version": "1.5.1",
+        "type": "jar"
+      },
+      "uri": "file:/Users/megha/.m2/repository/org/mule/runtime/api-annotations/1.5.1/api-annotations-1.5.1.jar",
+      "packages": [
+        "org.mule.api.annotation",
+        "org.mule.api.annotation.jpms"
+      ],
+      "resources": [
+        "META-INF/MANIFEST.MF",
+        "META-INF/maven/org.mule.runtime/api-annotations/pom.properties",
+        "META-INF/maven/org.mule.runtime/api-annotations/pom.xml",
+        "META-INF/mule-module.properties"
+      ]
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "org.json",
+        "artifactId": "json",
+        "version": "20240303",
+        "type": "jar"
+      },
+      "uri": "file:/Users/megha/.m2/repository/org/json/json/20240303/json-20240303.jar",
+      "packages": [
+        "META-INF.versions.9",
+        "org.json"
+      ],
+      "resources": [
+        "META-INF/MANIFEST.MF",
+        "META-INF/maven/org.json/json/pom.properties",
+        "META-INF/maven/org.json/json/pom.xml"
+      ]
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "commons-io",
+        "artifactId": "commons-io",
+        "version": "2.17.0",
+        "type": "jar"
+      },
+      "uri": "file:/Users/megha/.m2/repository/commons-io/commons-io/2.17.0/commons-io-2.17.0.jar",
+      "packages": [
+        "META-INF.versions.9",
+        "org.apache.commons.io",
+        "org.apache.commons.io.build",
+        "org.apache.commons.io.channels",
+        "org.apache.commons.io.charset",
+        "org.apache.commons.io.comparator",
+        "org.apache.commons.io.file",
+        "org.apache.commons.io.file.attribute",
+        "org.apache.commons.io.file.spi",
+        "org.apache.commons.io.filefilter",
+        "org.apache.commons.io.function",
+        "org.apache.commons.io.input",
+        "org.apache.commons.io.input.buffer",
+        "org.apache.commons.io.monitor",
+        "org.apache.commons.io.output",
+        "org.apache.commons.io.serialization"
+      ],
+      "resources": [
+        "META-INF/LICENSE.txt",
+        "META-INF/MANIFEST.MF",
+        "META-INF/NOTICE.txt",
+        "META-INF/maven/commons-io/commons-io/pom.properties",
+        "META-INF/maven/commons-io/commons-io/pom.xml"
+      ]
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "org.apache.commons",
+        "artifactId": "commons-lang3",
+        "version": "3.19.0",
+        "type": "jar"
+      },
+      "uri": "file:/Users/megha/.m2/repository/org/apache/commons/commons-lang3/3.19.0/commons-lang3-3.19.0.jar",
+      "packages": [
+        "META-INF.versions.9",
+        "org.apache.commons.lang3",
+        "org.apache.commons.lang3.arch",
+        "org.apache.commons.lang3.builder",
+        "org.apache.commons.lang3.compare",
+        "org.apache.commons.lang3.concurrent",
+        "org.apache.commons.lang3.concurrent.locks",
+        "org.apache.commons.lang3.event",
+        "org.apache.commons.lang3.exception",
+        "org.apache.commons.lang3.function",
+        "org.apache.commons.lang3.math",
+        "org.apache.commons.lang3.mutable",
+        "org.apache.commons.lang3.reflect",
+        "org.apache.commons.lang3.stream",
+        "org.apache.commons.lang3.text",
+        "org.apache.commons.lang3.text.translate",
+        "org.apache.commons.lang3.time",
+        "org.apache.commons.lang3.tuple",
+        "org.apache.commons.lang3.util"
+      ],
+      "resources": [
+        "META-INF/LICENSE.txt",
+        "META-INF/MANIFEST.MF",
+        "META-INF/NOTICE.txt",
+        "META-INF/maven/org.apache.commons/commons-lang3/pom.properties",
+        "META-INF/maven/org.apache.commons/commons-lang3/pom.xml"
+      ]
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.mulesoft.munit",
+        "artifactId": "munit-common-api",
+        "version": "3.6.2",
+        "type": "jar"
+      },
+      "uri": "file:/Users/megha/.m2/repository/com/mulesoft/munit/munit-common-api/3.6.2/munit-common-api-3.6.2.jar",
+      "packages": [
+        "org.mule.munit.common.api.event",
+        "org.mule.munit.common.api.model",
+        "org.mule.munit.common.api.model.stereotype",
+        "org.mule.munit.common.api.util"
+      ],
+      "resources": [
+        "META-INF/MANIFEST.MF",
+        "META-INF/maven/com.mulesoft.munit/munit-common-api/pom.properties",
+        "META-INF/maven/com.mulesoft.munit/munit-common-api/pom.xml"
+      ]
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.google.code.gson",
+        "artifactId": "gson",
+        "version": "2.13.1",
+        "type": "jar"
+      },
+      "uri": "file:/Users/megha/.m2/repository/com/google/code/gson/gson/2.13.1/gson-2.13.1.jar",
+      "packages": [
+        "META-INF.versions.9",
+        "com.google.gson",
+        "com.google.gson.annotations",
+        "com.google.gson.internal",
+        "com.google.gson.internal.bind",
+        "com.google.gson.internal.bind.util",
+        "com.google.gson.internal.reflect",
+        "com.google.gson.internal.sql",
+        "com.google.gson.reflect",
+        "com.google.gson.stream"
+      ],
+      "resources": [
+        "META-INF/MANIFEST.MF",
+        "META-INF/maven/com.google.code.gson/gson/pom.properties",
+        "META-INF/maven/com.google.code.gson/gson/pom.xml",
+        "META-INF/proguard/gson.pro"
+      ]
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.google.errorprone",
+        "artifactId": "error_prone_annotations",
+        "version": "2.38.0",
+        "type": "jar"
+      },
+      "uri": "file:/Users/megha/.m2/repository/com/google/errorprone/error_prone_annotations/2.38.0/error_prone_annotations-2.38.0.jar",
+      "packages": [
+        "META-INF.versions.9",
+        "com.google.errorprone.annotations",
+        "com.google.errorprone.annotations.concurrent"
+      ],
+      "resources": [
+        "META-INF/MANIFEST.MF",
+        "META-INF/maven/com.google.errorprone/error_prone_annotations/pom.properties",
+        "META-INF/maven/com.google.errorprone/error_prone_annotations/pom.xml"
+      ]
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "org.mule.sdk",
+        "artifactId": "mule-sdk-api",
+        "version": "0.11.4",
+        "type": "jar"
+      },
+      "uri": "file:/Users/megha/.m2/repository/org/mule/sdk/mule-sdk-api/0.11.4/mule-sdk-api-0.11.4.jar",
+      "packages": [
+        "org.mule.sdk.api.annotation",
+        "org.mule.sdk.api.annotation.binding",
+        "org.mule.sdk.api.annotation.connectivity",
+        "org.mule.sdk.api.annotation.connectivity.oauth",
+        "org.mule.sdk.api.annotation.data.sample",
+        "org.mule.sdk.api.annotation.deprecated",
+        "org.mule.sdk.api.annotation.dsl.xml",
+        "org.mule.sdk.api.annotation.error",
+        "org.mule.sdk.api.annotation.execution",
+        "org.mule.sdk.api.annotation.license",
+        "org.mule.sdk.api.annotation.metadata",
+        "org.mule.sdk.api.annotation.metadata.fixed",
+        "org.mule.sdk.api.annotation.notification",
+        "org.mule.sdk.api.annotation.param",
+        "org.mule.sdk.api.annotation.param.display",
+        "org.mule.sdk.api.annotation.param.reference",
+        "org.mule.sdk.api.annotation.param.stereotype",
+        "org.mule.sdk.api.annotation.route",
+        "org.mule.sdk.api.annotation.semantics",
+        "org.mule.sdk.api.annotation.semantics.connectivity",
+        "org.mule.sdk.api.annotation.semantics.file",
+        "org.mule.sdk.api.annotation.semantics.security",
+        "org.mule.sdk.api.annotation.source",
+        "org.mule.sdk.api.annotation.values",
+        "org.mule.sdk.api.artifact.lifecycle",
+        "org.mule.sdk.api.client",
+        "org.mule.sdk.api.connectivity",
+        "org.mule.sdk.api.connectivity.oauth",
+        "org.mule.sdk.api.data.sample",
+        "org.mule.sdk.api.error",
+        "org.mule.sdk.api.exception",
+        "org.mule.sdk.api.meta",
+        "org.mule.sdk.api.metadata",
+        "org.mule.sdk.api.metadata.resolving",
+        "org.mule.sdk.api.notification",
+        "org.mule.sdk.api.runtime.connectivity",
+        "org.mule.sdk.api.runtime.exception",
+        "org.mule.sdk.api.runtime.operation",
+        "org.mule.sdk.api.runtime.parameter",
+        "org.mule.sdk.api.runtime.process",
+        "org.mule.sdk.api.runtime.route",
+        "org.mule.sdk.api.runtime.source",
+        "org.mule.sdk.api.runtime.streaming",
+        "org.mule.sdk.api.security",
+        "org.mule.sdk.api.stereotype",
+        "org.mule.sdk.api.store",
+        "org.mule.sdk.api.streaming.bytes",
+        "org.mule.sdk.api.tx",
+        "org.mule.sdk.api.values",
+        "org.mule.sdk.internal.client",
+        "org.mule.sdk.internal.values"
+      ],
+      "resources": [
+        "META-INF/MANIFEST.MF",
+        "META-INF/affordance.properties",
+        "META-INF/maven/org.mule.sdk/mule-sdk-api/pom.properties",
+        "META-INF/maven/org.mule.sdk/mule-sdk-api/pom.xml",
+        "META-INF/mule-module.properties"
+      ]
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.mulesoft.munit",
+        "artifactId": "munit-maven-plugins-common",
+        "version": "3.6.2",
+        "type": "jar"
+      },
+      "uri": "file:/Users/megha/.m2/repository/com/mulesoft/munit/munit-maven-plugins-common/3.6.2/munit-maven-plugins-common-3.6.2.jar",
+      "packages": [
+        "org.mule.munit.plugin.maven",
+        "org.mule.munit.plugin.maven.fips",
+        "org.mule.munit.plugin.maven.locators",
+        "org.mule.munit.plugin.maven.project",
+        "org.mule.munit.plugin.maven.report.xml",
+        "org.mule.munit.plugin.maven.report.xml.sonar",
+        "org.mule.munit.plugin.maven.runner",
+        "org.mule.munit.plugin.maven.runner.consumer",
+        "org.mule.munit.plugin.maven.runner.handler",
+        "org.mule.munit.plugin.maven.runner.model",
+        "org.mule.munit.plugin.maven.runner.printer",
+        "org.mule.munit.plugin.maven.runner.structure",
+        "org.mule.munit.plugin.maven.runtime",
+        "org.mule.munit.plugin.maven.util",
+        "org.mule.munit.plugin.maven.util.properties"
+      ],
+      "resources": [
+        "META-INF/MANIFEST.MF",
+        "META-INF/maven/com.mulesoft.munit/munit-maven-plugins-common/pom.properties",
+        "META-INF/maven/com.mulesoft.munit/munit-maven-plugins-common/pom.xml"
+      ]
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.mulesoft.munit",
+        "artifactId": "munit-remote",
+        "version": "3.6.2",
+        "type": "jar",
+        "classifier": "jar-with-dependencies"
+      },
+      "uri": "file:/Users/megha/.m2/repository/com/mulesoft/munit/munit-remote/3.6.2/munit-remote-3.6.2-jar-with-dependencies.jar",
+      "packages": [
+        "META-INF.versions.10.org.codehaus.plexus.util",
+        "META-INF.versions.11",
+        "META-INF.versions.11.org.codehaus.plexus.util",
+        "META-INF.versions.11.org.jsoup.helper",
+        "META-INF.versions.11.org.mule.runtime.module.embedded.internal.utils",
+        "META-INF.versions.9",
+        "META-INF.versions.9.org.apache.logging.log4j.core.util",
+        "META-INF.versions.9.org.apache.logging.log4j.util",
+        "META-INF.versions.9.org.apache.logging.log4j.util.internal",
+        "META-INF.versions.9.org.codehaus.plexus.util",
+        "META-INF.versions.9.org.yaml.snakeyaml.internal",
+        "com.beust.ah",
+        "com.beust.jcommander",
+        "com.beust.jcommander.converters",
+        "com.beust.jcommander.defaultprovider",
+        "com.beust.jcommander.internal",
+        "com.beust.jcommander.parser",
+        "com.beust.jcommander.validators",
+        "com.evanlennick.retry4j",
+        "com.evanlennick.retry4j.backoff",
+        "com.evanlennick.retry4j.config",
+        "com.evanlennick.retry4j.exception",
+        "com.evanlennick.retry4j.listener",
+        "com.google.errorprone.annotations",
+        "com.google.errorprone.annotations.concurrent",
+        "com.google.gson",
+        "com.google.gson.annotations",
+        "com.google.gson.internal",
+        "com.google.gson.internal.bind",
+        "com.google.gson.internal.bind.util",
+        "com.google.gson.internal.reflect",
+        "com.google.gson.internal.sql",
+        "com.google.gson.reflect",
+        "com.google.gson.stream",
+        "com.lmax.disruptor",
+        "com.lmax.disruptor.dsl",
+        "com.lmax.disruptor.util",
+        "com.thoughtworks.xstream",
+        "com.thoughtworks.xstream.annotations",
+        "com.thoughtworks.xstream.converters",
+        "com.thoughtworks.xstream.converters.basic",
+        "com.thoughtworks.xstream.converters.collections",
+        "com.thoughtworks.xstream.converters.enums",
+        "com.thoughtworks.xstream.converters.extended",
+        "com.thoughtworks.xstream.converters.javabean",
+        "com.thoughtworks.xstream.converters.reflection",
+        "com.thoughtworks.xstream.converters.time",
+        "com.thoughtworks.xstream.core",
+        "com.thoughtworks.xstream.core.util",
+        "com.thoughtworks.xstream.io",
+        "com.thoughtworks.xstream.io.binary",
+        "com.thoughtworks.xstream.io.copy",
+        "com.thoughtworks.xstream.io.json",
+        "com.thoughtworks.xstream.io.naming",
+        "com.thoughtworks.xstream.io.path",
+        "com.thoughtworks.xstream.io.xml",
+        "com.thoughtworks.xstream.io.xml.xppdom",
+        "com.thoughtworks.xstream.mapper",
+        "com.thoughtworks.xstream.persistence",
+        "com.thoughtworks.xstream.security",
+        "com.vdurmont.semver4j",
+        "de.vandermeer.asciilist",
+        "de.vandermeer.asciilist.commons",
+        "de.vandermeer.asciilist.styles",
+        "de.vandermeer.asciitable.commons",
+        "de.vandermeer.asciitable.v1",
+        "de.vandermeer.asciitable.v2",
+        "de.vandermeer.asciitable.v2.render",
+        "de.vandermeer.asciitable.v2.row",
+        "de.vandermeer.asciitable.v2.themes",
+        "freemarker.cache",
+        "freemarker.core",
+        "freemarker.debug",
+        "freemarker.debug.impl",
+        "freemarker.ext.ant",
+        "freemarker.ext.beans",
+        "freemarker.ext.dom",
+        "freemarker.ext.jakarta.jsp",
+        "freemarker.ext.jakarta.servlet",
+        "freemarker.ext.jdom",
+        "freemarker.ext.jsp",
+        "freemarker.ext.jython",
+        "freemarker.ext.rhino",
+        "freemarker.ext.servlet",
+        "freemarker.ext.util",
+        "freemarker.ext.xml",
+        "freemarker.log",
+        "freemarker.template",
+        "freemarker.template.utility",
+        "io.github.xstream.mxparser",
+        "jakarta.activation",
+        "javax.inject",
+        "org.apache.commons.codec",
+        "org.apache.commons.codec.binary",
+        "org.apache.commons.codec.cli",
+        "org.apache.commons.codec.digest",
+        "org.apache.commons.codec.language",
+        "org.apache.commons.codec.language.bm",
+        "org.apache.commons.codec.net",
+        "org.apache.commons.io",
+        "org.apache.commons.io.build",
+        "org.apache.commons.io.channels",
+        "org.apache.commons.io.charset",
+        "org.apache.commons.io.comparator",
+        "org.apache.commons.io.file",
+        "org.apache.commons.io.file.attribute",
+        "org.apache.commons.io.file.spi",
+        "org.apache.commons.io.filefilter",
+        "org.apache.commons.io.function",
+        "org.apache.commons.io.input",
+        "org.apache.commons.io.input.buffer",
+        "org.apache.commons.io.monitor",
+        "org.apache.commons.io.output",
+        "org.apache.commons.io.serialization",
+        "org.apache.commons.lang3",
+        "org.apache.commons.lang3.arch",
+        "org.apache.commons.lang3.builder",
+        "org.apache.commons.lang3.compare",
+        "org.apache.commons.lang3.concurrent",
+        "org.apache.commons.lang3.concurrent.locks",
+        "org.apache.commons.lang3.event",
+        "org.apache.commons.lang3.exception",
+        "org.apache.commons.lang3.function",
+        "org.apache.commons.lang3.math",
+        "org.apache.commons.lang3.mutable",
+        "org.apache.commons.lang3.reflect",
+        "org.apache.commons.lang3.stream",
+        "org.apache.commons.lang3.text",
+        "org.apache.commons.lang3.text.translate",
+        "org.apache.commons.lang3.time",
+        "org.apache.commons.lang3.tuple",
+        "org.apache.commons.lang3.util",
+        "org.apache.commons.logging",
+        "org.apache.commons.logging.impl",
+        "org.apache.http",
+        "org.apache.http.annotation",
+        "org.apache.http.auth",
+        "org.apache.http.auth.params",
+        "org.apache.http.client",
+        "org.apache.http.client.config",
+        "org.apache.http.client.entity",
+        "org.apache.http.client.methods",
+        "org.apache.http.client.params",
+        "org.apache.http.client.protocol",
+        "org.apache.http.client.utils",
+        "org.apache.http.concurrent",
+        "org.apache.http.config",
+        "org.apache.http.conn",
+        "org.apache.http.conn.params",
+        "org.apache.http.conn.routing",
+        "org.apache.http.conn.scheme",
+        "org.apache.http.conn.socket",
+        "org.apache.http.conn.ssl",
+        "org.apache.http.conn.util",
+        "org.apache.http.cookie",
+        "org.apache.http.cookie.params",
+        "org.apache.http.entity",
+        "org.apache.http.impl",
+        "org.apache.http.impl.auth",
+        "org.apache.http.impl.bootstrap",
+        "org.apache.http.impl.client",
+        "org.apache.http.impl.conn",
+        "org.apache.http.impl.conn.tsccm",
+        "org.apache.http.impl.cookie",
+        "org.apache.http.impl.entity",
+        "org.apache.http.impl.execchain",
+        "org.apache.http.impl.io",
+        "org.apache.http.impl.pool",
+        "org.apache.http.io",
+        "org.apache.http.message",
+        "org.apache.http.params",
+        "org.apache.http.pool",
+        "org.apache.http.protocol",
+        "org.apache.http.ssl",
+        "org.apache.http.util",
+        "org.apache.logging.log4j",
+        "org.apache.logging.log4j.core",
+        "org.apache.logging.log4j.core.appender",
+        "org.apache.logging.log4j.core.appender.db",
+        "org.apache.logging.log4j.core.appender.db.jdbc",
+        "org.apache.logging.log4j.core.appender.mom",
+        "org.apache.logging.log4j.core.appender.mom.jeromq",
+        "org.apache.logging.log4j.core.appender.mom.kafka",
+        "org.apache.logging.log4j.core.appender.nosql",
+        "org.apache.logging.log4j.core.appender.rewrite",
+        "org.apache.logging.log4j.core.appender.rolling",
+        "org.apache.logging.log4j.core.appender.rolling.action",
+        "org.apache.logging.log4j.core.appender.routing",
+        "org.apache.logging.log4j.core.async",
+        "org.apache.logging.log4j.core.config",
+        "org.apache.logging.log4j.core.config.arbiters",
+        "org.apache.logging.log4j.core.config.builder.api",
+        "org.apache.logging.log4j.core.config.builder.impl",
+        "org.apache.logging.log4j.core.config.composite",
+        "org.apache.logging.log4j.core.config.json",
+        "org.apache.logging.log4j.core.config.plugins",
+        "org.apache.logging.log4j.core.config.plugins.convert",
+        "org.apache.logging.log4j.core.config.plugins.processor",
+        "org.apache.logging.log4j.core.config.plugins.util",
+        "org.apache.logging.log4j.core.config.plugins.validation",
+        "org.apache.logging.log4j.core.config.plugins.validation.constraints",
+        "org.apache.logging.log4j.core.config.plugins.validation.validators",
+        "org.apache.logging.log4j.core.config.plugins.visitors",
+        "org.apache.logging.log4j.core.config.properties",
+        "org.apache.logging.log4j.core.config.status",
+        "org.apache.logging.log4j.core.config.xml",
+        "org.apache.logging.log4j.core.config.yaml",
+        "org.apache.logging.log4j.core.filter",
+        "org.apache.logging.log4j.core.filter.mutable",
+        "org.apache.logging.log4j.core.impl",
+        "org.apache.logging.log4j.core.jackson",
+        "org.apache.logging.log4j.core.jmx",
+        "org.apache.logging.log4j.core.layout",
+        "org.apache.logging.log4j.core.layout.internal",
+        "org.apache.logging.log4j.core.lookup",
+        "org.apache.logging.log4j.core.message",
+        "org.apache.logging.log4j.core.net",
+        "org.apache.logging.log4j.core.net.ssl",
+        "org.apache.logging.log4j.core.osgi",
+        "org.apache.logging.log4j.core.parser",
+        "org.apache.logging.log4j.core.pattern",
+        "org.apache.logging.log4j.core.script",
+        "org.apache.logging.log4j.core.selector",
+        "org.apache.logging.log4j.core.time",
+        "org.apache.logging.log4j.core.time.internal",
+        "org.apache.logging.log4j.core.tools",
+        "org.apache.logging.log4j.core.tools.picocli",
+        "org.apache.logging.log4j.core.util",
+        "org.apache.logging.log4j.core.util.datetime",
+        "org.apache.logging.log4j.core.util.internal",
+        "org.apache.logging.log4j.internal",
+        "org.apache.logging.log4j.message",
+        "org.apache.logging.log4j.simple",
+        "org.apache.logging.log4j.spi",
+        "org.apache.logging.log4j.status",
+        "org.apache.logging.log4j.util",
+        "org.apache.logging.slf4j",
+        "org.apache.maven.artifact",
+        "org.apache.maven.artifact.handler",
+        "org.apache.maven.artifact.metadata",
+        "org.apache.maven.artifact.repository",
+        "org.apache.maven.artifact.repository.layout",
+        "org.apache.maven.artifact.repository.metadata",
+        "org.apache.maven.artifact.repository.metadata.io.xpp3",
+        "org.apache.maven.artifact.resolver",
+        "org.apache.maven.artifact.resolver.filter",
+        "org.apache.maven.artifact.versioning",
+        "org.apache.maven.building",
+        "org.apache.maven.model",
+        "org.apache.maven.model.building",
+        "org.apache.maven.model.composition",
+        "org.apache.maven.model.inheritance",
+        "org.apache.maven.model.interpolation",
+        "org.apache.maven.model.io",
+        "org.apache.maven.model.io.xpp3",
+        "org.apache.maven.model.locator",
+        "org.apache.maven.model.management",
+        "org.apache.maven.model.merge",
+        "org.apache.maven.model.normalization",
+        "org.apache.maven.model.path",
+        "org.apache.maven.model.plugin",
+        "org.apache.maven.model.profile",
+        "org.apache.maven.model.profile.activation",
+        "org.apache.maven.model.resolution",
+        "org.apache.maven.model.superpom",
+        "org.apache.maven.model.validation",
+        "org.apache.maven.repository",
+        "org.apache.maven.repository.internal",
+        "org.apache.maven.repository.legacy.metadata",
+        "org.apache.maven.settings",
+        "org.apache.maven.settings.building",
+        "org.apache.maven.settings.crypto",
+        "org.apache.maven.settings.io",
+        "org.apache.maven.settings.io.xpp3",
+        "org.apache.maven.settings.merge",
+        "org.apache.maven.settings.validation",
+        "org.apache.maven.utils",
+        "org.apache.maven.wagon",
+        "org.apache.maven.wagon.authentication",
+        "org.apache.maven.wagon.authorization",
+        "org.apache.maven.wagon.events",
+        "org.apache.maven.wagon.observers",
+        "org.apache.maven.wagon.providers.http",
+        "org.apache.maven.wagon.proxy",
+        "org.apache.maven.wagon.repository",
+        "org.apache.maven.wagon.resource",
+        "org.apache.maven.wagon.shared.http",
+        "org.codehaus.plexus",
+        "org.codehaus.plexus.component",
+        "org.codehaus.plexus.component.annotations",
+        "org.codehaus.plexus.component.composition",
+        "org.codehaus.plexus.component.configurator",
+        "org.codehaus.plexus.component.configurator.converters",
+        "org.codehaus.plexus.component.configurator.converters.basic",
+        "org.codehaus.plexus.component.configurator.converters.composite",
+        "org.codehaus.plexus.component.configurator.converters.lookup",
+        "org.codehaus.plexus.component.configurator.converters.special",
+        "org.codehaus.plexus.component.configurator.expression",
+        "org.codehaus.plexus.component.factory",
+        "org.codehaus.plexus.component.repository",
+        "org.codehaus.plexus.component.repository.exception",
+        "org.codehaus.plexus.configuration",
+        "org.codehaus.plexus.configuration.xml",
+        "org.codehaus.plexus.context",
+        "org.codehaus.plexus.interpolation",
+        "org.codehaus.plexus.interpolation.fixed",
+        "org.codehaus.plexus.interpolation.multi",
+        "org.codehaus.plexus.interpolation.object",
+        "org.codehaus.plexus.interpolation.os",
+        "org.codehaus.plexus.interpolation.reflection",
+        "org.codehaus.plexus.interpolation.util",
+        "org.codehaus.plexus.logging",
+        "org.codehaus.plexus.logging.console",
+        "org.codehaus.plexus.personality.plexus.lifecycle.phase",
+        "org.codehaus.plexus.util",
+        "org.codehaus.plexus.util.cli",
+        "org.codehaus.plexus.util.cli.shell",
+        "org.codehaus.plexus.util.dag",
+        "org.codehaus.plexus.util.introspection",
+        "org.codehaus.plexus.util.io",
+        "org.codehaus.plexus.util.reflection",
+        "org.codehaus.plexus.util.xml",
+        "org.codehaus.plexus.util.xml.pull",
+        "org.eclipse.aether",
+        "org.eclipse.aether.artifact",
+        "org.eclipse.aether.collection",
+        "org.eclipse.aether.connector.basic",
+        "org.eclipse.aether.deployment",
+        "org.eclipse.aether.graph",
+        "org.eclipse.aether.impl",
+        "org.eclipse.aether.impl.guice",
+        "org.eclipse.aether.installation",
+        "org.eclipse.aether.internal.impl",
+        "org.eclipse.aether.internal.impl.checksum",
+        "org.eclipse.aether.internal.impl.collect",
+        "org.eclipse.aether.internal.impl.collect.bf",
+        "org.eclipse.aether.internal.impl.collect.df",
+        "org.eclipse.aether.internal.impl.filter",
+        "org.eclipse.aether.internal.impl.resolution",
+        "org.eclipse.aether.internal.impl.slf4j",
+        "org.eclipse.aether.internal.impl.synccontext",
+        "org.eclipse.aether.internal.impl.synccontext.legacy",
+        "org.eclipse.aether.internal.impl.synccontext.named",
+        "org.eclipse.aether.internal.impl.synccontext.named.providers",
+        "org.eclipse.aether.internal.transport.wagon",
+        "org.eclipse.aether.metadata",
+        "org.eclipse.aether.named",
+        "org.eclipse.aether.named.providers",
+        "org.eclipse.aether.named.support",
+        "org.eclipse.aether.repository",
+        "org.eclipse.aether.resolution",
+        "org.eclipse.aether.spi.checksums",
+        "org.eclipse.aether.spi.connector",
+        "org.eclipse.aether.spi.connector.checksum",
+        "org.eclipse.aether.spi.connector.filter",
+        "org.eclipse.aether.spi.connector.layout",
+        "org.eclipse.aether.spi.connector.transport",
+        "org.eclipse.aether.spi.io",
+        "org.eclipse.aether.spi.localrepo",
+        "org.eclipse.aether.spi.locator",
+        "org.eclipse.aether.spi.log",
+        "org.eclipse.aether.spi.resolution",
+        "org.eclipse.aether.spi.synccontext",
+        "org.eclipse.aether.supplier",
+        "org.eclipse.aether.transfer",
+        "org.eclipse.aether.transform",
+        "org.eclipse.aether.transport.file",
+        "org.eclipse.aether.transport.http",
+        "org.eclipse.aether.transport.wagon",
+        "org.eclipse.aether.util",
+        "org.eclipse.aether.util.artifact",
+        "org.eclipse.aether.util.concurrency",
+        "org.eclipse.aether.util.filter",
+        "org.eclipse.aether.util.graph.manager",
+        "org.eclipse.aether.util.graph.selector",
+        "org.eclipse.aether.util.graph.transformer",
+        "org.eclipse.aether.util.graph.traverser",
+        "org.eclipse.aether.util.graph.version",
+        "org.eclipse.aether.util.graph.visitor",
+        "org.eclipse.aether.util.listener",
+        "org.eclipse.aether.util.repository",
+        "org.eclipse.aether.util.version",
+        "org.eclipse.aether.version",
+        "org.eclipse.sisu",
+        "org.eclipse.sisu.bean",
+        "org.eclipse.sisu.inject",
+        "org.eclipse.sisu.launch",
+        "org.eclipse.sisu.osgi",
+        "org.eclipse.sisu.plexus",
+        "org.eclipse.sisu.space",
+        "org.eclipse.sisu.space.asm",
+        "org.eclipse.sisu.wire",
+        "org.jdom2",
+        "org.jdom2.adapters",
+        "org.jdom2.filter",
+        "org.jdom2.input",
+        "org.jdom2.input.sax",
+        "org.jdom2.input.stax",
+        "org.jdom2.internal",
+        "org.jdom2.located",
+        "org.jdom2.output",
+        "org.jdom2.output.support",
+        "org.jdom2.transform",
+        "org.jdom2.util",
+        "org.jdom2.xpath",
+        "org.jdom2.xpath.jaxen",
+        "org.jdom2.xpath.util",
+        "org.json",
+        "org.jsoup",
+        "org.jsoup.helper",
+        "org.jsoup.internal",
+        "org.jsoup.nodes",
+        "org.jsoup.parser",
+        "org.jsoup.safety",
+        "org.jsoup.select",
+        "org.mule.api.annotation",
+        "org.mule.api.annotation.jpms",
+        "org.mule.api.annotation.properties",
+        "org.mule.maven.client.api",
+        "org.mule.maven.client.api.exception",
+        "org.mule.maven.client.api.model",
+        "org.mule.maven.client.internal",
+        "org.mule.maven.client.internal.dependency",
+        "org.mule.maven.client.internal.pom",
+        "org.mule.maven.client.internal.repository",
+        "org.mule.maven.client.internal.util",
+        "org.mule.maven.client.internal.version",
+        "org.mule.maven.client.internal.wagon",
+        "org.mule.maven.pom.parser.api",
+        "org.mule.maven.pom.parser.api.model",
+        "org.mule.maven.pom.parser.internal",
+        "org.mule.maven.pom.parser.internal.model",
+        "org.mule.maven.pom.parser.internal.util",
+        "org.mule.munit.common.behavior",
+        "org.mule.munit.common.exception",
+        "org.mule.munit.common.properties",
+        "org.mule.munit.common.protocol.listeners",
+        "org.mule.munit.common.protocol.message",
+        "org.mule.munit.common.protocol.notifiers",
+        "org.mule.munit.common.util",
+        "org.mule.munit.remote",
+        "org.mule.munit.remote.api.client",
+        "org.mule.munit.remote.api.configuration",
+        "org.mule.munit.remote.classloading",
+        "org.mule.munit.remote.container",
+        "org.mule.munit.remote.container.model",
+        "org.mule.munit.remote.coverage",
+        "org.mule.munit.remote.coverage.model",
+        "org.mule.munit.remote.coverage.printer",
+        "org.mule.munit.remote.coverage.printer.model",
+        "org.mule.munit.remote.coverage.printer.model.sonar",
+        "org.mule.munit.remote.coverage.server",
+        "org.mule.munit.remote.exception",
+        "org.mule.munit.remote.logging",
+        "org.mule.munit.remote.notifier",
+        "org.mule.munit.remote.notifiers",
+        "org.mule.munit.remote.properties",
+        "org.mule.munit.remote.properties.deploy",
+        "org.mule.munit.remote.runtime.utils",
+        "org.mule.runtime.module.embedded.api",
+        "org.mule.runtime.module.embedded.api.controller",
+        "org.mule.runtime.module.embedded.api.dependencies",
+        "org.mule.runtime.module.embedded.commons.api",
+        "org.mule.runtime.module.embedded.commons.internal",
+        "org.mule.runtime.module.embedded.commons.internal.utils",
+        "org.mule.runtime.module.embedded.internal",
+        "org.mule.runtime.module.embedded.internal.classloading",
+        "org.mule.runtime.module.embedded.internal.controller",
+        "org.mule.runtime.module.embedded.internal.dependencies",
+        "org.mule.runtime.module.embedded.internal.jvm",
+        "org.mule.runtime.module.embedded.internal.legacy",
+        "org.mule.runtime.module.embedded.internal.utils",
+        "org.slf4j",
+        "org.slf4j.event",
+        "org.slf4j.helpers",
+        "org.slf4j.spi",
+        "org.sonatype.inject",
+        "org.sonatype.plexus.components.cipher",
+        "org.sonatype.plexus.components.sec.dispatcher",
+        "org.sonatype.plexus.components.sec.dispatcher.model",
+        "org.sonatype.plexus.components.sec.dispatcher.model.io.xpp3",
+        "org.xmlpull.v1",
+        "org.yaml.snakeyaml",
+        "org.yaml.snakeyaml.comments",
+        "org.yaml.snakeyaml.composer",
+        "org.yaml.snakeyaml.constructor",
+        "org.yaml.snakeyaml.emitter",
+        "org.yaml.snakeyaml.env",
+        "org.yaml.snakeyaml.error",
+        "org.yaml.snakeyaml.events",
+        "org.yaml.snakeyaml.extensions.compactnotation",
+        "org.yaml.snakeyaml.external.biz.base64Coder",
+        "org.yaml.snakeyaml.external.com.google.gdata.util.common.base",
+        "org.yaml.snakeyaml.inspector",
+        "org.yaml.snakeyaml.internal",
+        "org.yaml.snakeyaml.introspector",
+        "org.yaml.snakeyaml.nodes",
+        "org.yaml.snakeyaml.parser",
+        "org.yaml.snakeyaml.reader",
+        "org.yaml.snakeyaml.representer",
+        "org.yaml.snakeyaml.resolver",
+        "org.yaml.snakeyaml.scanner",
+        "org.yaml.snakeyaml.serializer",
+        "org.yaml.snakeyaml.tokens",
+        "org.yaml.snakeyaml.util"
+      ],
+      "resources": [
+        ".keep",
+        "CHANGELOG.asciidoc",
+        "CHANGELOG.html",
+        "LICENSE",
+        "Log4j-charsets.properties",
+        "Log4j-config.xsd",
+        "Log4j-events.dtd",
+        "Log4j-events.xsd",
+        "Log4j-levels.xsd",
+        "META-INF/DEPENDENCIES",
+        "META-INF/LICENSE",
+        "META-INF/LICENSE.md",
+        "META-INF/LICENSE.txt",
+        "META-INF/MANIFEST.MF",
+        "META-INF/NOTICE",
+        "META-INF/NOTICE.md",
+        "META-INF/NOTICE.txt",
+        "META-INF/jdom-info.xml",
+        "META-INF/jsoup/LICENSE",
+        "META-INF/maven/com.evanlennick/retry4j/pom.properties",
+        "META-INF/maven/com.evanlennick/retry4j/pom.xml",
+        "META-INF/maven/com.google.code.gson/gson/pom.properties",
+        "META-INF/maven/com.google.code.gson/gson/pom.xml",
+        "META-INF/maven/com.google.errorprone/error_prone_annotations/pom.properties",
+        "META-INF/maven/com.google.errorprone/error_prone_annotations/pom.xml",
+        "META-INF/maven/com.mulesoft.munit/munit-common/pom.properties",
+        "META-INF/maven/com.mulesoft.munit/munit-common/pom.xml",
+        "META-INF/maven/com.mulesoft.munit/munit-remote/pom.properties",
+        "META-INF/maven/com.mulesoft.munit/munit-remote/pom.xml",
+        "META-INF/maven/com.thoughtworks.xstream/xstream/pom.properties",
+        "META-INF/maven/com.thoughtworks.xstream/xstream/pom.xml",
+        "META-INF/maven/com.vdurmont/semver4j/pom.properties",
+        "META-INF/maven/com.vdurmont/semver4j/pom.xml",
+        "META-INF/maven/commons-codec/commons-codec/pom.properties",
+        "META-INF/maven/commons-codec/commons-codec/pom.xml",
+        "META-INF/maven/commons-io/commons-io/pom.properties",
+        "META-INF/maven/commons-io/commons-io/pom.xml",
+        "META-INF/maven/commons-logging/commons-logging/pom.properties",
+        "META-INF/maven/commons-logging/commons-logging/pom.xml",
+        "META-INF/maven/de.vandermeer/asciilist/pom.properties",
+        "META-INF/maven/de.vandermeer/asciilist/pom.xml",
+        "META-INF/maven/de.vandermeer/asciitable/pom.properties",
+        "META-INF/maven/de.vandermeer/asciitable/pom.xml",
+        "META-INF/maven/io.github.x-stream/mxparser/pom.properties",
+        "META-INF/maven/io.github.x-stream/mxparser/pom.xml",
+        "META-INF/maven/jakarta.activation/jakarta.activation-api/pom.properties",
+        "META-INF/maven/jakarta.activation/jakarta.activation-api/pom.xml",
+        "META-INF/maven/org.apache.commons/commons-lang3/pom.properties",
+        "META-INF/maven/org.apache.commons/commons-lang3/pom.xml",
+        "META-INF/maven/org.apache.httpcomponents/httpclient/pom.properties",
+        "META-INF/maven/org.apache.httpcomponents/httpclient/pom.xml",
+        "META-INF/maven/org.apache.httpcomponents/httpcore/pom.properties",
+        "META-INF/maven/org.apache.httpcomponents/httpcore/pom.xml",
+        "META-INF/maven/org.apache.logging.log4j/log4j-api/pom.properties",
+        "META-INF/maven/org.apache.logging.log4j/log4j-api/pom.xml",
+        "META-INF/maven/org.apache.logging.log4j/log4j-core/pom.properties",
+        "META-INF/maven/org.apache.logging.log4j/log4j-core/pom.xml",
+        "META-INF/maven/org.apache.logging.log4j/log4j-slf4j2-impl/pom.properties",
+        "META-INF/maven/org.apache.logging.log4j/log4j-slf4j2-impl/pom.xml",
+        "META-INF/maven/org.apache.maven.resolver/maven-resolver-api/pom.properties",
+        "META-INF/maven/org.apache.maven.resolver/maven-resolver-api/pom.xml",
+        "META-INF/maven/org.apache.maven.resolver/maven-resolver-connector-basic/pom.properties",
+        "META-INF/maven/org.apache.maven.resolver/maven-resolver-connector-basic/pom.xml",
+        "META-INF/maven/org.apache.maven.resolver/maven-resolver-impl/pom.properties",
+        "META-INF/maven/org.apache.maven.resolver/maven-resolver-impl/pom.xml",
+        "META-INF/maven/org.apache.maven.resolver/maven-resolver-named-locks/pom.properties",
+        "META-INF/maven/org.apache.maven.resolver/maven-resolver-named-locks/pom.xml",
+        "META-INF/maven/org.apache.maven.resolver/maven-resolver-spi/pom.properties",
+        "META-INF/maven/org.apache.maven.resolver/maven-resolver-spi/pom.xml",
+        "META-INF/maven/org.apache.maven.resolver/maven-resolver-supplier/pom.properties",
+        "META-INF/maven/org.apache.maven.resolver/maven-resolver-supplier/pom.xml",
+        "META-INF/maven/org.apache.maven.resolver/maven-resolver-transport-file/pom.properties",
+        "META-INF/maven/org.apache.maven.resolver/maven-resolver-transport-file/pom.xml",
+        "META-INF/maven/org.apache.maven.resolver/maven-resolver-transport-http/pom.properties",
+        "META-INF/maven/org.apache.maven.resolver/maven-resolver-transport-http/pom.xml",
+        "META-INF/maven/org.apache.maven.resolver/maven-resolver-transport-wagon/pom.properties",
+        "META-INF/maven/org.apache.maven.resolver/maven-resolver-transport-wagon/pom.xml",
+        "META-INF/maven/org.apache.maven.resolver/maven-resolver-util/pom.properties",
+        "META-INF/maven/org.apache.maven.resolver/maven-resolver-util/pom.xml",
+        "META-INF/maven/org.apache.maven.wagon/wagon-http-shared/pom.properties",
+        "META-INF/maven/org.apache.maven.wagon/wagon-http-shared/pom.xml",
+        "META-INF/maven/org.apache.maven.wagon/wagon-http/pom.properties",
+        "META-INF/maven/org.apache.maven.wagon/wagon-http/pom.xml",
+        "META-INF/maven/org.apache.maven.wagon/wagon-provider-api/pom.properties",
+        "META-INF/maven/org.apache.maven.wagon/wagon-provider-api/pom.xml",
+        "META-INF/maven/org.apache.maven/maven-artifact/pom.properties",
+        "META-INF/maven/org.apache.maven/maven-artifact/pom.xml",
+        "META-INF/maven/org.apache.maven/maven-builder-support/pom.properties",
+        "META-INF/maven/org.apache.maven/maven-builder-support/pom.xml",
+        "META-INF/maven/org.apache.maven/maven-model-builder/pom.properties",
+        "META-INF/maven/org.apache.maven/maven-model-builder/pom.xml",
+        "META-INF/maven/org.apache.maven/maven-model/pom.properties",
+        "META-INF/maven/org.apache.maven/maven-model/pom.xml",
+        "META-INF/maven/org.apache.maven/maven-repository-metadata/pom.properties",
+        "META-INF/maven/org.apache.maven/maven-repository-metadata/pom.xml",
+        "META-INF/maven/org.apache.maven/maven-resolver-provider/pom.properties",
+        "META-INF/maven/org.apache.maven/maven-resolver-provider/pom.xml",
+        "META-INF/maven/org.apache.maven/maven-settings-builder/pom.properties",
+        "META-INF/maven/org.apache.maven/maven-settings-builder/pom.xml",
+        "META-INF/maven/org.apache.maven/maven-settings/pom.properties",
+        "META-INF/maven/org.apache.maven/maven-settings/pom.xml",
+        "META-INF/maven/org.codehaus.plexus/plexus-cipher/pom.properties",
+        "META-INF/maven/org.codehaus.plexus/plexus-cipher/pom.xml",
+        "META-INF/maven/org.codehaus.plexus/plexus-component-annotations/pom.properties",
+        "META-INF/maven/org.codehaus.plexus/plexus-component-annotations/pom.xml",
+        "META-INF/maven/org.codehaus.plexus/plexus-interpolation/pom.properties",
+        "META-INF/maven/org.codehaus.plexus/plexus-interpolation/pom.xml",
+        "META-INF/maven/org.codehaus.plexus/plexus-sec-dispatcher/pom.properties",
+        "META-INF/maven/org.codehaus.plexus/plexus-sec-dispatcher/pom.xml",
+        "META-INF/maven/org.codehaus.plexus/plexus-utils/pom.properties",
+        "META-INF/maven/org.codehaus.plexus/plexus-utils/pom.xml",
+        "META-INF/maven/org.codehaus.plexus/plexus-xml/pom.properties",
+        "META-INF/maven/org.codehaus.plexus/plexus-xml/pom.xml",
+        "META-INF/maven/org.eclipse.sisu/org.eclipse.sisu.inject/pom.properties",
+        "META-INF/maven/org.eclipse.sisu/org.eclipse.sisu.inject/pom.xml",
+        "META-INF/maven/org.eclipse.sisu/org.eclipse.sisu.plexus/pom.properties",
+        "META-INF/maven/org.eclipse.sisu/org.eclipse.sisu.plexus/pom.xml",
+        "META-INF/maven/org.json/json/pom.properties",
+        "META-INF/maven/org.json/json/pom.xml",
+        "META-INF/maven/org.jsoup/jsoup/pom.properties",
+        "META-INF/maven/org.jsoup/jsoup/pom.xml",
+        "META-INF/maven/org.mule.runtime/api-annotations/pom.properties",
+        "META-INF/maven/org.mule.runtime/api-annotations/pom.xml",
+        "META-INF/maven/org.mule.runtime/mule-embedded-api/pom.properties",
+        "META-INF/maven/org.mule.runtime/mule-embedded-api/pom.xml",
+        "META-INF/maven/org.mule.runtime/mule-embedded-commons/pom.properties",
+        "META-INF/maven/org.mule.runtime/mule-embedded-commons/pom.xml",
+        "META-INF/maven/org.mule/maven-model-shaded/pom.properties",
+        "META-INF/maven/org.mule/maven-model-shaded/pom.xml",
+        "META-INF/maven/org.mule/mule-maven-client-api/pom.properties",
+        "META-INF/maven/org.mule/mule-maven-client-api/pom.xml",
+        "META-INF/maven/org.mule/mule-maven-client-impl/pom.properties",
+        "META-INF/maven/org.mule/mule-maven-client-impl/pom.xml",
+        "META-INF/maven/org.mule/mule-maven-pom-parser-api/pom.properties",
+        "META-INF/maven/org.mule/mule-maven-pom-parser-api/pom.xml",
+        "META-INF/maven/org.mule/mule-maven-pom-parser-impl/pom.properties",
+        "META-INF/maven/org.mule/mule-maven-pom-parser-impl/pom.xml",
+        "META-INF/maven/org.slf4j/jcl-over-slf4j/pom.properties",
+        "META-INF/maven/org.slf4j/jcl-over-slf4j/pom.xml",
+        "META-INF/maven/org.slf4j/slf4j-api/pom.properties",
+        "META-INF/maven/org.slf4j/slf4j-api/pom.xml",
+        "META-INF/maven/org.yaml/snakeyaml/pom.properties",
+        "META-INF/maven/org.yaml/snakeyaml/pom.xml",
+        "META-INF/mule-artifact/mule-artifact.json",
+        "META-INF/mule-module.properties",
+        "META-INF/org/apache/logging/log4j/core/config/plugins/Log4j2Plugins.dat",
+        "META-INF/plexus/components.xml",
+        "META-INF/proguard/gson.pro",
+        "META-INF/services/javax.annotation.processing.Processor",
+        "META-INF/services/org.apache.commons.logging.LogFactory",
+        "META-INF/services/org.apache.logging.log4j.core.util.ContextDataProvider",
+        "META-INF/services/org.apache.logging.log4j.message.ThreadDumpMessage$ThreadInfoFactory",
+        "META-INF/services/org.apache.logging.log4j.spi.Provider",
+        "META-INF/services/org.apache.logging.log4j.util.PropertySource",
+        "META-INF/services/org.mule.maven.client.api.MavenClientProvider",
+        "META-INF/services/org.mule.maven.client.api.VersionUtils",
+        "META-INF/services/org.mule.maven.pom.parser.api.MavenPomParserProvider",
+        "META-INF/services/org.mule.maven.pom.parser.api.model.MavenModelBuilderProvider",
+        "META-INF/services/org.slf4j.spi.SLF4JServiceProvider",
+        "META-INF/services/org.xmlpull.v1.XmlPullParser",
+        "META-INF/services/org.xmlpull.v1.XmlPullParserFactory",
+        "META-INF/sisu/javax.inject.Named",
+        "README.asciidoc",
+        "README.html",
+        "XMLPULL_1_1_3_1_VERSION",
+        "about.html",
+        "artifact-info.properties",
+        "assembly-descriptor.xml",
+        "default-log4j2-config.xml",
+        "fonts/muleicons.ttf",
+        "freemarker/ext/beans/DefaultMemberAccessPolicy-rules",
+        "freemarker/ext/beans/unsafeMethods.properties",
+        "freemarker/version.properties",
+        "icons/004_logo.svg",
+        "licenses/extreme.indiana.edu.license.TXT",
+        "licenses/javolution.license.TXT",
+        "licenses/thoughtworks.TXT",
+        "mozilla/public-suffix-list.txt",
+        "mulesoft-styles.css",
+        "org/apache/commons/codec/language/bm/ash_approx_any.txt",
+        "org/apache/commons/codec/language/bm/ash_approx_common.txt",
+        "org/apache/commons/codec/language/bm/ash_approx_cyrillic.txt",
+        "org/apache/commons/codec/language/bm/ash_approx_english.txt",
+        "org/apache/commons/codec/language/bm/ash_approx_french.txt",
+        "org/apache/commons/codec/language/bm/ash_approx_german.txt",
+        "org/apache/commons/codec/language/bm/ash_approx_hebrew.txt",
+        "org/apache/commons/codec/language/bm/ash_approx_hungarian.txt",
+        "org/apache/commons/codec/language/bm/ash_approx_polish.txt",
+        "org/apache/commons/codec/language/bm/ash_approx_romanian.txt",
+        "org/apache/commons/codec/language/bm/ash_approx_russian.txt",
+        "org/apache/commons/codec/language/bm/ash_approx_spanish.txt",
+        "org/apache/commons/codec/language/bm/ash_exact_any.txt",
+        "org/apache/commons/codec/language/bm/ash_exact_approx_common.txt",
+        "org/apache/commons/codec/language/bm/ash_exact_common.txt",
+        "org/apache/commons/codec/language/bm/ash_exact_cyrillic.txt",
+        "org/apache/commons/codec/language/bm/ash_exact_english.txt",
+        "org/apache/commons/codec/language/bm/ash_exact_french.txt",
+        "org/apache/commons/codec/language/bm/ash_exact_german.txt",
+        "org/apache/commons/codec/language/bm/ash_exact_hebrew.txt",
+        "org/apache/commons/codec/language/bm/ash_exact_hungarian.txt",
+        "org/apache/commons/codec/language/bm/ash_exact_polish.txt",
+        "org/apache/commons/codec/language/bm/ash_exact_romanian.txt",
+        "org/apache/commons/codec/language/bm/ash_exact_russian.txt",
+        "org/apache/commons/codec/language/bm/ash_exact_spanish.txt",
+        "org/apache/commons/codec/language/bm/ash_hebrew_common.txt",
+        "org/apache/commons/codec/language/bm/ash_lang.txt",
+        "org/apache/commons/codec/language/bm/ash_languages.txt",
+        "org/apache/commons/codec/language/bm/ash_rules_any.txt",
+        "org/apache/commons/codec/language/bm/ash_rules_cyrillic.txt",
+        "org/apache/commons/codec/language/bm/ash_rules_english.txt",
+        "org/apache/commons/codec/language/bm/ash_rules_french.txt",
+        "org/apache/commons/codec/language/bm/ash_rules_german.txt",
+        "org/apache/commons/codec/language/bm/ash_rules_hebrew.txt",
+        "org/apache/commons/codec/language/bm/ash_rules_hungarian.txt",
+        "org/apache/commons/codec/language/bm/ash_rules_polish.txt",
+        "org/apache/commons/codec/language/bm/ash_rules_romanian.txt",
+        "org/apache/commons/codec/language/bm/ash_rules_russian.txt",
+        "org/apache/commons/codec/language/bm/ash_rules_spanish.txt",
+        "org/apache/commons/codec/language/bm/gen_approx_any.txt",
+        "org/apache/commons/codec/language/bm/gen_approx_arabic.txt",
+        "org/apache/commons/codec/language/bm/gen_approx_common.txt",
+        "org/apache/commons/codec/language/bm/gen_approx_cyrillic.txt",
+        "org/apache/commons/codec/language/bm/gen_approx_czech.txt",
+        "org/apache/commons/codec/language/bm/gen_approx_dutch.txt",
+        "org/apache/commons/codec/language/bm/gen_approx_english.txt",
+        "org/apache/commons/codec/language/bm/gen_approx_french.txt",
+        "org/apache/commons/codec/language/bm/gen_approx_german.txt",
+        "org/apache/commons/codec/language/bm/gen_approx_greek.txt",
+        "org/apache/commons/codec/language/bm/gen_approx_greeklatin.txt",
+        "org/apache/commons/codec/language/bm/gen_approx_hebrew.txt",
+        "org/apache/commons/codec/language/bm/gen_approx_hungarian.txt",
+        "org/apache/commons/codec/language/bm/gen_approx_italian.txt",
+        "org/apache/commons/codec/language/bm/gen_approx_polish.txt",
+        "org/apache/commons/codec/language/bm/gen_approx_portuguese.txt",
+        "org/apache/commons/codec/language/bm/gen_approx_romanian.txt",
+        "org/apache/commons/codec/language/bm/gen_approx_russian.txt",
+        "org/apache/commons/codec/language/bm/gen_approx_spanish.txt",
+        "org/apache/commons/codec/language/bm/gen_approx_turkish.txt",
+        "org/apache/commons/codec/language/bm/gen_exact_any.txt",
+        "org/apache/commons/codec/language/bm/gen_exact_approx_common.txt",
+        "org/apache/commons/codec/language/bm/gen_exact_arabic.txt",
+        "org/apache/commons/codec/language/bm/gen_exact_common.txt",
+        "org/apache/commons/codec/language/bm/gen_exact_cyrillic.txt",
+        "org/apache/commons/codec/language/bm/gen_exact_czech.txt",
+        "org/apache/commons/codec/language/bm/gen_exact_dutch.txt",
+        "org/apache/commons/codec/language/bm/gen_exact_english.txt",
+        "org/apache/commons/codec/language/bm/gen_exact_french.txt",
+        "org/apache/commons/codec/language/bm/gen_exact_german.txt",
+        "org/apache/commons/codec/language/bm/gen_exact_greek.txt",
+        "org/apache/commons/codec/language/bm/gen_exact_greeklatin.txt",
+        "org/apache/commons/codec/language/bm/gen_exact_hebrew.txt",
+        "org/apache/commons/codec/language/bm/gen_exact_hungarian.txt",
+        "org/apache/commons/codec/language/bm/gen_exact_italian.txt",
+        "org/apache/commons/codec/language/bm/gen_exact_polish.txt",
+        "org/apache/commons/codec/language/bm/gen_exact_portuguese.txt",
+        "org/apache/commons/codec/language/bm/gen_exact_romanian.txt",
+        "org/apache/commons/codec/language/bm/gen_exact_russian.txt",
+        "org/apache/commons/codec/language/bm/gen_exact_spanish.txt",
+        "org/apache/commons/codec/language/bm/gen_exact_turkish.txt",
+        "org/apache/commons/codec/language/bm/gen_hebrew_common.txt",
+        "org/apache/commons/codec/language/bm/gen_lang.txt",
+        "org/apache/commons/codec/language/bm/gen_languages.txt",
+        "org/apache/commons/codec/language/bm/gen_rules_any.txt",
+        "org/apache/commons/codec/language/bm/gen_rules_arabic.txt",
+        "org/apache/commons/codec/language/bm/gen_rules_cyrillic.txt",
+        "org/apache/commons/codec/language/bm/gen_rules_czech.txt",
+        "org/apache/commons/codec/language/bm/gen_rules_dutch.txt",
+        "org/apache/commons/codec/language/bm/gen_rules_english.txt",
+        "org/apache/commons/codec/language/bm/gen_rules_french.txt",
+        "org/apache/commons/codec/language/bm/gen_rules_german.txt",
+        "org/apache/commons/codec/language/bm/gen_rules_greek.txt",
+        "org/apache/commons/codec/language/bm/gen_rules_greeklatin.txt",
+        "org/apache/commons/codec/language/bm/gen_rules_hebrew.txt",
+        "org/apache/commons/codec/language/bm/gen_rules_hungarian.txt",
+        "org/apache/commons/codec/language/bm/gen_rules_italian.txt",
+        "org/apache/commons/codec/language/bm/gen_rules_polish.txt",
+        "org/apache/commons/codec/language/bm/gen_rules_portuguese.txt",
+        "org/apache/commons/codec/language/bm/gen_rules_romanian.txt",
+        "org/apache/commons/codec/language/bm/gen_rules_russian.txt",
+        "org/apache/commons/codec/language/bm/gen_rules_spanish.txt",
+        "org/apache/commons/codec/language/bm/gen_rules_turkish.txt",
+        "org/apache/commons/codec/language/bm/lang.txt",
+        "org/apache/commons/codec/language/bm/sep_approx_any.txt",
+        "org/apache/commons/codec/language/bm/sep_approx_common.txt",
+        "org/apache/commons/codec/language/bm/sep_approx_french.txt",
+        "org/apache/commons/codec/language/bm/sep_approx_hebrew.txt",
+        "org/apache/commons/codec/language/bm/sep_approx_italian.txt",
+        "org/apache/commons/codec/language/bm/sep_approx_portuguese.txt",
+        "org/apache/commons/codec/language/bm/sep_approx_spanish.txt",
+        "org/apache/commons/codec/language/bm/sep_exact_any.txt",
+        "org/apache/commons/codec/language/bm/sep_exact_approx_common.txt",
+        "org/apache/commons/codec/language/bm/sep_exact_common.txt",
+        "org/apache/commons/codec/language/bm/sep_exact_french.txt",
+        "org/apache/commons/codec/language/bm/sep_exact_hebrew.txt",
+        "org/apache/commons/codec/language/bm/sep_exact_italian.txt",
+        "org/apache/commons/codec/language/bm/sep_exact_portuguese.txt",
+        "org/apache/commons/codec/language/bm/sep_exact_spanish.txt",
+        "org/apache/commons/codec/language/bm/sep_hebrew_common.txt",
+        "org/apache/commons/codec/language/bm/sep_lang.txt",
+        "org/apache/commons/codec/language/bm/sep_languages.txt",
+        "org/apache/commons/codec/language/bm/sep_rules_any.txt",
+        "org/apache/commons/codec/language/bm/sep_rules_french.txt",
+        "org/apache/commons/codec/language/bm/sep_rules_hebrew.txt",
+        "org/apache/commons/codec/language/bm/sep_rules_italian.txt",
+        "org/apache/commons/codec/language/bm/sep_rules_portuguese.txt",
+        "org/apache/commons/codec/language/bm/sep_rules_spanish.txt",
+        "org/apache/commons/codec/language/dmrules.txt",
+        "org/apache/http/client/version.properties",
+        "org/apache/http/version.properties",
+        "org/apache/maven/model/pom-4.0.0.xml",
+        "overview.html",
+        "templates/resource.ftl",
+        "templates/summary.ftl",
+        "tsorter.css",
+        "tsorter.min.js"
+      ]
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "org.apache.logging.log4j",
+        "artifactId": "log4j-core",
+        "version": "2.20.0",
+        "type": "jar"
+      },
+      "uri": "file:/Users/megha/.m2/repository/org/apache/logging/log4j/log4j-core/2.20.0/log4j-core-2.20.0.jar",
+      "packages": [
+        "META-INF.versions.9.org.apache.logging.log4j.core.util",
+        "org.apache.logging.log4j.core",
+        "org.apache.logging.log4j.core.appender",
+        "org.apache.logging.log4j.core.appender.db",
+        "org.apache.logging.log4j.core.appender.db.jdbc",
+        "org.apache.logging.log4j.core.appender.mom",
+        "org.apache.logging.log4j.core.appender.mom.jeromq",
+        "org.apache.logging.log4j.core.appender.mom.kafka",
+        "org.apache.logging.log4j.core.appender.nosql",
+        "org.apache.logging.log4j.core.appender.rewrite",
+        "org.apache.logging.log4j.core.appender.rolling",
+        "org.apache.logging.log4j.core.appender.rolling.action",
+        "org.apache.logging.log4j.core.appender.routing",
+        "org.apache.logging.log4j.core.async",
+        "org.apache.logging.log4j.core.config",
+        "org.apache.logging.log4j.core.config.arbiters",
+        "org.apache.logging.log4j.core.config.builder.api",
+        "org.apache.logging.log4j.core.config.builder.impl",
+        "org.apache.logging.log4j.core.config.composite",
+        "org.apache.logging.log4j.core.config.json",
+        "org.apache.logging.log4j.core.config.plugins",
+        "org.apache.logging.log4j.core.config.plugins.convert",
+        "org.apache.logging.log4j.core.config.plugins.processor",
+        "org.apache.logging.log4j.core.config.plugins.util",
+        "org.apache.logging.log4j.core.config.plugins.validation",
+        "org.apache.logging.log4j.core.config.plugins.validation.constraints",
+        "org.apache.logging.log4j.core.config.plugins.validation.validators",
+        "org.apache.logging.log4j.core.config.plugins.visitors",
+        "org.apache.logging.log4j.core.config.properties",
+        "org.apache.logging.log4j.core.config.status",
+        "org.apache.logging.log4j.core.config.xml",
+        "org.apache.logging.log4j.core.config.yaml",
+        "org.apache.logging.log4j.core.filter",
+        "org.apache.logging.log4j.core.filter.mutable",
+        "org.apache.logging.log4j.core.impl",
+        "org.apache.logging.log4j.core.jackson",
+        "org.apache.logging.log4j.core.jmx",
+        "org.apache.logging.log4j.core.layout",
+        "org.apache.logging.log4j.core.layout.internal",
+        "org.apache.logging.log4j.core.lookup",
+        "org.apache.logging.log4j.core.message",
+        "org.apache.logging.log4j.core.net",
+        "org.apache.logging.log4j.core.net.ssl",
+        "org.apache.logging.log4j.core.osgi",
+        "org.apache.logging.log4j.core.parser",
+        "org.apache.logging.log4j.core.pattern",
+        "org.apache.logging.log4j.core.script",
+        "org.apache.logging.log4j.core.selector",
+        "org.apache.logging.log4j.core.time",
+        "org.apache.logging.log4j.core.time.internal",
+        "org.apache.logging.log4j.core.tools",
+        "org.apache.logging.log4j.core.tools.picocli",
+        "org.apache.logging.log4j.core.util",
+        "org.apache.logging.log4j.core.util.datetime",
+        "org.apache.logging.log4j.core.util.internal"
+      ],
+      "resources": [
+        "Log4j-config.xsd",
+        "Log4j-events.dtd",
+        "Log4j-events.xsd",
+        "Log4j-levels.xsd",
+        "META-INF/DEPENDENCIES",
+        "META-INF/LICENSE",
+        "META-INF/MANIFEST.MF",
+        "META-INF/NOTICE",
+        "META-INF/maven/org.apache.logging.log4j/log4j-core/pom.properties",
+        "META-INF/maven/org.apache.logging.log4j/log4j-core/pom.xml",
+        "META-INF/org/apache/logging/log4j/core/config/plugins/Log4j2Plugins.dat",
+        "META-INF/services/javax.annotation.processing.Processor",
+        "META-INF/services/org.apache.logging.log4j.core.util.ContextDataProvider",
+        "META-INF/services/org.apache.logging.log4j.message.ThreadDumpMessage$ThreadInfoFactory",
+        "META-INF/services/org.apache.logging.log4j.spi.Provider"
+      ]
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "org.apache.logging.log4j",
+        "artifactId": "log4j-slf4j2-impl",
+        "version": "2.20.0",
+        "type": "jar"
+      },
+      "uri": "file:/Users/megha/.m2/repository/org/apache/logging/log4j/log4j-slf4j2-impl/2.20.0/log4j-slf4j2-impl-2.20.0.jar",
+      "packages": [
+        "org.apache.logging.slf4j"
+      ],
+      "resources": [
+        "META-INF/DEPENDENCIES",
+        "META-INF/LICENSE",
+        "META-INF/MANIFEST.MF",
+        "META-INF/NOTICE",
+        "META-INF/maven/org.apache.logging.log4j/log4j-slf4j2-impl/pom.properties",
+        "META-INF/maven/org.apache.logging.log4j/log4j-slf4j2-impl/pom.xml",
+        "META-INF/services/org.slf4j.spi.SLF4JServiceProvider"
+      ]
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.lmax",
+        "artifactId": "disruptor",
+        "version": "3.4.3",
+        "type": "jar"
+      },
+      "uri": "file:/Users/megha/.m2/repository/com/lmax/disruptor/3.4.3/disruptor-3.4.3.jar",
+      "packages": [
+        "com.lmax.disruptor",
+        "com.lmax.disruptor.dsl",
+        "com.lmax.disruptor.util"
+      ],
+      "resources": [
+        "META-INF/MANIFEST.MF"
+      ]
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "org.mule.runtime",
+        "artifactId": "mule-embedded-api",
+        "version": "1.10.1",
+        "type": "jar"
+      },
+      "uri": "file:/Users/megha/.m2/repository/org/mule/runtime/mule-embedded-api/1.10.1/mule-embedded-api-1.10.1.jar",
+      "packages": [
+        "META-INF.versions.11.org.mule.runtime.module.embedded.internal.utils",
+        "org.mule.runtime.module.embedded.api",
+        "org.mule.runtime.module.embedded.api.controller",
+        "org.mule.runtime.module.embedded.api.dependencies",
+        "org.mule.runtime.module.embedded.internal",
+        "org.mule.runtime.module.embedded.internal.classloading",
+        "org.mule.runtime.module.embedded.internal.controller",
+        "org.mule.runtime.module.embedded.internal.dependencies",
+        "org.mule.runtime.module.embedded.internal.jvm",
+        "org.mule.runtime.module.embedded.internal.legacy",
+        "org.mule.runtime.module.embedded.internal.utils"
+      ],
+      "resources": [
+        "META-INF/MANIFEST.MF",
+        "META-INF/maven/org.mule.runtime/mule-embedded-api/pom.properties",
+        "META-INF/maven/org.mule.runtime/mule-embedded-api/pom.xml",
+        "META-INF/mule-module.properties",
+        "artifact-info.properties"
+      ]
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "org.mule.runtime",
+        "artifactId": "mule-embedded-commons",
+        "version": "1.10.1",
+        "type": "jar"
+      },
+      "uri": "file:/Users/megha/.m2/repository/org/mule/runtime/mule-embedded-commons/1.10.1/mule-embedded-commons-1.10.1.jar",
+      "packages": [
+        "org.mule.runtime.module.embedded.commons.api",
+        "org.mule.runtime.module.embedded.commons.internal",
+        "org.mule.runtime.module.embedded.commons.internal.utils"
+      ],
+      "resources": [
+        "META-INF/MANIFEST.MF",
+        "META-INF/maven/org.mule.runtime/mule-embedded-commons/pom.properties",
+        "META-INF/maven/org.mule.runtime/mule-embedded-commons/pom.xml",
+        "META-INF/mule-module.properties"
+      ]
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "commons-logging",
+        "artifactId": "commons-logging",
+        "version": "1.3.1",
+        "type": "jar"
+      },
+      "uri": "file:/Users/megha/.m2/repository/commons-logging/commons-logging/1.3.1/commons-logging-1.3.1.jar",
+      "packages": [
+        "META-INF.versions.9",
+        "org.apache.commons.logging",
+        "org.apache.commons.logging.impl"
+      ],
+      "resources": [
+        "META-INF/LICENSE.txt",
+        "META-INF/MANIFEST.MF",
+        "META-INF/NOTICE.txt",
+        "META-INF/maven/commons-logging/commons-logging/pom.properties",
+        "META-INF/maven/commons-logging/commons-logging/pom.xml"
+      ]
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.evanlennick",
+        "artifactId": "retry4j",
+        "version": "0.15.0",
+        "type": "jar"
+      },
+      "uri": "file:/Users/megha/.m2/repository/com/evanlennick/retry4j/0.15.0/retry4j-0.15.0.jar",
+      "packages": [
+        "com.evanlennick.retry4j",
+        "com.evanlennick.retry4j.backoff",
+        "com.evanlennick.retry4j.config",
+        "com.evanlennick.retry4j.exception",
+        "com.evanlennick.retry4j.listener"
+      ],
+      "resources": [
+        "META-INF/MANIFEST.MF",
+        "META-INF/maven/com.evanlennick/retry4j/pom.properties",
+        "META-INF/maven/com.evanlennick/retry4j/pom.xml"
+      ]
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "org.jdom",
+        "artifactId": "jdom2",
+        "version": "2.0.6.1",
+        "type": "jar"
+      },
+      "uri": "file:/Users/megha/.m2/repository/org/jdom/jdom2/2.0.6.1/jdom2-2.0.6.1.jar",
+      "packages": [
+        "org.jdom2",
+        "org.jdom2.adapters",
+        "org.jdom2.filter",
+        "org.jdom2.input",
+        "org.jdom2.input.sax",
+        "org.jdom2.input.stax",
+        "org.jdom2.internal",
+        "org.jdom2.located",
+        "org.jdom2.output",
+        "org.jdom2.output.support",
+        "org.jdom2.transform",
+        "org.jdom2.util",
+        "org.jdom2.xpath",
+        "org.jdom2.xpath.jaxen",
+        "org.jdom2.xpath.util"
+      ],
+      "resources": [
+        "META-INF/LICENSE.txt",
+        "META-INF/MANIFEST.MF",
+        "META-INF/jdom-info.xml"
+      ]
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "org.yaml",
+        "artifactId": "snakeyaml",
+        "version": "2.0",
+        "type": "jar"
+      },
+      "uri": "file:/Users/megha/.m2/repository/org/yaml/snakeyaml/2.0/snakeyaml-2.0.jar",
+      "packages": [
+        "META-INF.versions.9",
+        "META-INF.versions.9.org.yaml.snakeyaml.internal",
+        "org.yaml.snakeyaml",
+        "org.yaml.snakeyaml.comments",
+        "org.yaml.snakeyaml.composer",
+        "org.yaml.snakeyaml.constructor",
+        "org.yaml.snakeyaml.emitter",
+        "org.yaml.snakeyaml.env",
+        "org.yaml.snakeyaml.error",
+        "org.yaml.snakeyaml.events",
+        "org.yaml.snakeyaml.extensions.compactnotation",
+        "org.yaml.snakeyaml.external.biz.base64Coder",
+        "org.yaml.snakeyaml.external.com.google.gdata.util.common.base",
+        "org.yaml.snakeyaml.inspector",
+        "org.yaml.snakeyaml.internal",
+        "org.yaml.snakeyaml.introspector",
+        "org.yaml.snakeyaml.nodes",
+        "org.yaml.snakeyaml.parser",
+        "org.yaml.snakeyaml.reader",
+        "org.yaml.snakeyaml.representer",
+        "org.yaml.snakeyaml.resolver",
+        "org.yaml.snakeyaml.scanner",
+        "org.yaml.snakeyaml.serializer",
+        "org.yaml.snakeyaml.tokens",
+        "org.yaml.snakeyaml.util"
+      ],
+      "resources": [
+        "META-INF/MANIFEST.MF",
+        "META-INF/maven/org.yaml/snakeyaml/pom.properties",
+        "META-INF/maven/org.yaml/snakeyaml/pom.xml"
+      ]
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "org.freemarker",
+        "artifactId": "freemarker",
+        "version": "2.3.33",
+        "type": "jar"
+      },
+      "uri": "file:/Users/megha/.m2/repository/org/freemarker/freemarker/2.3.33/freemarker-2.3.33.jar",
+      "packages": [
+        "freemarker.cache",
+        "freemarker.core",
+        "freemarker.debug",
+        "freemarker.debug.impl",
+        "freemarker.ext.ant",
+        "freemarker.ext.beans",
+        "freemarker.ext.dom",
+        "freemarker.ext.jakarta.jsp",
+        "freemarker.ext.jakarta.servlet",
+        "freemarker.ext.jdom",
+        "freemarker.ext.jsp",
+        "freemarker.ext.jython",
+        "freemarker.ext.rhino",
+        "freemarker.ext.servlet",
+        "freemarker.ext.util",
+        "freemarker.ext.xml",
+        "freemarker.log",
+        "freemarker.template",
+        "freemarker.template.utility"
+      ],
+      "resources": [
+        "META-INF/LICENSE",
+        "META-INF/MANIFEST.MF",
+        "freemarker/ext/beans/DefaultMemberAccessPolicy-rules",
+        "freemarker/ext/beans/unsafeMethods.properties",
+        "freemarker/version.properties"
+      ]
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "de.vandermeer",
+        "artifactId": "asciitable",
+        "version": "0.2.5",
+        "type": "jar"
+      },
+      "uri": "file:/Users/megha/.m2/repository/de/vandermeer/asciitable/0.2.5/asciitable-0.2.5.jar",
+      "packages": [
+        "de.vandermeer.asciitable.commons",
+        "de.vandermeer.asciitable.v1",
+        "de.vandermeer.asciitable.v2",
+        "de.vandermeer.asciitable.v2.render",
+        "de.vandermeer.asciitable.v2.row",
+        "de.vandermeer.asciitable.v2.themes"
+      ],
+      "resources": [
+        ".keep",
+        "CHANGELOG.asciidoc",
+        "CHANGELOG.html",
+        "LICENSE",
+        "META-INF/MANIFEST.MF",
+        "META-INF/maven/de.vandermeer/asciitable/pom.properties",
+        "META-INF/maven/de.vandermeer/asciitable/pom.xml",
+        "README.asciidoc",
+        "README.html"
+      ]
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "de.vandermeer",
+        "artifactId": "asciilist",
+        "version": "0.0.3",
+        "type": "jar"
+      },
+      "uri": "file:/Users/megha/.m2/repository/de/vandermeer/asciilist/0.0.3/asciilist-0.0.3.jar",
+      "packages": [
+        "de.vandermeer.asciilist",
+        "de.vandermeer.asciilist.commons",
+        "de.vandermeer.asciilist.styles"
+      ],
+      "resources": [
+        ".keep",
+        "CHANGELOG.asciidoc",
+        "CHANGELOG.html",
+        "LICENSE",
+        "META-INF/MANIFEST.MF",
+        "META-INF/maven/de.vandermeer/asciilist/pom.properties",
+        "META-INF/maven/de.vandermeer/asciilist/pom.xml",
+        "README.asciidoc",
+        "README.html"
+      ]
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.mulesoft.anypoint",
+        "artifactId": "runtime-discovery-api",
+        "version": "4.0.0",
+        "type": "jar"
+      },
+      "uri": "file:/Users/megha/.m2/repository/com/mulesoft/anypoint/runtime-discovery-api/4.0.0/runtime-discovery-api-4.0.0.jar",
+      "packages": [
+        "com.mulesoft.anypoint.discovery.api",
+        "com.mulesoft.anypoint.discovery.api.exception",
+        "com.mulesoft.anypoint.discovery.api.version"
+      ],
+      "resources": [
+        "META-INF/MANIFEST.MF",
+        "META-INF/maven/com.mulesoft.anypoint/runtime-discovery-api/pom.properties",
+        "META-INF/maven/com.mulesoft.anypoint/runtime-discovery-api/pom.xml"
+      ]
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.mulesoft.anypoint",
+        "artifactId": "runtime-discovery-core",
+        "version": "4.0.0",
+        "type": "jar"
+      },
+      "uri": "file:/Users/megha/.m2/repository/com/mulesoft/anypoint/runtime-discovery-core/4.0.0/runtime-discovery-core-4.0.0.jar",
+      "packages": [
+        "com.mulesoft.anypoint.discovery.core.aether",
+        "com.mulesoft.anypoint.discovery.core.version",
+        "com.mulesoft.anypoint.discovery.core.version.comparator"
+      ],
+      "resources": [
+        "META-INF/MANIFEST.MF",
+        "META-INF/maven/com.mulesoft.anypoint/runtime-discovery-core/pom.properties",
+        "META-INF/maven/com.mulesoft.anypoint/runtime-discovery-core/pom.xml"
+      ]
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "org.eclipse.aether",
+        "artifactId": "aether-api",
+        "version": "1.1.0",
+        "type": "jar"
+      },
+      "uri": "file:/Users/megha/.m2/repository/org/eclipse/aether/aether-api/1.1.0/aether-api-1.1.0.jar",
+      "packages": [
+        "org.eclipse.aether",
+        "org.eclipse.aether.artifact",
+        "org.eclipse.aether.collection",
+        "org.eclipse.aether.deployment",
+        "org.eclipse.aether.graph",
+        "org.eclipse.aether.installation",
+        "org.eclipse.aether.metadata",
+        "org.eclipse.aether.repository",
+        "org.eclipse.aether.resolution",
+        "org.eclipse.aether.transfer",
+        "org.eclipse.aether.version"
+      ],
+      "resources": [
+        "META-INF/MANIFEST.MF",
+        "META-INF/maven/org.eclipse.aether/aether-api/pom.properties",
+        "META-INF/maven/org.eclipse.aether/aether-api/pom.xml",
+        "about.html"
+      ]
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.mulesoft.munit",
+        "artifactId": "munit-starter",
+        "version": "3.6.2",
+        "type": "jar"
+      },
+      "uri": "file:/Users/megha/.m2/repository/com/mulesoft/munit/munit-starter/3.6.2/munit-starter-3.6.2.jar",
+      "packages": [
+        "org.mule.munit.starter"
+      ],
+      "resources": [
+        "META-INF/MANIFEST.MF",
+        "META-INF/maven/com.mulesoft.munit/munit-starter/pom.properties",
+        "META-INF/maven/com.mulesoft.munit/munit-starter/pom.xml",
+        "assembly-descriptor.xml"
+      ]
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "org.apache.logging.log4j",
+        "artifactId": "log4j-api",
+        "version": "2.20.0",
+        "type": "jar"
+      },
+      "uri": "file:/Users/megha/.m2/repository/org/apache/logging/log4j/log4j-api/2.20.0/log4j-api-2.20.0.jar",
+      "packages": [
+        "META-INF.versions.9",
+        "META-INF.versions.9.org.apache.logging.log4j.util",
+        "META-INF.versions.9.org.apache.logging.log4j.util.internal",
+        "org.apache.logging.log4j",
+        "org.apache.logging.log4j.internal",
+        "org.apache.logging.log4j.message",
+        "org.apache.logging.log4j.simple",
+        "org.apache.logging.log4j.spi",
+        "org.apache.logging.log4j.status",
+        "org.apache.logging.log4j.util"
+      ],
+      "resources": [
+        "Log4j-charsets.properties",
+        "META-INF/DEPENDENCIES",
+        "META-INF/LICENSE",
+        "META-INF/MANIFEST.MF",
+        "META-INF/NOTICE",
+        "META-INF/maven/org.apache.logging.log4j/log4j-api/pom.properties",
+        "META-INF/maven/org.apache.logging.log4j/log4j-api/pom.xml",
+        "META-INF/services/org.apache.logging.log4j.util.PropertySource"
+      ]
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "org.apache.logging.log4j",
+        "artifactId": "log4j-1.2-api",
+        "version": "2.20.0",
+        "type": "jar"
+      },
+      "uri": "file:/Users/megha/.m2/repository/org/apache/logging/log4j/log4j-1.2-api/2.20.0/log4j-1.2-api-2.20.0.jar",
+      "packages": [
+        "org.apache.log4j",
+        "org.apache.log4j.bridge",
+        "org.apache.log4j.builders",
+        "org.apache.log4j.builders.appender",
+        "org.apache.log4j.builders.filter",
+        "org.apache.log4j.builders.layout",
+        "org.apache.log4j.builders.rewrite",
+        "org.apache.log4j.builders.rolling",
+        "org.apache.log4j.component.helpers",
+        "org.apache.log4j.config",
+        "org.apache.log4j.helpers",
+        "org.apache.log4j.jmx",
+        "org.apache.log4j.layout",
+        "org.apache.log4j.legacy.core",
+        "org.apache.log4j.or",
+        "org.apache.log4j.or.jms",
+        "org.apache.log4j.pattern",
+        "org.apache.log4j.rewrite",
+        "org.apache.log4j.spi",
+        "org.apache.log4j.varia",
+        "org.apache.log4j.xml"
+      ],
+      "resources": [
+        "META-INF/DEPENDENCIES",
+        "META-INF/LICENSE",
+        "META-INF/MANIFEST.MF",
+        "META-INF/NOTICE",
+        "META-INF/maven/org.apache.logging.log4j/log4j-1.2-api/pom.properties",
+        "META-INF/maven/org.apache.logging.log4j/log4j-1.2-api/pom.xml",
+        "META-INF/org/apache/logging/log4j/core/config/plugins/Log4j2Plugins.dat",
+        "org/apache/log4j/xml/log4j.dtd"
+      ]
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.mulesoft.munit",
+        "artifactId": "munit-remote",
+        "version": "3.6.2",
+        "type": "jar"
+      },
+      "uri": "file:/Users/megha/.m2/repository/com/mulesoft/munit/munit-remote/3.6.2/munit-remote-3.6.2.jar",
+      "packages": [
+        "org.mule.munit.remote",
+        "org.mule.munit.remote.api.client",
+        "org.mule.munit.remote.api.configuration",
+        "org.mule.munit.remote.classloading",
+        "org.mule.munit.remote.container",
+        "org.mule.munit.remote.container.model",
+        "org.mule.munit.remote.coverage",
+        "org.mule.munit.remote.coverage.model",
+        "org.mule.munit.remote.coverage.printer",
+        "org.mule.munit.remote.coverage.printer.model",
+        "org.mule.munit.remote.coverage.printer.model.sonar",
+        "org.mule.munit.remote.coverage.server",
+        "org.mule.munit.remote.exception",
+        "org.mule.munit.remote.logging",
+        "org.mule.munit.remote.notifier",
+        "org.mule.munit.remote.notifiers",
+        "org.mule.munit.remote.properties",
+        "org.mule.munit.remote.properties.deploy",
+        "org.mule.munit.remote.runtime.utils"
+      ],
+      "resources": [
+        "META-INF/MANIFEST.MF",
+        "META-INF/maven/com.mulesoft.munit/munit-remote/pom.properties",
+        "META-INF/maven/com.mulesoft.munit/munit-remote/pom.xml",
+        "META-INF/mule-artifact/mule-artifact.json",
+        "assembly-descriptor.xml",
+        "default-log4j2-config.xml",
+        "fonts/muleicons.ttf",
+        "icons/004_logo.svg",
+        "mulesoft-styles.css",
+        "templates/resource.ftl",
+        "templates/summary.ftl",
+        "tsorter.css",
+        "tsorter.min.js"
+      ]
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.mulesoft.munit",
+        "artifactId": "munit-starter",
+        "version": "3.6.2",
+        "type": "zip",
+        "classifier": "dependencies"
+      },
+      "uri": "file:/Users/megha/.m2/repository/com/mulesoft/munit/munit-starter/3.6.2/munit-starter-3.6.2-dependencies.zip"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.mulesoft.munit",
+        "artifactId": "munit-remote",
+        "version": "3.6.2",
+        "type": "zip",
+        "classifier": "dependencies"
+      },
+      "uri": "file:/Users/megha/.m2/repository/com/mulesoft/munit/munit-remote/3.6.2/munit-remote-3.6.2-dependencies.zip"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "org.codehaus.plexus",
+        "artifactId": "plexus-archiver",
+        "version": "4.10.0",
+        "type": "jar"
+      },
+      "uri": "file:/Users/megha/.m2/repository/org/codehaus/plexus/plexus-archiver/4.10.0/plexus-archiver-4.10.0.jar",
+      "packages": [
+        "org.codehaus.plexus.archiver",
+        "org.codehaus.plexus.archiver.bzip2",
+        "org.codehaus.plexus.archiver.car",
+        "org.codehaus.plexus.archiver.diags",
+        "org.codehaus.plexus.archiver.dir",
+        "org.codehaus.plexus.archiver.ear",
+        "org.codehaus.plexus.archiver.esb",
+        "org.codehaus.plexus.archiver.exceptions",
+        "org.codehaus.plexus.archiver.filters",
+        "org.codehaus.plexus.archiver.gzip",
+        "org.codehaus.plexus.archiver.jar",
+        "org.codehaus.plexus.archiver.manager",
+        "org.codehaus.plexus.archiver.nar",
+        "org.codehaus.plexus.archiver.par",
+        "org.codehaus.plexus.archiver.rar",
+        "org.codehaus.plexus.archiver.resources",
+        "org.codehaus.plexus.archiver.sar",
+        "org.codehaus.plexus.archiver.snappy",
+        "org.codehaus.plexus.archiver.swc",
+        "org.codehaus.plexus.archiver.tar",
+        "org.codehaus.plexus.archiver.util",
+        "org.codehaus.plexus.archiver.war",
+        "org.codehaus.plexus.archiver.xz",
+        "org.codehaus.plexus.archiver.zip",
+        "org.codehaus.plexus.archiver.zstd",
+        "org.codehaus.plexus.components.io.resources"
+      ],
+      "resources": [
+        "META-INF/MANIFEST.MF",
+        "META-INF/maven/org.codehaus.plexus/plexus-archiver/pom.properties",
+        "META-INF/maven/org.codehaus.plexus/plexus-archiver/pom.xml",
+        "META-INF/sisu/javax.inject.Named"
+      ]
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "javax.inject",
+        "artifactId": "javax.inject",
+        "version": "1",
+        "type": "jar"
+      },
+      "uri": "file:/Users/megha/.m2/repository/javax/inject/javax.inject/1/javax.inject-1.jar",
+      "packages": [
+        "javax.inject"
+      ]
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "org.codehaus.plexus",
+        "artifactId": "plexus-io",
+        "version": "3.5.0",
+        "type": "jar"
+      },
+      "uri": "file:/Users/megha/.m2/repository/org/codehaus/plexus/plexus-io/3.5.0/plexus-io-3.5.0.jar",
+      "packages": [
+        "org.codehaus.plexus.components.io.attributes",
+        "org.codehaus.plexus.components.io.attributes.proxy",
+        "org.codehaus.plexus.components.io.filemappers",
+        "org.codehaus.plexus.components.io.fileselectors",
+        "org.codehaus.plexus.components.io.functions",
+        "org.codehaus.plexus.components.io.resources",
+        "org.codehaus.plexus.components.io.resources.proxy"
+      ],
+      "resources": [
+        "META-INF/MANIFEST.MF",
+        "META-INF/maven/org.codehaus.plexus/plexus-io/pom.properties",
+        "META-INF/maven/org.codehaus.plexus/plexus-io/pom.xml",
+        "META-INF/sisu/javax.inject.Named"
+      ]
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "org.apache.commons",
+        "artifactId": "commons-compress",
+        "version": "1.26.2",
+        "type": "jar"
+      },
+      "uri": "file:/Users/megha/.m2/repository/org/apache/commons/commons-compress/1.26.2/commons-compress-1.26.2.jar",
+      "packages": [
+        "META-INF.versions.9",
+        "org.apache.commons.compress",
+        "org.apache.commons.compress.archivers",
+        "org.apache.commons.compress.archivers.ar",
+        "org.apache.commons.compress.archivers.arj",
+        "org.apache.commons.compress.archivers.cpio",
+        "org.apache.commons.compress.archivers.dump",
+        "org.apache.commons.compress.archivers.examples",
+        "org.apache.commons.compress.archivers.jar",
+        "org.apache.commons.compress.archivers.sevenz",
+        "org.apache.commons.compress.archivers.tar",
+        "org.apache.commons.compress.archivers.zip",
+        "org.apache.commons.compress.changes",
+        "org.apache.commons.compress.compressors",
+        "org.apache.commons.compress.compressors.brotli",
+        "org.apache.commons.compress.compressors.bzip2",
+        "org.apache.commons.compress.compressors.deflate",
+        "org.apache.commons.compress.compressors.deflate64",
+        "org.apache.commons.compress.compressors.gzip",
+        "org.apache.commons.compress.compressors.lz4",
+        "org.apache.commons.compress.compressors.lz77support",
+        "org.apache.commons.compress.compressors.lzma",
+        "org.apache.commons.compress.compressors.lzw",
+        "org.apache.commons.compress.compressors.pack200",
+        "org.apache.commons.compress.compressors.snappy",
+        "org.apache.commons.compress.compressors.xz",
+        "org.apache.commons.compress.compressors.z",
+        "org.apache.commons.compress.compressors.zstandard",
+        "org.apache.commons.compress.harmony",
+        "org.apache.commons.compress.harmony.archive.internal.nls",
+        "org.apache.commons.compress.harmony.pack200",
+        "org.apache.commons.compress.harmony.unpack200",
+        "org.apache.commons.compress.harmony.unpack200.bytecode",
+        "org.apache.commons.compress.harmony.unpack200.bytecode.forms",
+        "org.apache.commons.compress.java.util.jar",
+        "org.apache.commons.compress.parallel",
+        "org.apache.commons.compress.utils"
+      ],
+      "resources": [
+        "META-INF/LICENSE.txt",
+        "META-INF/MANIFEST.MF",
+        "META-INF/NOTICE.txt",
+        "META-INF/maven/org.apache.commons/commons-compress/pom.properties",
+        "META-INF/maven/org.apache.commons/commons-compress/pom.xml"
+      ]
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "commons-codec",
+        "artifactId": "commons-codec",
+        "version": "1.17.0",
+        "type": "jar"
+      },
+      "uri": "file:/Users/megha/.m2/repository/commons-codec/commons-codec/1.17.0/commons-codec-1.17.0.jar",
+      "packages": [
+        "META-INF.versions.9",
+        "org.apache.commons.codec",
+        "org.apache.commons.codec.binary",
+        "org.apache.commons.codec.cli",
+        "org.apache.commons.codec.digest",
+        "org.apache.commons.codec.language",
+        "org.apache.commons.codec.language.bm",
+        "org.apache.commons.codec.net"
+      ],
+      "resources": [
+        "META-INF/LICENSE.txt",
+        "META-INF/MANIFEST.MF",
+        "META-INF/NOTICE.txt",
+        "META-INF/maven/commons-codec/commons-codec/pom.properties",
+        "META-INF/maven/commons-codec/commons-codec/pom.xml",
+        "org/apache/commons/codec/language/bm/ash_approx_any.txt",
+        "org/apache/commons/codec/language/bm/ash_approx_common.txt",
+        "org/apache/commons/codec/language/bm/ash_approx_cyrillic.txt",
+        "org/apache/commons/codec/language/bm/ash_approx_english.txt",
+        "org/apache/commons/codec/language/bm/ash_approx_french.txt",
+        "org/apache/commons/codec/language/bm/ash_approx_german.txt",
+        "org/apache/commons/codec/language/bm/ash_approx_hebrew.txt",
+        "org/apache/commons/codec/language/bm/ash_approx_hungarian.txt",
+        "org/apache/commons/codec/language/bm/ash_approx_polish.txt",
+        "org/apache/commons/codec/language/bm/ash_approx_romanian.txt",
+        "org/apache/commons/codec/language/bm/ash_approx_russian.txt",
+        "org/apache/commons/codec/language/bm/ash_approx_spanish.txt",
+        "org/apache/commons/codec/language/bm/ash_exact_any.txt",
+        "org/apache/commons/codec/language/bm/ash_exact_approx_common.txt",
+        "org/apache/commons/codec/language/bm/ash_exact_common.txt",
+        "org/apache/commons/codec/language/bm/ash_exact_cyrillic.txt",
+        "org/apache/commons/codec/language/bm/ash_exact_english.txt",
+        "org/apache/commons/codec/language/bm/ash_exact_french.txt",
+        "org/apache/commons/codec/language/bm/ash_exact_german.txt",
+        "org/apache/commons/codec/language/bm/ash_exact_hebrew.txt",
+        "org/apache/commons/codec/language/bm/ash_exact_hungarian.txt",
+        "org/apache/commons/codec/language/bm/ash_exact_polish.txt",
+        "org/apache/commons/codec/language/bm/ash_exact_romanian.txt",
+        "org/apache/commons/codec/language/bm/ash_exact_russian.txt",
+        "org/apache/commons/codec/language/bm/ash_exact_spanish.txt",
+        "org/apache/commons/codec/language/bm/ash_hebrew_common.txt",
+        "org/apache/commons/codec/language/bm/ash_lang.txt",
+        "org/apache/commons/codec/language/bm/ash_languages.txt",
+        "org/apache/commons/codec/language/bm/ash_rules_any.txt",
+        "org/apache/commons/codec/language/bm/ash_rules_cyrillic.txt",
+        "org/apache/commons/codec/language/bm/ash_rules_english.txt",
+        "org/apache/commons/codec/language/bm/ash_rules_french.txt",
+        "org/apache/commons/codec/language/bm/ash_rules_german.txt",
+        "org/apache/commons/codec/language/bm/ash_rules_hebrew.txt",
+        "org/apache/commons/codec/language/bm/ash_rules_hungarian.txt",
+        "org/apache/commons/codec/language/bm/ash_rules_polish.txt",
+        "org/apache/commons/codec/language/bm/ash_rules_romanian.txt",
+        "org/apache/commons/codec/language/bm/ash_rules_russian.txt",
+        "org/apache/commons/codec/language/bm/ash_rules_spanish.txt",
+        "org/apache/commons/codec/language/bm/gen_approx_any.txt",
+        "org/apache/commons/codec/language/bm/gen_approx_arabic.txt",
+        "org/apache/commons/codec/language/bm/gen_approx_common.txt",
+        "org/apache/commons/codec/language/bm/gen_approx_cyrillic.txt",
+        "org/apache/commons/codec/language/bm/gen_approx_czech.txt",
+        "org/apache/commons/codec/language/bm/gen_approx_dutch.txt",
+        "org/apache/commons/codec/language/bm/gen_approx_english.txt",
+        "org/apache/commons/codec/language/bm/gen_approx_french.txt",
+        "org/apache/commons/codec/language/bm/gen_approx_german.txt",
+        "org/apache/commons/codec/language/bm/gen_approx_greek.txt",
+        "org/apache/commons/codec/language/bm/gen_approx_greeklatin.txt",
+        "org/apache/commons/codec/language/bm/gen_approx_hebrew.txt",
+        "org/apache/commons/codec/language/bm/gen_approx_hungarian.txt",
+        "org/apache/commons/codec/language/bm/gen_approx_italian.txt",
+        "org/apache/commons/codec/language/bm/gen_approx_polish.txt",
+        "org/apache/commons/codec/language/bm/gen_approx_portuguese.txt",
+        "org/apache/commons/codec/language/bm/gen_approx_romanian.txt",
+        "org/apache/commons/codec/language/bm/gen_approx_russian.txt",
+        "org/apache/commons/codec/language/bm/gen_approx_spanish.txt",
+        "org/apache/commons/codec/language/bm/gen_approx_turkish.txt",
+        "org/apache/commons/codec/language/bm/gen_exact_any.txt",
+        "org/apache/commons/codec/language/bm/gen_exact_approx_common.txt",
+        "org/apache/commons/codec/language/bm/gen_exact_arabic.txt",
+        "org/apache/commons/codec/language/bm/gen_exact_common.txt",
+        "org/apache/commons/codec/language/bm/gen_exact_cyrillic.txt",
+        "org/apache/commons/codec/language/bm/gen_exact_czech.txt",
+        "org/apache/commons/codec/language/bm/gen_exact_dutch.txt",
+        "org/apache/commons/codec/language/bm/gen_exact_english.txt",
+        "org/apache/commons/codec/language/bm/gen_exact_french.txt",
+        "org/apache/commons/codec/language/bm/gen_exact_german.txt",
+        "org/apache/commons/codec/language/bm/gen_exact_greek.txt",
+        "org/apache/commons/codec/language/bm/gen_exact_greeklatin.txt",
+        "org/apache/commons/codec/language/bm/gen_exact_hebrew.txt",
+        "org/apache/commons/codec/language/bm/gen_exact_hungarian.txt",
+        "org/apache/commons/codec/language/bm/gen_exact_italian.txt",
+        "org/apache/commons/codec/language/bm/gen_exact_polish.txt",
+        "org/apache/commons/codec/language/bm/gen_exact_portuguese.txt",
+        "org/apache/commons/codec/language/bm/gen_exact_romanian.txt",
+        "org/apache/commons/codec/language/bm/gen_exact_russian.txt",
+        "org/apache/commons/codec/language/bm/gen_exact_spanish.txt",
+        "org/apache/commons/codec/language/bm/gen_exact_turkish.txt",
+        "org/apache/commons/codec/language/bm/gen_hebrew_common.txt",
+        "org/apache/commons/codec/language/bm/gen_lang.txt",
+        "org/apache/commons/codec/language/bm/gen_languages.txt",
+        "org/apache/commons/codec/language/bm/gen_rules_any.txt",
+        "org/apache/commons/codec/language/bm/gen_rules_arabic.txt",
+        "org/apache/commons/codec/language/bm/gen_rules_cyrillic.txt",
+        "org/apache/commons/codec/language/bm/gen_rules_czech.txt",
+        "org/apache/commons/codec/language/bm/gen_rules_dutch.txt",
+        "org/apache/commons/codec/language/bm/gen_rules_english.txt",
+        "org/apache/commons/codec/language/bm/gen_rules_french.txt",
+        "org/apache/commons/codec/language/bm/gen_rules_german.txt",
+        "org/apache/commons/codec/language/bm/gen_rules_greek.txt",
+        "org/apache/commons/codec/language/bm/gen_rules_greeklatin.txt",
+        "org/apache/commons/codec/language/bm/gen_rules_hebrew.txt",
+        "org/apache/commons/codec/language/bm/gen_rules_hungarian.txt",
+        "org/apache/commons/codec/language/bm/gen_rules_italian.txt",
+        "org/apache/commons/codec/language/bm/gen_rules_polish.txt",
+        "org/apache/commons/codec/language/bm/gen_rules_portuguese.txt",
+        "org/apache/commons/codec/language/bm/gen_rules_romanian.txt",
+        "org/apache/commons/codec/language/bm/gen_rules_russian.txt",
+        "org/apache/commons/codec/language/bm/gen_rules_spanish.txt",
+        "org/apache/commons/codec/language/bm/gen_rules_turkish.txt",
+        "org/apache/commons/codec/language/bm/lang.txt",
+        "org/apache/commons/codec/language/bm/sep_approx_any.txt",
+        "org/apache/commons/codec/language/bm/sep_approx_common.txt",
+        "org/apache/commons/codec/language/bm/sep_approx_french.txt",
+        "org/apache/commons/codec/language/bm/sep_approx_hebrew.txt",
+        "org/apache/commons/codec/language/bm/sep_approx_italian.txt",
+        "org/apache/commons/codec/language/bm/sep_approx_portuguese.txt",
+        "org/apache/commons/codec/language/bm/sep_approx_spanish.txt",
+        "org/apache/commons/codec/language/bm/sep_exact_any.txt",
+        "org/apache/commons/codec/language/bm/sep_exact_approx_common.txt",
+        "org/apache/commons/codec/language/bm/sep_exact_common.txt",
+        "org/apache/commons/codec/language/bm/sep_exact_french.txt",
+        "org/apache/commons/codec/language/bm/sep_exact_hebrew.txt",
+        "org/apache/commons/codec/language/bm/sep_exact_italian.txt",
+        "org/apache/commons/codec/language/bm/sep_exact_portuguese.txt",
+        "org/apache/commons/codec/language/bm/sep_exact_spanish.txt",
+        "org/apache/commons/codec/language/bm/sep_hebrew_common.txt",
+        "org/apache/commons/codec/language/bm/sep_lang.txt",
+        "org/apache/commons/codec/language/bm/sep_languages.txt",
+        "org/apache/commons/codec/language/bm/sep_rules_any.txt",
+        "org/apache/commons/codec/language/bm/sep_rules_french.txt",
+        "org/apache/commons/codec/language/bm/sep_rules_hebrew.txt",
+        "org/apache/commons/codec/language/bm/sep_rules_italian.txt",
+        "org/apache/commons/codec/language/bm/sep_rules_portuguese.txt",
+        "org/apache/commons/codec/language/bm/sep_rules_spanish.txt",
+        "org/apache/commons/codec/language/dmrules.txt"
+      ]
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "io.airlift",
+        "artifactId": "aircompressor",
+        "version": "0.27",
+        "type": "jar"
+      },
+      "uri": "file:/Users/megha/.m2/repository/io/airlift/aircompressor/0.27/aircompressor-0.27.jar",
+      "packages": [
+        "io.airlift.compress",
+        "io.airlift.compress.bzip2",
+        "io.airlift.compress.deflate",
+        "io.airlift.compress.gzip",
+        "io.airlift.compress.hadoop",
+        "io.airlift.compress.lz4",
+        "io.airlift.compress.lzo",
+        "io.airlift.compress.snappy",
+        "io.airlift.compress.zstd"
+      ],
+      "resources": [
+        "META-INF/MANIFEST.MF",
+        "META-INF/maven/io.airlift/aircompressor/pom.properties",
+        "META-INF/maven/io.airlift/aircompressor/pom.xml"
+      ]
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "org.tukaani",
+        "artifactId": "xz",
+        "version": "1.9",
+        "type": "jar"
+      },
+      "uri": "file:/Users/megha/.m2/repository/org/tukaani/xz/1.9/xz-1.9.jar",
+      "packages": [
+        "META-INF.versions.9",
+        "org.tukaani.xz",
+        "org.tukaani.xz.check",
+        "org.tukaani.xz.common",
+        "org.tukaani.xz.delta",
+        "org.tukaani.xz.index",
+        "org.tukaani.xz.lz",
+        "org.tukaani.xz.lzma",
+        "org.tukaani.xz.rangecoder",
+        "org.tukaani.xz.simple"
+      ],
+      "resources": [
+        "META-INF/MANIFEST.MF"
+      ]
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "org.mule.tools.maven",
+        "artifactId": "mule-packager",
+        "version": "4.1.0",
+        "type": "jar"
+      },
+      "uri": "file:/Users/megha/.m2/repository/org/mule/tools/maven/mule-packager/4.1.0/mule-packager-4.1.0.jar",
+      "packages": [
+        "org.mule.tools.api.exception",
+        "org.mule.tools.api.muleclassloader.model",
+        "org.mule.tools.api.muleclassloader.model.resolver",
+        "org.mule.tools.api.muleclassloader.model.util",
+        "org.mule.tools.api.packager",
+        "org.mule.tools.api.packager.archiver",
+        "org.mule.tools.api.packager.builder",
+        "org.mule.tools.api.packager.packaging",
+        "org.mule.tools.api.packager.resources.content",
+        "org.mule.tools.api.packager.resources.generator",
+        "org.mule.tools.api.packager.resources.processor",
+        "org.mule.tools.api.packager.sources",
+        "org.mule.tools.api.packager.structure",
+        "org.mule.tools.api.repository",
+        "org.mule.tools.api.util",
+        "org.mule.tools.api.util.exclude",
+        "org.mule.tools.api.validation",
+        "org.mule.tools.api.validation.deployment",
+        "org.mule.tools.api.validation.exchange",
+        "org.mule.tools.api.validation.exchange.model",
+        "org.mule.tools.api.validation.project",
+        "org.mule.tools.api.validation.resolver",
+        "org.mule.tools.api.validation.resolver.model",
+        "org.mule.tools.api.validation.resolver.visitor",
+        "org.mule.tools.api.verifier",
+        "org.mule.tools.api.verifier.policy"
+      ],
+      "resources": [
+        "META-INF/MANIFEST.MF",
+        "META-INF/maven/org.mule.tools.maven/mule-packager/pom.properties",
+        "META-INF/maven/org.mule.tools.maven/mule-packager/pom.xml"
+      ]
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "org.mule.tools.maven",
+        "artifactId": "mule-deployer",
+        "version": "4.1.0",
+        "type": "jar"
+      },
+      "uri": "file:/Users/megha/.m2/repository/org/mule/tools/maven/mule-deployer/4.1.0/mule-deployer-4.1.0.jar",
+      "packages": [
+        "org.mule.tools.client",
+        "org.mule.tools.client.agent",
+        "org.mule.tools.client.agent.model",
+        "org.mule.tools.client.arm",
+        "org.mule.tools.client.arm.model",
+        "org.mule.tools.client.authentication",
+        "org.mule.tools.client.authentication.model",
+        "org.mule.tools.client.cloudhub",
+        "org.mule.tools.client.cloudhub.model",
+        "org.mule.tools.client.core",
+        "org.mule.tools.client.core.exception",
+        "org.mule.tools.client.core.logging",
+        "org.mule.tools.client.fabric",
+        "org.mule.tools.client.fabric.model",
+        "org.mule.tools.client.model",
+        "org.mule.tools.client.standalone.configuration",
+        "org.mule.tools.client.standalone.controller",
+        "org.mule.tools.client.standalone.controller.probing",
+        "org.mule.tools.client.standalone.controller.probing.deployment",
+        "org.mule.tools.client.standalone.deployment",
+        "org.mule.tools.client.standalone.exception",
+        "org.mule.tools.client.standalone.installer",
+        "org.mule.tools.deployment",
+        "org.mule.tools.deployment.agent",
+        "org.mule.tools.deployment.arm",
+        "org.mule.tools.deployment.artifact",
+        "org.mule.tools.deployment.cloudhub",
+        "org.mule.tools.deployment.cloudhub2",
+        "org.mule.tools.deployment.fabric",
+        "org.mule.tools.deployment.standalone",
+        "org.mule.tools.model",
+        "org.mule.tools.model.agent",
+        "org.mule.tools.model.anypoint",
+        "org.mule.tools.model.standalone",
+        "org.mule.tools.utils",
+        "org.mule.tools.validation",
+        "org.mule.tools.validation.agent",
+        "org.mule.tools.validation.arm",
+        "org.mule.tools.validation.cloudhub",
+        "org.mule.tools.validation.fabric",
+        "org.mule.tools.validation.standalone",
+        "org.mule.tools.verification",
+        "org.mule.tools.verification.agent",
+        "org.mule.tools.verification.arm",
+        "org.mule.tools.verification.cloudhub",
+        "org.mule.tools.verification.fabric"
+      ],
+      "resources": [
+        "META-INF/MANIFEST.MF",
+        "META-INF/maven/org.mule.tools.maven/mule-deployer/pom.properties",
+        "META-INF/maven/org.mule.tools.maven/mule-deployer/pom.xml"
+      ]
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "jakarta.ws.rs",
+        "artifactId": "jakarta.ws.rs-api",
+        "version": "2.1.6",
+        "type": "jar"
+      },
+      "uri": "file:/Users/megha/.m2/repository/jakarta/ws/rs/jakarta.ws.rs-api/2.1.6/jakarta.ws.rs-api-2.1.6.jar",
+      "packages": [
+        "javax.ws.rs",
+        "javax.ws.rs.client",
+        "javax.ws.rs.container",
+        "javax.ws.rs.core",
+        "javax.ws.rs.ext",
+        "javax.ws.rs.sse"
+      ],
+      "resources": [
+        "META-INF/LICENSE.md",
+        "META-INF/MANIFEST.MF",
+        "META-INF/NOTICE.md",
+        "META-INF/maven/jakarta.ws.rs/jakarta.ws.rs-api/pom.properties",
+        "META-INF/maven/jakarta.ws.rs/jakarta.ws.rs-api/pom.xml"
+      ]
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "org.glassfish.jersey.connectors",
+        "artifactId": "jersey-jdk-connector",
+        "version": "2.35",
+        "type": "jar"
+      },
+      "uri": "file:/Users/megha/.m2/repository/org/glassfish/jersey/connectors/jersey-jdk-connector/2.35/jersey-jdk-connector-2.35.jar",
+      "packages": [
+        "org.glassfish.jersey.jdk.connector",
+        "org.glassfish.jersey.jdk.connector.internal"
+      ],
+      "resources": [
+        "META-INF/LICENSE.md",
+        "META-INF/MANIFEST.MF",
+        "META-INF/NOTICE.md",
+        "META-INF/maven/org.glassfish.jersey.connectors/jersey-jdk-connector/pom.properties",
+        "META-INF/maven/org.glassfish.jersey.connectors/jersey-jdk-connector/pom.xml",
+        "org/glassfish/jersey/jdk/connector/internal/localization.properties"
+      ]
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "org.apache.commons",
+        "artifactId": "commons-exec",
+        "version": "1.2",
+        "type": "jar"
+      },
+      "uri": "file:/Users/megha/.m2/repository/org/apache/commons/commons-exec/1.2/commons-exec-1.2.jar",
+      "packages": [
+        "org.apache.commons.exec",
+        "org.apache.commons.exec.environment",
+        "org.apache.commons.exec.launcher",
+        "org.apache.commons.exec.util"
+      ],
+      "resources": [
+        "META-INF/LICENSE.txt",
+        "META-INF/MANIFEST.MF",
+        "META-INF/NOTICE.txt",
+        "META-INF/maven/org.apache.commons/commons-exec/pom.properties",
+        "META-INF/maven/org.apache.commons/commons-exec/pom.xml"
+      ]
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "org.glassfish.jersey.inject",
+        "artifactId": "jersey-hk2",
+        "version": "2.35",
+        "type": "jar"
+      },
+      "uri": "file:/Users/megha/.m2/repository/org/glassfish/jersey/inject/jersey-hk2/2.35/jersey-hk2-2.35.jar",
+      "packages": [
+        "org.glassfish.jersey.inject.hk2"
+      ],
+      "resources": [
+        "META-INF/LICENSE.md",
+        "META-INF/MANIFEST.MF",
+        "META-INF/NOTICE.md",
+        "META-INF/maven/org.glassfish.jersey.inject/jersey-hk2/pom.properties",
+        "META-INF/maven/org.glassfish.jersey.inject/jersey-hk2/pom.xml",
+        "META-INF/native-image/org.glassfish.jersey.inject/jersey-hk2/reflect-config.json",
+        "META-INF/native-image/org.glassfish.jersey.inject/jersey-hk2/resource-config.json",
+        "META-INF/services/org.glassfish.jersey.internal.inject.InjectionManagerFactory",
+        "org/glassfish/jersey/inject/hk2/localization.properties"
+      ]
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "org.glassfish.hk2",
+        "artifactId": "hk2-locator",
+        "version": "2.6.1",
+        "type": "jar"
+      },
+      "uri": "file:/Users/megha/.m2/repository/org/glassfish/hk2/hk2-locator/2.6.1/hk2-locator-2.6.1.jar",
+      "packages": [
+        "org.jvnet.hk2.external.generator",
+        "org.jvnet.hk2.external.runtime",
+        "org.jvnet.hk2.internal"
+      ],
+      "resources": [
+        "META-INF/LICENSE.md",
+        "META-INF/MANIFEST.MF",
+        "META-INF/NOTICE.md",
+        "META-INF/maven/org.glassfish.hk2/hk2-locator/pom.properties",
+        "META-INF/maven/org.glassfish.hk2/hk2-locator/pom.xml",
+        "META-INF/services/org.glassfish.hk2.extension.ServiceLocatorGenerator"
+      ]
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "org.glassfish.hk2.external",
+        "artifactId": "aopalliance-repackaged",
+        "version": "2.6.1",
+        "type": "jar"
+      },
+      "uri": "file:/Users/megha/.m2/repository/org/glassfish/hk2/external/aopalliance-repackaged/2.6.1/aopalliance-repackaged-2.6.1.jar",
+      "packages": [
+        "org.aopalliance.aop",
+        "org.aopalliance.instrument",
+        "org.aopalliance.intercept",
+        "org.aopalliance.reflect"
+      ],
+      "resources": [
+        "META-INF/LICENSE.md",
+        "META-INF/MANIFEST.MF",
+        "META-INF/NOTICE.md",
+        "META-INF/maven/org.glassfish.hk2.external/aopalliance-repackaged/pom.properties",
+        "META-INF/maven/org.glassfish.hk2.external/aopalliance-repackaged/pom.xml"
+      ]
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "org.glassfish.hk2",
+        "artifactId": "hk2-api",
+        "version": "2.6.1",
+        "type": "jar"
+      },
+      "uri": "file:/Users/megha/.m2/repository/org/glassfish/hk2/hk2-api/2.6.1/hk2-api-2.6.1.jar",
+      "packages": [
+        "org.glassfish.hk2.api",
+        "org.glassfish.hk2.api.messaging",
+        "org.glassfish.hk2.extension",
+        "org.glassfish.hk2.internal",
+        "org.glassfish.hk2.utilities",
+        "org.glassfish.hk2.utilities.binding",
+        "org.jvnet.hk2.annotations"
+      ],
+      "resources": [
+        "META-INF/LICENSE.md",
+        "META-INF/MANIFEST.MF",
+        "META-INF/NOTICE.md",
+        "META-INF/maven/org.glassfish.hk2/hk2-api/pom.properties",
+        "META-INF/maven/org.glassfish.hk2/hk2-api/pom.xml"
+      ]
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "org.glassfish.hk2",
+        "artifactId": "hk2-utils",
+        "version": "2.6.1",
+        "type": "jar"
+      },
+      "uri": "file:/Users/megha/.m2/repository/org/glassfish/hk2/hk2-utils/2.6.1/hk2-utils-2.6.1.jar",
+      "packages": [
+        "org.glassfish.hk2.utilities.cache",
+        "org.glassfish.hk2.utilities.cache.internal",
+        "org.glassfish.hk2.utilities.general",
+        "org.glassfish.hk2.utilities.general.internal",
+        "org.glassfish.hk2.utilities.reflection",
+        "org.glassfish.hk2.utilities.reflection.internal",
+        "org.jvnet.hk2.component"
+      ],
+      "resources": [
+        "META-INF/LICENSE.md",
+        "META-INF/MANIFEST.MF",
+        "META-INF/NOTICE.md",
+        "META-INF/maven/org.glassfish.hk2/hk2-utils/pom.properties",
+        "META-INF/maven/org.glassfish.hk2/hk2-utils/pom.xml"
+      ]
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "org.javassist",
+        "artifactId": "javassist",
+        "version": "3.25.0-GA",
+        "type": "jar"
+      },
+      "uri": "file:/Users/megha/.m2/repository/org/javassist/javassist/3.25.0-GA/javassist-3.25.0-GA.jar",
+      "packages": [
+        "javassist",
+        "javassist.bytecode",
+        "javassist.bytecode.analysis",
+        "javassist.bytecode.annotation",
+        "javassist.bytecode.stackmap",
+        "javassist.compiler",
+        "javassist.compiler.ast",
+        "javassist.convert",
+        "javassist.expr",
+        "javassist.runtime",
+        "javassist.scopedpool",
+        "javassist.tools",
+        "javassist.tools.reflect",
+        "javassist.tools.rmi",
+        "javassist.tools.web",
+        "javassist.util",
+        "javassist.util.proxy"
+      ],
+      "resources": [
+        "META-INF/MANIFEST.MF",
+        "META-INF/maven/org.javassist/javassist/pom.properties",
+        "META-INF/maven/org.javassist/javassist/pom.xml"
+      ]
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "org.glassfish.jersey.core",
+        "artifactId": "jersey-client",
+        "version": "2.35",
+        "type": "jar"
+      },
+      "uri": "file:/Users/megha/.m2/repository/org/glassfish/jersey/core/jersey-client/2.35/jersey-client-2.35.jar",
+      "packages": [
+        "org.glassfish.jersey.client",
+        "org.glassfish.jersey.client.authentication",
+        "org.glassfish.jersey.client.filter",
+        "org.glassfish.jersey.client.http",
+        "org.glassfish.jersey.client.inject",
+        "org.glassfish.jersey.client.internal",
+        "org.glassfish.jersey.client.internal.inject",
+        "org.glassfish.jersey.client.internal.jdkconnector",
+        "org.glassfish.jersey.client.internal.routing",
+        "org.glassfish.jersey.client.spi"
+      ],
+      "resources": [
+        "META-INF/LICENSE.md",
+        "META-INF/MANIFEST.MF",
+        "META-INF/NOTICE.md",
+        "META-INF/maven/org.glassfish.jersey.core/jersey-client/pom.properties",
+        "META-INF/maven/org.glassfish.jersey.core/jersey-client/pom.xml",
+        "META-INF/native-image/org.glassfish.jersey.core/jersey-client/reflect-config.json",
+        "META-INF/native-image/org.glassfish.jersey.core/jersey-client/resource-config.json",
+        "org/glassfish/jersey/client/internal/jdkconnector/localization.properties",
+        "org/glassfish/jersey/client/internal/localization.properties"
+      ]
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "org.glassfish.hk2.external",
+        "artifactId": "jakarta.inject",
+        "version": "2.6.1",
+        "type": "jar"
+      },
+      "uri": "file:/Users/megha/.m2/repository/org/glassfish/hk2/external/jakarta.inject/2.6.1/jakarta.inject-2.6.1.jar",
+      "packages": [
+        "javax.inject"
+      ],
+      "resources": [
+        "META-INF/LICENSE.md",
+        "META-INF/MANIFEST.MF",
+        "META-INF/NOTICE.md",
+        "META-INF/maven/org.glassfish.hk2.external/jakarta.inject/pom.properties",
+        "META-INF/maven/org.glassfish.hk2.external/jakarta.inject/pom.xml"
+      ]
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "org.glassfish.jersey.media",
+        "artifactId": "jersey-media-multipart",
+        "version": "2.35",
+        "type": "jar"
+      },
+      "uri": "file:/Users/megha/.m2/repository/org/glassfish/jersey/media/jersey-media-multipart/2.35/jersey-media-multipart-2.35.jar",
+      "packages": [
+        "org.glassfish.jersey.media.multipart",
+        "org.glassfish.jersey.media.multipart.file",
+        "org.glassfish.jersey.media.multipart.internal"
+      ],
+      "resources": [
+        "META-INF/LICENSE.md",
+        "META-INF/MANIFEST.MF",
+        "META-INF/NOTICE.md",
+        "META-INF/maven/org.glassfish.jersey.media/jersey-media-multipart/pom.properties",
+        "META-INF/maven/org.glassfish.jersey.media/jersey-media-multipart/pom.xml",
+        "org/glassfish/jersey/media/multipart/internal/localization.properties"
+      ]
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "org.jvnet.mimepull",
+        "artifactId": "mimepull",
+        "version": "1.9.13",
+        "type": "jar"
+      },
+      "uri": "file:/Users/megha/.m2/repository/org/jvnet/mimepull/mimepull/1.9.13/mimepull-1.9.13.jar",
+      "packages": [
+        "org.jvnet.mimepull"
+      ],
+      "resources": [
+        "META-INF/LICENSE.md",
+        "META-INF/MANIFEST.MF",
+        "META-INF/NOTICE.md",
+        "META-INF/maven/org.jvnet.mimepull/mimepull/pom.properties",
+        "META-INF/maven/org.jvnet.mimepull/mimepull/pom.xml"
+      ]
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "org.glassfish.jersey.media",
+        "artifactId": "jersey-media-moxy",
+        "version": "2.31",
+        "type": "jar"
+      },
+      "uri": "file:/Users/megha/.m2/repository/org/glassfish/jersey/media/jersey-media-moxy/2.31/jersey-media-moxy-2.31.jar",
+      "packages": [
+        "org.glassfish.jersey.moxy.internal",
+        "org.glassfish.jersey.moxy.json",
+        "org.glassfish.jersey.moxy.json.internal",
+        "org.glassfish.jersey.moxy.xml"
+      ],
+      "resources": [
+        "META-INF/LICENSE.md",
+        "META-INF/MANIFEST.MF",
+        "META-INF/NOTICE.md",
+        "META-INF/maven/org.glassfish.jersey.media/jersey-media-moxy/pom.properties",
+        "META-INF/maven/org.glassfish.jersey.media/jersey-media-moxy/pom.xml",
+        "META-INF/services/org.glassfish.jersey.internal.spi.AutoDiscoverable"
+      ]
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "org.glassfish.jersey.ext",
+        "artifactId": "jersey-entity-filtering",
+        "version": "2.31",
+        "type": "jar"
+      },
+      "uri": "file:/Users/megha/.m2/repository/org/glassfish/jersey/ext/jersey-entity-filtering/2.31/jersey-entity-filtering-2.31.jar",
+      "packages": [
+        "org.glassfish.jersey.message.filtering",
+        "org.glassfish.jersey.message.filtering.internal",
+        "org.glassfish.jersey.message.filtering.spi"
+      ],
+      "resources": [
+        "META-INF/LICENSE.md",
+        "META-INF/MANIFEST.MF",
+        "META-INF/NOTICE.md",
+        "META-INF/maven/org.glassfish.jersey.ext/jersey-entity-filtering/pom.properties",
+        "META-INF/maven/org.glassfish.jersey.ext/jersey-entity-filtering/pom.xml",
+        "org/glassfish/jersey/message/filtering/internal/localization.properties"
+      ]
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "org.eclipse.persistence",
+        "artifactId": "org.eclipse.persistence.moxy",
+        "version": "2.7.6",
+        "type": "jar"
+      },
+      "uri": "file:/Users/megha/.m2/repository/org/eclipse/persistence/org.eclipse.persistence.moxy/2.7.6/org.eclipse.persistence.moxy-2.7.6.jar",
+      "packages": [
+        "org.eclipse.persistence.internal.jaxb",
+        "org.eclipse.persistence.internal.jaxb.json.schema",
+        "org.eclipse.persistence.internal.jaxb.json.schema.model",
+        "org.eclipse.persistence.internal.jaxb.many",
+        "org.eclipse.persistence.jaxb",
+        "org.eclipse.persistence.jaxb.attachment",
+        "org.eclipse.persistence.jaxb.compiler",
+        "org.eclipse.persistence.jaxb.compiler.builder",
+        "org.eclipse.persistence.jaxb.compiler.builder.helper",
+        "org.eclipse.persistence.jaxb.compiler.facets",
+        "org.eclipse.persistence.jaxb.dynamic",
+        "org.eclipse.persistence.jaxb.dynamic.metadata",
+        "org.eclipse.persistence.jaxb.javamodel",
+        "org.eclipse.persistence.jaxb.javamodel.oxm",
+        "org.eclipse.persistence.jaxb.javamodel.reflection",
+        "org.eclipse.persistence.jaxb.json",
+        "org.eclipse.persistence.jaxb.metadata",
+        "org.eclipse.persistence.jaxb.plugins",
+        "org.eclipse.persistence.jaxb.rs",
+        "org.eclipse.persistence.jaxb.xmlmodel"
+      ],
+      "resources": [
+        "META-INF/MANIFEST.MF",
+        "META-INF/services/com.sun.tools.xjc.Plugin",
+        "about.html",
+        "license.html",
+        "org/eclipse/persistence/jaxb/beanval.xsd",
+        "org/eclipse/persistence/jaxb/eclipselink_oxm_2_6.xsd",
+        "org/eclipse/persistence/jaxb/xmlmodel/jaxb.properties",
+        "readme.html"
+      ]
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "org.eclipse.persistence",
+        "artifactId": "org.eclipse.persistence.core",
+        "version": "2.7.6",
+        "type": "jar"
+      },
+      "uri": "file:/Users/megha/.m2/repository/org/eclipse/persistence/org.eclipse.persistence.core/2.7.6/org.eclipse.persistence.core-2.7.6.jar",
+      "packages": [
+        "org.eclipse.persistence",
+        "org.eclipse.persistence.annotations",
+        "org.eclipse.persistence.config",
+        "org.eclipse.persistence.core.descriptors",
+        "org.eclipse.persistence.core.mappings",
+        "org.eclipse.persistence.core.mappings.converters",
+        "org.eclipse.persistence.core.mappings.transformers",
+        "org.eclipse.persistence.core.queries",
+        "org.eclipse.persistence.core.sessions",
+        "org.eclipse.persistence.descriptors",
+        "org.eclipse.persistence.descriptors.changetracking",
+        "org.eclipse.persistence.descriptors.copying",
+        "org.eclipse.persistence.descriptors.invalidation",
+        "org.eclipse.persistence.descriptors.partitioning",
+        "org.eclipse.persistence.dynamic",
+        "org.eclipse.persistence.eis",
+        "org.eclipse.persistence.eis.interactions",
+        "org.eclipse.persistence.eis.mappings",
+        "org.eclipse.persistence.exceptions",
+        "org.eclipse.persistence.exceptions.i18n",
+        "org.eclipse.persistence.expressions",
+        "org.eclipse.persistence.expressions.spatial",
+        "org.eclipse.persistence.history",
+        "org.eclipse.persistence.indirection",
+        "org.eclipse.persistence.internal.cache",
+        "org.eclipse.persistence.internal.codegen",
+        "org.eclipse.persistence.internal.core.databaseaccess",
+        "org.eclipse.persistence.internal.core.descriptors",
+        "org.eclipse.persistence.internal.core.helper",
+        "org.eclipse.persistence.internal.core.queries",
+        "org.eclipse.persistence.internal.core.sessions",
+        "org.eclipse.persistence.internal.databaseaccess",
+        "org.eclipse.persistence.internal.descriptors",
+        "org.eclipse.persistence.internal.descriptors.changetracking",
+        "org.eclipse.persistence.internal.dynamic",
+        "org.eclipse.persistence.internal.expressions",
+        "org.eclipse.persistence.internal.helper",
+        "org.eclipse.persistence.internal.helper.linkedlist",
+        "org.eclipse.persistence.internal.history",
+        "org.eclipse.persistence.internal.identitymaps",
+        "org.eclipse.persistence.internal.indirection",
+        "org.eclipse.persistence.internal.indirection.jdk8",
+        "org.eclipse.persistence.internal.jpa.jpql",
+        "org.eclipse.persistence.internal.jpa.parsing",
+        "org.eclipse.persistence.internal.jpa.parsing.jpql",
+        "org.eclipse.persistence.internal.jpa.parsing.jpql.antlr",
+        "org.eclipse.persistence.internal.jpa.rs.metadata.model",
+        "org.eclipse.persistence.internal.jpa.rs.metadata.model.v2",
+        "org.eclipse.persistence.internal.localization",
+        "org.eclipse.persistence.internal.localization.i18n",
+        "org.eclipse.persistence.internal.mappings.converters",
+        "org.eclipse.persistence.internal.oxm",
+        "org.eclipse.persistence.internal.oxm.accessor",
+        "org.eclipse.persistence.internal.oxm.conversion",
+        "org.eclipse.persistence.internal.oxm.documentpreservation",
+        "org.eclipse.persistence.internal.oxm.mappings",
+        "org.eclipse.persistence.internal.oxm.record",
+        "org.eclipse.persistence.internal.oxm.record.deferred",
+        "org.eclipse.persistence.internal.oxm.record.json",
+        "org.eclipse.persistence.internal.oxm.record.namespaces",
+        "org.eclipse.persistence.internal.oxm.schema",
+        "org.eclipse.persistence.internal.oxm.schema.model",
+        "org.eclipse.persistence.internal.oxm.unmapped",
+        "org.eclipse.persistence.internal.platform.database",
+        "org.eclipse.persistence.internal.queries",
+        "org.eclipse.persistence.internal.security",
+        "org.eclipse.persistence.internal.sequencing",
+        "org.eclipse.persistence.internal.sessions",
+        "org.eclipse.persistence.internal.sessions.cdi",
+        "org.eclipse.persistence.internal.sessions.coordination",
+        "org.eclipse.persistence.internal.sessions.coordination.broadcast",
+        "org.eclipse.persistence.internal.sessions.coordination.corba",
+        "org.eclipse.persistence.internal.sessions.coordination.corba.sun",
+        "org.eclipse.persistence.internal.sessions.coordination.jms",
+        "org.eclipse.persistence.internal.sessions.coordination.rmi",
+        "org.eclipse.persistence.internal.sessions.coordination.rmi.iiop",
+        "org.eclipse.persistence.internal.sessions.factories",
+        "org.eclipse.persistence.internal.sessions.factories.model",
+        "org.eclipse.persistence.internal.sessions.factories.model.event",
+        "org.eclipse.persistence.internal.sessions.factories.model.log",
+        "org.eclipse.persistence.internal.sessions.factories.model.login",
+        "org.eclipse.persistence.internal.sessions.factories.model.platform",
+        "org.eclipse.persistence.internal.sessions.factories.model.pool",
+        "org.eclipse.persistence.internal.sessions.factories.model.project",
+        "org.eclipse.persistence.internal.sessions.factories.model.property",
+        "org.eclipse.persistence.internal.sessions.factories.model.rcm",
+        "org.eclipse.persistence.internal.sessions.factories.model.rcm.command",
+        "org.eclipse.persistence.internal.sessions.factories.model.sequencing",
+        "org.eclipse.persistence.internal.sessions.factories.model.session",
+        "org.eclipse.persistence.internal.sessions.factories.model.transport",
+        "org.eclipse.persistence.internal.sessions.factories.model.transport.discovery",
+        "org.eclipse.persistence.internal.sessions.factories.model.transport.naming",
+        "org.eclipse.persistence.internal.sessions.remote",
+        "org.eclipse.persistence.internal.weaving",
+        "org.eclipse.persistence.logging",
+        "org.eclipse.persistence.mappings",
+        "org.eclipse.persistence.mappings.converters",
+        "org.eclipse.persistence.mappings.foundation",
+        "org.eclipse.persistence.mappings.querykeys",
+        "org.eclipse.persistence.mappings.structures",
+        "org.eclipse.persistence.mappings.transformers",
+        "org.eclipse.persistence.mappings.xdb",
+        "org.eclipse.persistence.oxm",
+        "org.eclipse.persistence.oxm.annotations",
+        "org.eclipse.persistence.oxm.attachment",
+        "org.eclipse.persistence.oxm.documentpreservation",
+        "org.eclipse.persistence.oxm.json",
+        "org.eclipse.persistence.oxm.mappings",
+        "org.eclipse.persistence.oxm.mappings.converters",
+        "org.eclipse.persistence.oxm.mappings.nullpolicy",
+        "org.eclipse.persistence.oxm.platform",
+        "org.eclipse.persistence.oxm.record",
+        "org.eclipse.persistence.oxm.schema",
+        "org.eclipse.persistence.oxm.sequenced",
+        "org.eclipse.persistence.oxm.unmapped",
+        "org.eclipse.persistence.platform.database",
+        "org.eclipse.persistence.platform.database.converters",
+        "org.eclipse.persistence.platform.database.events",
+        "org.eclipse.persistence.platform.database.jdbc",
+        "org.eclipse.persistence.platform.database.oracle.annotations",
+        "org.eclipse.persistence.platform.database.oracle.jdbc",
+        "org.eclipse.persistence.platform.database.oracle.plsql",
+        "org.eclipse.persistence.platform.database.partitioning",
+        "org.eclipse.persistence.platform.server",
+        "org.eclipse.persistence.platform.server.glassfish",
+        "org.eclipse.persistence.platform.server.jboss",
+        "org.eclipse.persistence.platform.server.oc4j",
+        "org.eclipse.persistence.platform.server.sap",
+        "org.eclipse.persistence.platform.server.sunas",
+        "org.eclipse.persistence.platform.server.was",
+        "org.eclipse.persistence.platform.server.wls",
+        "org.eclipse.persistence.platform.xml",
+        "org.eclipse.persistence.platform.xml.jaxp",
+        "org.eclipse.persistence.queries",
+        "org.eclipse.persistence.sequencing",
+        "org.eclipse.persistence.services",
+        "org.eclipse.persistence.services.glassfish",
+        "org.eclipse.persistence.services.jboss",
+        "org.eclipse.persistence.services.mbean",
+        "org.eclipse.persistence.services.weblogic",
+        "org.eclipse.persistence.services.websphere",
+        "org.eclipse.persistence.sessions",
+        "org.eclipse.persistence.sessions.broker",
+        "org.eclipse.persistence.sessions.changesets",
+        "org.eclipse.persistence.sessions.coordination",
+        "org.eclipse.persistence.sessions.coordination.broadcast",
+        "org.eclipse.persistence.sessions.coordination.corba",
+        "org.eclipse.persistence.sessions.coordination.corba.sun",
+        "org.eclipse.persistence.sessions.coordination.jms",
+        "org.eclipse.persistence.sessions.coordination.rmi",
+        "org.eclipse.persistence.sessions.factories",
+        "org.eclipse.persistence.sessions.interceptors",
+        "org.eclipse.persistence.sessions.remote",
+        "org.eclipse.persistence.sessions.remote.corba.sun",
+        "org.eclipse.persistence.sessions.remote.rmi",
+        "org.eclipse.persistence.sessions.remote.rmi.iiop",
+        "org.eclipse.persistence.sessions.serializers",
+        "org.eclipse.persistence.sessions.server",
+        "org.eclipse.persistence.tools",
+        "org.eclipse.persistence.tools.file",
+        "org.eclipse.persistence.tools.profiler",
+        "org.eclipse.persistence.tools.schemaframework",
+        "org.eclipse.persistence.tools.tuning",
+        "org.eclipse.persistence.transaction",
+        "org.eclipse.persistence.transaction.glassfish",
+        "org.eclipse.persistence.transaction.jboss",
+        "org.eclipse.persistence.transaction.jotm",
+        "org.eclipse.persistence.transaction.oc4j",
+        "org.eclipse.persistence.transaction.sap",
+        "org.eclipse.persistence.transaction.sunas",
+        "org.eclipse.persistence.transaction.was",
+        "org.eclipse.persistence.transaction.wls"
+      ],
+      "resources": [
+        "META-INF/MANIFEST.MF",
+        "about.html",
+        "license.html",
+        "org/eclipse/persistence/Version.j",
+        "org/eclipse/persistence/eclipselink_persistence_map_1.0.xsd",
+        "org/eclipse/persistence/eclipselink_persistence_map_2.3.xsd",
+        "org/eclipse/persistence/eclipselink_sessions_2.1.xsd",
+        "org/eclipse/persistence/internal/helper/VendorNameToPlatformMapping.properties",
+        "org/eclipse/persistence/internal/jpa/parsing/jpql/antlr/JPQL.g",
+        "org/eclipse/persistence/toplink-object-persistence_11_1_1.xsd",
+        "readme.html"
+      ]
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "org.eclipse.persistence",
+        "artifactId": "org.eclipse.persistence.asm",
+        "version": "2.7.6",
+        "type": "jar"
+      },
+      "uri": "file:/Users/megha/.m2/repository/org/eclipse/persistence/org.eclipse.persistence.asm/2.7.6/org.eclipse.persistence.asm-2.7.6.jar",
+      "packages": [
+        "org.eclipse.persistence.internal.libraries.asm",
+        "org.eclipse.persistence.internal.libraries.asm.commons",
+        "org.eclipse.persistence.internal.libraries.asm.signature",
+        "org.eclipse.persistence.internal.libraries.asm.tree",
+        "org.eclipse.persistence.internal.libraries.asm.tree.analysis",
+        "org.eclipse.persistence.internal.libraries.asm.util",
+        "org.eclipse.persistence.internal.libraries.asm.xml"
+      ],
+      "resources": [
+        "META-INF/MANIFEST.MF",
+        "about.html",
+        "license.html",
+        "readme.html"
+      ]
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "jakarta.xml.bind",
+        "artifactId": "jakarta.xml.bind-api",
+        "version": "2.3.3",
+        "type": "jar"
+      },
+      "uri": "file:/Users/megha/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/2.3.3/jakarta.xml.bind-api-2.3.3.jar",
+      "packages": [
+        "META-INF.versions.9.javax.xml.bind",
+        "javax.xml.bind",
+        "javax.xml.bind.annotation",
+        "javax.xml.bind.annotation.adapters",
+        "javax.xml.bind.attachment",
+        "javax.xml.bind.helpers",
+        "javax.xml.bind.util"
+      ],
+      "resources": [
+        "META-INF/LICENSE.md",
+        "META-INF/MANIFEST.MF",
+        "META-INF/NOTICE.md",
+        "META-INF/maven/jakarta.xml.bind/jakarta.xml.bind-api/pom.properties",
+        "META-INF/maven/jakarta.xml.bind/jakarta.xml.bind-api/pom.xml",
+        "javax/xml/bind/Messages.properties",
+        "javax/xml/bind/helpers/Messages.properties",
+        "javax/xml/bind/util/Messages.properties"
+      ]
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "org.mule.tools.maven",
+        "artifactId": "exchange-mule-plugin-utils",
+        "version": "0.0.23",
+        "type": "jar"
+      },
+      "uri": "file:/Users/megha/.m2/repository/org/mule/tools/maven/exchange-mule-plugin-utils/0.0.23/exchange-mule-plugin-utils-0.0.23.jar",
+      "packages": [
+        "com.mulesoft.exchange.mavenfacade.utils"
+      ],
+      "resources": [
+        "META-INF/MANIFEST.MF",
+        "META-INF/maven/org.mule.tools.maven/exchange-mule-plugin-utils/pom.properties",
+        "META-INF/maven/org.mule.tools.maven/exchange-mule-plugin-utils/pom.xml"
+      ]
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "de.skuzzle",
+        "artifactId": "semantic-version",
+        "version": "1.2.0",
+        "type": "jar"
+      },
+      "uri": "file:/Users/megha/.m2/repository/de/skuzzle/semantic-version/1.2.0/semantic-version-1.2.0.jar",
+      "packages": [
+        "de.skuzzle.semantic"
+      ],
+      "resources": [
+        "META-INF/MANIFEST.MF",
+        "META-INF/maven/de.skuzzle/semantic-version/pom.properties",
+        "META-INF/maven/de.skuzzle/semantic-version/pom.xml"
+      ]
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.thoughtworks.xstream",
+        "artifactId": "xstream",
+        "version": "1.4.21",
+        "type": "jar"
+      },
+      "uri": "file:/Users/megha/.m2/repository/com/thoughtworks/xstream/xstream/1.4.21/xstream-1.4.21.jar",
+      "packages": [
+        "com.thoughtworks.xstream",
+        "com.thoughtworks.xstream.annotations",
+        "com.thoughtworks.xstream.converters",
+        "com.thoughtworks.xstream.converters.basic",
+        "com.thoughtworks.xstream.converters.collections",
+        "com.thoughtworks.xstream.converters.enums",
+        "com.thoughtworks.xstream.converters.extended",
+        "com.thoughtworks.xstream.converters.javabean",
+        "com.thoughtworks.xstream.converters.reflection",
+        "com.thoughtworks.xstream.converters.time",
+        "com.thoughtworks.xstream.core",
+        "com.thoughtworks.xstream.core.util",
+        "com.thoughtworks.xstream.io",
+        "com.thoughtworks.xstream.io.binary",
+        "com.thoughtworks.xstream.io.copy",
+        "com.thoughtworks.xstream.io.json",
+        "com.thoughtworks.xstream.io.naming",
+        "com.thoughtworks.xstream.io.path",
+        "com.thoughtworks.xstream.io.xml",
+        "com.thoughtworks.xstream.io.xml.xppdom",
+        "com.thoughtworks.xstream.mapper",
+        "com.thoughtworks.xstream.persistence",
+        "com.thoughtworks.xstream.security"
+      ],
+      "resources": [
+        "META-INF/MANIFEST.MF",
+        "META-INF/maven/com.thoughtworks.xstream/xstream/pom.properties",
+        "META-INF/maven/com.thoughtworks.xstream/xstream/pom.xml"
+      ]
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "io.github.x-stream",
+        "artifactId": "mxparser",
+        "version": "1.2.2",
+        "type": "jar"
+      },
+      "uri": "file:/Users/megha/.m2/repository/io/github/x-stream/mxparser/1.2.2/mxparser-1.2.2.jar",
+      "packages": [
+        "io.github.xstream.mxparser"
+      ],
+      "resources": [
+        "META-INF/LICENSE",
+        "META-INF/MANIFEST.MF",
+        "META-INF/maven/io.github.x-stream/mxparser/pom.properties",
+        "META-INF/maven/io.github.x-stream/mxparser/pom.xml",
+        "META-INF/services/org.xmlpull.v1.XmlPullParser",
+        "META-INF/services/org.xmlpull.v1.XmlPullParserFactory"
+      ]
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "xmlpull",
+        "artifactId": "xmlpull",
+        "version": "1.1.3.1",
+        "type": "jar"
+      },
+      "uri": "file:/Users/megha/.m2/repository/xmlpull/xmlpull/1.1.3.1/xmlpull-1.1.3.1.jar",
+      "packages": [
+        "org.xmlpull.v1"
+      ],
+      "resources": [
+        "META-INF/MANIFEST.MF",
+        "XMLPULL_1_1_3_1_VERSION"
+      ]
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "org.mule",
+        "artifactId": "mule-maven-client-impl",
+        "version": "2.5.0",
+        "type": "jar"
+      },
+      "uri": "file:/Users/megha/.m2/repository/org/mule/mule-maven-client-impl/2.5.0/mule-maven-client-impl-2.5.0.jar",
+      "packages": [
+        "org.mule.maven.client.internal",
+        "org.mule.maven.client.internal.dependency",
+        "org.mule.maven.client.internal.pom",
+        "org.mule.maven.client.internal.repository",
+        "org.mule.maven.client.internal.util",
+        "org.mule.maven.client.internal.version",
+        "org.mule.maven.client.internal.wagon"
+      ],
+      "resources": [
+        "META-INF/MANIFEST.MF",
+        "META-INF/maven/org.mule/mule-maven-client-impl/pom.properties",
+        "META-INF/maven/org.mule/mule-maven-client-impl/pom.xml",
+        "META-INF/services/org.mule.maven.client.api.MavenClientProvider",
+        "META-INF/services/org.mule.maven.client.api.VersionUtils",
+        "META-INF/sisu/javax.inject.Named"
+      ]
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "org.mule",
+        "artifactId": "mule-maven-client-api",
+        "version": "2.5.0",
+        "type": "jar"
+      },
+      "uri": "file:/Users/megha/.m2/repository/org/mule/mule-maven-client-api/2.5.0/mule-maven-client-api-2.5.0.jar",
+      "packages": [
+        "org.mule.maven.client.api",
+        "org.mule.maven.client.api.exception",
+        "org.mule.maven.client.api.model"
+      ],
+      "resources": [
+        "META-INF/MANIFEST.MF",
+        "META-INF/maven/org.mule/mule-maven-client-api/pom.properties",
+        "META-INF/maven/org.mule/mule-maven-client-api/pom.xml"
+      ]
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "org.mule",
+        "artifactId": "mule-maven-pom-parser-api",
+        "version": "2.5.0",
+        "type": "jar"
+      },
+      "uri": "file:/Users/megha/.m2/repository/org/mule/mule-maven-pom-parser-api/2.5.0/mule-maven-pom-parser-api-2.5.0.jar",
+      "packages": [
+        "org.mule.maven.pom.parser.api",
+        "org.mule.maven.pom.parser.api.model"
+      ],
+      "resources": [
+        "META-INF/MANIFEST.MF",
+        "META-INF/maven/org.mule/mule-maven-pom-parser-api/pom.properties",
+        "META-INF/maven/org.mule/mule-maven-pom-parser-api/pom.xml"
+      ]
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "org.mule",
+        "artifactId": "mule-maven-pom-parser-impl",
+        "version": "2.5.0",
+        "type": "jar"
+      },
+      "uri": "file:/Users/megha/.m2/repository/org/mule/mule-maven-pom-parser-impl/2.5.0/mule-maven-pom-parser-impl-2.5.0.jar",
+      "packages": [
+        "org.mule.maven.pom.parser.internal",
+        "org.mule.maven.pom.parser.internal.model",
+        "org.mule.maven.pom.parser.internal.util"
+      ],
+      "resources": [
+        "META-INF/MANIFEST.MF",
+        "META-INF/maven/org.mule/mule-maven-pom-parser-impl/pom.properties",
+        "META-INF/maven/org.mule/mule-maven-pom-parser-impl/pom.xml",
+        "META-INF/services/org.mule.maven.pom.parser.api.MavenPomParserProvider",
+        "META-INF/services/org.mule.maven.pom.parser.api.model.MavenModelBuilderProvider"
+      ]
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "org.apache.maven.resolver",
+        "artifactId": "maven-resolver-api",
+        "version": "1.9.22",
+        "type": "jar"
+      },
+      "uri": "file:/Users/megha/.m2/repository/org/apache/maven/resolver/maven-resolver-api/1.9.22/maven-resolver-api-1.9.22.jar",
+      "packages": [
+        "org.eclipse.aether",
+        "org.eclipse.aether.artifact",
+        "org.eclipse.aether.collection",
+        "org.eclipse.aether.deployment",
+        "org.eclipse.aether.graph",
+        "org.eclipse.aether.installation",
+        "org.eclipse.aether.metadata",
+        "org.eclipse.aether.repository",
+        "org.eclipse.aether.resolution",
+        "org.eclipse.aether.transfer",
+        "org.eclipse.aether.transform",
+        "org.eclipse.aether.version"
+      ],
+      "resources": [
+        "META-INF/DEPENDENCIES",
+        "META-INF/LICENSE",
+        "META-INF/MANIFEST.MF",
+        "META-INF/NOTICE",
+        "META-INF/maven/org.apache.maven.resolver/maven-resolver-api/pom.properties",
+        "META-INF/maven/org.apache.maven.resolver/maven-resolver-api/pom.xml"
+      ]
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "org.apache.maven.resolver",
+        "artifactId": "maven-resolver-util",
+        "version": "1.9.22",
+        "type": "jar"
+      },
+      "uri": "file:/Users/megha/.m2/repository/org/apache/maven/resolver/maven-resolver-util/1.9.22/maven-resolver-util-1.9.22.jar",
+      "packages": [
+        "org.eclipse.aether.util",
+        "org.eclipse.aether.util.artifact",
+        "org.eclipse.aether.util.concurrency",
+        "org.eclipse.aether.util.filter",
+        "org.eclipse.aether.util.graph.manager",
+        "org.eclipse.aether.util.graph.selector",
+        "org.eclipse.aether.util.graph.transformer",
+        "org.eclipse.aether.util.graph.traverser",
+        "org.eclipse.aether.util.graph.version",
+        "org.eclipse.aether.util.graph.visitor",
+        "org.eclipse.aether.util.listener",
+        "org.eclipse.aether.util.repository",
+        "org.eclipse.aether.util.version"
+      ],
+      "resources": [
+        "META-INF/DEPENDENCIES",
+        "META-INF/LICENSE",
+        "META-INF/MANIFEST.MF",
+        "META-INF/NOTICE",
+        "META-INF/maven/org.apache.maven.resolver/maven-resolver-util/pom.properties",
+        "META-INF/maven/org.apache.maven.resolver/maven-resolver-util/pom.xml"
+      ]
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.vdurmont",
+        "artifactId": "semver4j",
+        "version": "3.1.0",
+        "type": "jar"
+      },
+      "uri": "file:/Users/megha/.m2/repository/com/vdurmont/semver4j/3.1.0/semver4j-3.1.0.jar",
+      "packages": [
+        "com.vdurmont.semver4j"
+      ],
+      "resources": [
+        "META-INF/MANIFEST.MF",
+        "META-INF/maven/com.vdurmont/semver4j/pom.properties",
+        "META-INF/maven/com.vdurmont/semver4j/pom.xml"
+      ]
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "org.mule",
+        "artifactId": "maven-model-shaded",
+        "version": "2.5.0",
+        "type": "jar"
+      },
+      "uri": "file:/Users/megha/.m2/repository/org/mule/maven-model-shaded/2.5.0/maven-model-shaded-2.5.0.jar",
+      "packages": [
+        "org.apache.maven.artifact",
+        "org.apache.maven.artifact.handler",
+        "org.apache.maven.artifact.metadata",
+        "org.apache.maven.artifact.repository",
+        "org.apache.maven.artifact.repository.layout",
+        "org.apache.maven.artifact.repository.metadata",
+        "org.apache.maven.artifact.repository.metadata.io.xpp3",
+        "org.apache.maven.artifact.resolver",
+        "org.apache.maven.artifact.resolver.filter",
+        "org.apache.maven.artifact.versioning",
+        "org.apache.maven.model",
+        "org.apache.maven.model.building",
+        "org.apache.maven.model.composition",
+        "org.apache.maven.model.inheritance",
+        "org.apache.maven.model.interpolation",
+        "org.apache.maven.model.io",
+        "org.apache.maven.model.io.xpp3",
+        "org.apache.maven.model.locator",
+        "org.apache.maven.model.management",
+        "org.apache.maven.model.merge",
+        "org.apache.maven.model.normalization",
+        "org.apache.maven.model.path",
+        "org.apache.maven.model.plugin",
+        "org.apache.maven.model.profile",
+        "org.apache.maven.model.profile.activation",
+        "org.apache.maven.model.resolution",
+        "org.apache.maven.model.superpom",
+        "org.apache.maven.model.validation",
+        "org.apache.maven.repository",
+        "org.apache.maven.repository.legacy.metadata",
+        "org.apache.maven.utils"
+      ],
+      "resources": [
+        "META-INF/DEPENDENCIES",
+        "META-INF/LICENSE",
+        "META-INF/MANIFEST.MF",
+        "META-INF/NOTICE",
+        "META-INF/maven/org.apache.maven/maven-artifact/pom.properties",
+        "META-INF/maven/org.apache.maven/maven-artifact/pom.xml",
+        "META-INF/maven/org.apache.maven/maven-model-builder/pom.properties",
+        "META-INF/maven/org.apache.maven/maven-model-builder/pom.xml",
+        "META-INF/maven/org.apache.maven/maven-model/pom.properties",
+        "META-INF/maven/org.apache.maven/maven-model/pom.xml",
+        "META-INF/maven/org.apache.maven/maven-repository-metadata/pom.properties",
+        "META-INF/maven/org.apache.maven/maven-repository-metadata/pom.xml",
+        "META-INF/maven/org.mule/maven-model-shaded/pom.properties",
+        "META-INF/maven/org.mule/maven-model-shaded/pom.xml",
+        "META-INF/sisu/javax.inject.Named",
+        "org/apache/maven/model/pom-4.0.0.xml"
+      ]
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "org.apache.maven",
+        "artifactId": "maven-settings-builder",
+        "version": "3.9.9",
+        "type": "jar"
+      },
+      "uri": "file:/Users/megha/.m2/repository/org/apache/maven/maven-settings-builder/3.9.9/maven-settings-builder-3.9.9.jar",
+      "packages": [
+        "org.apache.maven.settings.building",
+        "org.apache.maven.settings.crypto",
+        "org.apache.maven.settings.io",
+        "org.apache.maven.settings.merge",
+        "org.apache.maven.settings.validation"
+      ],
+      "resources": [
+        "META-INF/DEPENDENCIES",
+        "META-INF/LICENSE",
+        "META-INF/MANIFEST.MF",
+        "META-INF/NOTICE",
+        "META-INF/maven/org.apache.maven/maven-settings-builder/pom.properties",
+        "META-INF/maven/org.apache.maven/maven-settings-builder/pom.xml",
+        "META-INF/sisu/javax.inject.Named"
+      ]
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "org.apache.maven",
+        "artifactId": "maven-builder-support",
+        "version": "3.9.9",
+        "type": "jar"
+      },
+      "uri": "file:/Users/megha/.m2/repository/org/apache/maven/maven-builder-support/3.9.9/maven-builder-support-3.9.9.jar",
+      "packages": [
+        "org.apache.maven.building"
+      ],
+      "resources": [
+        "META-INF/DEPENDENCIES",
+        "META-INF/LICENSE",
+        "META-INF/MANIFEST.MF",
+        "META-INF/NOTICE",
+        "META-INF/maven/org.apache.maven/maven-builder-support/pom.properties",
+        "META-INF/maven/org.apache.maven/maven-builder-support/pom.xml"
+      ]
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "org.codehaus.plexus",
+        "artifactId": "plexus-interpolation",
+        "version": "1.27",
+        "type": "jar"
+      },
+      "uri": "file:/Users/megha/.m2/repository/org/codehaus/plexus/plexus-interpolation/1.27/plexus-interpolation-1.27.jar",
+      "packages": [
+        "org.codehaus.plexus.interpolation",
+        "org.codehaus.plexus.interpolation.fixed",
+        "org.codehaus.plexus.interpolation.multi",
+        "org.codehaus.plexus.interpolation.object",
+        "org.codehaus.plexus.interpolation.os",
+        "org.codehaus.plexus.interpolation.reflection",
+        "org.codehaus.plexus.interpolation.util"
+      ],
+      "resources": [
+        "META-INF/MANIFEST.MF",
+        "META-INF/maven/org.codehaus.plexus/plexus-interpolation/pom.properties",
+        "META-INF/maven/org.codehaus.plexus/plexus-interpolation/pom.xml"
+      ]
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "org.apache.maven",
+        "artifactId": "maven-settings",
+        "version": "3.9.9",
+        "type": "jar"
+      },
+      "uri": "file:/Users/megha/.m2/repository/org/apache/maven/maven-settings/3.9.9/maven-settings-3.9.9.jar",
+      "packages": [
+        "org.apache.maven.settings",
+        "org.apache.maven.settings.io.xpp3"
+      ],
+      "resources": [
+        "META-INF/DEPENDENCIES",
+        "META-INF/LICENSE",
+        "META-INF/MANIFEST.MF",
+        "META-INF/NOTICE",
+        "META-INF/maven/org.apache.maven/maven-settings/pom.properties",
+        "META-INF/maven/org.apache.maven/maven-settings/pom.xml"
+      ]
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "org.codehaus.plexus",
+        "artifactId": "plexus-sec-dispatcher",
+        "version": "2.0",
+        "type": "jar"
+      },
+      "uri": "file:/Users/megha/.m2/repository/org/codehaus/plexus/plexus-sec-dispatcher/2.0/plexus-sec-dispatcher-2.0.jar",
+      "packages": [
+        "org.sonatype.plexus.components.sec.dispatcher",
+        "org.sonatype.plexus.components.sec.dispatcher.model",
+        "org.sonatype.plexus.components.sec.dispatcher.model.io.xpp3"
+      ],
+      "resources": [
+        "META-INF/MANIFEST.MF",
+        "META-INF/maven/org.codehaus.plexus/plexus-sec-dispatcher/pom.properties",
+        "META-INF/maven/org.codehaus.plexus/plexus-sec-dispatcher/pom.xml",
+        "META-INF/sisu/javax.inject.Named"
+      ]
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "org.codehaus.plexus",
+        "artifactId": "plexus-cipher",
+        "version": "2.0",
+        "type": "jar"
+      },
+      "uri": "file:/Users/megha/.m2/repository/org/codehaus/plexus/plexus-cipher/2.0/plexus-cipher-2.0.jar",
+      "packages": [
+        "org.sonatype.plexus.components.cipher"
+      ],
+      "resources": [
+        "META-INF/MANIFEST.MF",
+        "META-INF/maven/org.codehaus.plexus/plexus-cipher/pom.properties",
+        "META-INF/maven/org.codehaus.plexus/plexus-cipher/pom.xml",
+        "META-INF/sisu/javax.inject.Named"
+      ]
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "org.apache.maven.wagon",
+        "artifactId": "wagon-http",
+        "version": "3.5.3",
+        "type": "jar"
+      },
+      "uri": "file:/Users/megha/.m2/repository/org/apache/maven/wagon/wagon-http/3.5.3/wagon-http-3.5.3.jar",
+      "packages": [
+        "org.apache.maven.wagon.providers.http"
+      ],
+      "resources": [
+        "META-INF/DEPENDENCIES",
+        "META-INF/LICENSE",
+        "META-INF/MANIFEST.MF",
+        "META-INF/NOTICE",
+        "META-INF/maven/org.apache.maven.wagon/wagon-http/pom.properties",
+        "META-INF/maven/org.apache.maven.wagon/wagon-http/pom.xml",
+        "META-INF/plexus/components.xml"
+      ]
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "org.apache.maven.wagon",
+        "artifactId": "wagon-http-shared",
+        "version": "3.5.3",
+        "type": "jar"
+      },
+      "uri": "file:/Users/megha/.m2/repository/org/apache/maven/wagon/wagon-http-shared/3.5.3/wagon-http-shared-3.5.3.jar",
+      "packages": [
+        "org.apache.maven.wagon.shared.http"
+      ],
+      "resources": [
+        "META-INF/DEPENDENCIES",
+        "META-INF/LICENSE",
+        "META-INF/MANIFEST.MF",
+        "META-INF/NOTICE",
+        "META-INF/maven/org.apache.maven.wagon/wagon-http-shared/pom.properties",
+        "META-INF/maven/org.apache.maven.wagon/wagon-http-shared/pom.xml"
+      ]
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "org.slf4j",
+        "artifactId": "jcl-over-slf4j",
+        "version": "1.7.36",
+        "type": "jar"
+      },
+      "uri": "file:/Users/megha/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.36/jcl-over-slf4j-1.7.36.jar",
+      "packages": [
+        "org.apache.commons.logging",
+        "org.apache.commons.logging.impl"
+      ],
+      "resources": [
+        "META-INF/MANIFEST.MF",
+        "META-INF/maven/org.slf4j/jcl-over-slf4j/pom.properties",
+        "META-INF/maven/org.slf4j/jcl-over-slf4j/pom.xml",
+        "META-INF/services/org.apache.commons.logging.LogFactory"
+      ]
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "org.apache.maven.wagon",
+        "artifactId": "wagon-provider-api",
+        "version": "3.5.3",
+        "type": "jar"
+      },
+      "uri": "file:/Users/megha/.m2/repository/org/apache/maven/wagon/wagon-provider-api/3.5.3/wagon-provider-api-3.5.3.jar",
+      "packages": [
+        "org.apache.maven.wagon",
+        "org.apache.maven.wagon.authentication",
+        "org.apache.maven.wagon.authorization",
+        "org.apache.maven.wagon.events",
+        "org.apache.maven.wagon.observers",
+        "org.apache.maven.wagon.proxy",
+        "org.apache.maven.wagon.repository",
+        "org.apache.maven.wagon.resource"
+      ],
+      "resources": [
+        "META-INF/DEPENDENCIES",
+        "META-INF/LICENSE",
+        "META-INF/MANIFEST.MF",
+        "META-INF/NOTICE",
+        "META-INF/maven/org.apache.maven.wagon/wagon-provider-api/pom.properties",
+        "META-INF/maven/org.apache.maven.wagon/wagon-provider-api/pom.xml"
+      ]
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "org.apache.httpcomponents",
+        "artifactId": "httpclient",
+        "version": "4.5.14",
+        "type": "jar"
+      },
+      "uri": "file:/Users/megha/.m2/repository/org/apache/httpcomponents/httpclient/4.5.14/httpclient-4.5.14.jar",
+      "packages": [
+        "org.apache.http.auth",
+        "org.apache.http.auth.params",
+        "org.apache.http.client",
+        "org.apache.http.client.config",
+        "org.apache.http.client.entity",
+        "org.apache.http.client.methods",
+        "org.apache.http.client.params",
+        "org.apache.http.client.protocol",
+        "org.apache.http.client.utils",
+        "org.apache.http.conn",
+        "org.apache.http.conn.params",
+        "org.apache.http.conn.routing",
+        "org.apache.http.conn.scheme",
+        "org.apache.http.conn.socket",
+        "org.apache.http.conn.ssl",
+        "org.apache.http.conn.util",
+        "org.apache.http.cookie",
+        "org.apache.http.cookie.params",
+        "org.apache.http.impl.auth",
+        "org.apache.http.impl.client",
+        "org.apache.http.impl.conn",
+        "org.apache.http.impl.conn.tsccm",
+        "org.apache.http.impl.cookie",
+        "org.apache.http.impl.execchain"
+      ],
+      "resources": [
+        "META-INF/DEPENDENCIES",
+        "META-INF/LICENSE",
+        "META-INF/MANIFEST.MF",
+        "META-INF/NOTICE",
+        "META-INF/maven/org.apache.httpcomponents/httpclient/pom.properties",
+        "META-INF/maven/org.apache.httpcomponents/httpclient/pom.xml",
+        "mozilla/public-suffix-list.txt",
+        "org/apache/http/client/version.properties"
+      ]
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "org.apache.httpcomponents",
+        "artifactId": "httpcore",
+        "version": "4.4.16",
+        "type": "jar"
+      },
+      "uri": "file:/Users/megha/.m2/repository/org/apache/httpcomponents/httpcore/4.4.16/httpcore-4.4.16.jar",
+      "packages": [
+        "org.apache.http",
+        "org.apache.http.annotation",
+        "org.apache.http.concurrent",
+        "org.apache.http.config",
+        "org.apache.http.entity",
+        "org.apache.http.impl",
+        "org.apache.http.impl.bootstrap",
+        "org.apache.http.impl.entity",
+        "org.apache.http.impl.io",
+        "org.apache.http.impl.pool",
+        "org.apache.http.io",
+        "org.apache.http.message",
+        "org.apache.http.params",
+        "org.apache.http.pool",
+        "org.apache.http.protocol",
+        "org.apache.http.ssl",
+        "org.apache.http.util"
+      ],
+      "resources": [
+        "META-INF/DEPENDENCIES",
+        "META-INF/LICENSE",
+        "META-INF/MANIFEST.MF",
+        "META-INF/NOTICE",
+        "META-INF/maven/org.apache.httpcomponents/httpcore/pom.properties",
+        "META-INF/maven/org.apache.httpcomponents/httpcore/pom.xml",
+        "org/apache/http/version.properties"
+      ]
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "org.jsoup",
+        "artifactId": "jsoup",
+        "version": "1.21.1",
+        "type": "jar"
+      },
+      "uri": "file:/Users/megha/.m2/repository/org/jsoup/jsoup/1.21.1/jsoup-1.21.1.jar",
+      "packages": [
+        "META-INF.versions.11",
+        "META-INF.versions.11.org.jsoup.helper",
+        "org.jsoup",
+        "org.jsoup.helper",
+        "org.jsoup.internal",
+        "org.jsoup.nodes",
+        "org.jsoup.parser",
+        "org.jsoup.safety",
+        "org.jsoup.select"
+      ],
+      "resources": [
+        "META-INF/MANIFEST.MF",
+        "META-INF/jsoup/LICENSE",
+        "META-INF/maven/org.jsoup/jsoup/pom.properties",
+        "META-INF/maven/org.jsoup/jsoup/pom.xml"
+      ]
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.beust",
+        "artifactId": "jcommander",
+        "version": "1.82",
+        "type": "jar"
+      },
+      "uri": "file:/Users/megha/.m2/repository/com/beust/jcommander/1.82/jcommander-1.82.jar",
+      "packages": [
+        "com.beust.ah",
+        "com.beust.jcommander",
+        "com.beust.jcommander.converters",
+        "com.beust.jcommander.defaultprovider",
+        "com.beust.jcommander.internal",
+        "com.beust.jcommander.parser",
+        "com.beust.jcommander.validators"
+      ],
+      "resources": [
+        "META-INF/MANIFEST.MF"
+      ]
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "org.eclipse.sisu",
+        "artifactId": "org.eclipse.sisu.plexus",
+        "version": "0.9.0.M3",
+        "type": "jar"
+      },
+      "uri": "file:/Users/megha/.m2/repository/org/eclipse/sisu/org.eclipse.sisu.plexus/0.9.0.M3/org.eclipse.sisu.plexus-0.9.0.M3.jar",
+      "packages": [
+        "org.codehaus.plexus",
+        "org.codehaus.plexus.component",
+        "org.codehaus.plexus.component.composition",
+        "org.codehaus.plexus.component.configurator",
+        "org.codehaus.plexus.component.configurator.converters",
+        "org.codehaus.plexus.component.configurator.converters.basic",
+        "org.codehaus.plexus.component.configurator.converters.composite",
+        "org.codehaus.plexus.component.configurator.converters.lookup",
+        "org.codehaus.plexus.component.configurator.converters.special",
+        "org.codehaus.plexus.component.configurator.expression",
+        "org.codehaus.plexus.component.factory",
+        "org.codehaus.plexus.component.repository",
+        "org.codehaus.plexus.component.repository.exception",
+        "org.codehaus.plexus.configuration",
+        "org.codehaus.plexus.configuration.xml",
+        "org.codehaus.plexus.context",
+        "org.codehaus.plexus.logging",
+        "org.codehaus.plexus.logging.console",
+        "org.codehaus.plexus.personality.plexus.lifecycle.phase",
+        "org.eclipse.sisu.plexus"
+      ],
+      "resources": [
+        "META-INF/MANIFEST.MF",
+        "META-INF/maven/org.eclipse.sisu/org.eclipse.sisu.plexus/pom.properties",
+        "META-INF/maven/org.eclipse.sisu/org.eclipse.sisu.plexus/pom.xml",
+        "META-INF/sisu/javax.inject.Named",
+        "about.html",
+        "overview.html"
+      ]
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "org.eclipse.sisu",
+        "artifactId": "org.eclipse.sisu.inject",
+        "version": "0.9.0.M3",
+        "type": "jar"
+      },
+      "uri": "file:/Users/megha/.m2/repository/org/eclipse/sisu/org.eclipse.sisu.inject/0.9.0.M3/org.eclipse.sisu.inject-0.9.0.M3.jar",
+      "packages": [
+        "org.eclipse.sisu",
+        "org.eclipse.sisu.bean",
+        "org.eclipse.sisu.inject",
+        "org.eclipse.sisu.launch",
+        "org.eclipse.sisu.osgi",
+        "org.eclipse.sisu.space",
+        "org.eclipse.sisu.space.asm",
+        "org.eclipse.sisu.wire",
+        "org.sonatype.inject"
+      ],
+      "resources": [
+        "META-INF/MANIFEST.MF",
+        "META-INF/maven/org.eclipse.sisu/org.eclipse.sisu.inject/pom.properties",
+        "META-INF/maven/org.eclipse.sisu/org.eclipse.sisu.inject/pom.xml",
+        "about.html",
+        "overview.html"
+      ]
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "org.codehaus.plexus",
+        "artifactId": "plexus-component-annotations",
+        "version": "2.1.0",
+        "type": "jar"
+      },
+      "uri": "file:/Users/megha/.m2/repository/org/codehaus/plexus/plexus-component-annotations/2.1.0/plexus-component-annotations-2.1.0.jar",
+      "packages": [
+        "org.codehaus.plexus.component.annotations"
+      ],
+      "resources": [
+        "META-INF/MANIFEST.MF",
+        "META-INF/maven/org.codehaus.plexus/plexus-component-annotations/pom.properties",
+        "META-INF/maven/org.codehaus.plexus/plexus-component-annotations/pom.xml"
+      ]
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "org.codehaus.plexus",
+        "artifactId": "plexus-xml",
+        "version": "3.0.0",
+        "type": "jar"
+      },
+      "uri": "file:/Users/megha/.m2/repository/org/codehaus/plexus/plexus-xml/3.0.0/plexus-xml-3.0.0.jar",
+      "packages": [
+        "org.codehaus.plexus.util.xml",
+        "org.codehaus.plexus.util.xml.pull"
+      ],
+      "resources": [
+        "META-INF/LICENSE",
+        "META-INF/MANIFEST.MF",
+        "META-INF/NOTICE",
+        "META-INF/maven/org.codehaus.plexus/plexus-xml/pom.properties",
+        "META-INF/maven/org.codehaus.plexus/plexus-xml/pom.xml",
+        "licenses/extreme.indiana.edu.license.TXT",
+        "licenses/javolution.license.TXT",
+        "licenses/thoughtworks.TXT"
+      ]
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "org.apache.maven",
+        "artifactId": "maven-plugin-api",
+        "version": "3.9.6",
+        "type": "jar"
+      },
+      "uri": "file:/Users/megha/.m2/repository/org/apache/maven/maven-plugin-api/3.9.6/maven-plugin-api-3.9.6.jar",
+      "packages": [
+        "org.apache.maven.monitor.logging",
+        "org.apache.maven.plugin",
+        "org.apache.maven.plugin.descriptor",
+        "org.apache.maven.plugin.lifecycle",
+        "org.apache.maven.plugin.lifecycle.io.xpp3",
+        "org.apache.maven.plugin.logging"
+      ],
+      "resources": [
+        "META-INF/DEPENDENCIES",
+        "META-INF/LICENSE",
+        "META-INF/MANIFEST.MF",
+        "META-INF/NOTICE",
+        "META-INF/maven/org.apache.maven/maven-plugin-api/pom.properties",
+        "META-INF/maven/org.apache.maven/maven-plugin-api/pom.xml"
+      ]
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "org.apache.maven",
+        "artifactId": "maven-model",
+        "version": "3.9.6",
+        "type": "jar"
+      },
+      "uri": "file:/Users/megha/.m2/repository/org/apache/maven/maven-model/3.9.6/maven-model-3.9.6.jar",
+      "packages": [
+        "org.apache.maven.model",
+        "org.apache.maven.model.io.xpp3",
+        "org.apache.maven.model.merge"
+      ],
+      "resources": [
+        "META-INF/DEPENDENCIES",
+        "META-INF/LICENSE",
+        "META-INF/MANIFEST.MF",
+        "META-INF/NOTICE",
+        "META-INF/maven/org.apache.maven/maven-model/pom.properties",
+        "META-INF/maven/org.apache.maven/maven-model/pom.xml"
+      ]
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "org.apache.maven",
+        "artifactId": "maven-artifact",
+        "version": "3.9.6",
+        "type": "jar"
+      },
+      "uri": "file:/Users/megha/.m2/repository/org/apache/maven/maven-artifact/3.9.6/maven-artifact-3.9.6.jar",
+      "packages": [
+        "org.apache.maven.artifact",
+        "org.apache.maven.artifact.handler",
+        "org.apache.maven.artifact.metadata",
+        "org.apache.maven.artifact.repository",
+        "org.apache.maven.artifact.repository.layout",
+        "org.apache.maven.artifact.repository.metadata",
+        "org.apache.maven.artifact.resolver",
+        "org.apache.maven.artifact.resolver.filter",
+        "org.apache.maven.artifact.versioning",
+        "org.apache.maven.repository",
+        "org.apache.maven.repository.legacy.metadata"
+      ],
+      "resources": [
+        "META-INF/DEPENDENCIES",
+        "META-INF/LICENSE",
+        "META-INF/MANIFEST.MF",
+        "META-INF/NOTICE",
+        "META-INF/maven/org.apache.maven/maven-artifact/pom.properties",
+        "META-INF/maven/org.apache.maven/maven-artifact/pom.xml"
+      ]
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "org.codehaus.plexus",
+        "artifactId": "plexus-classworlds",
+        "version": "2.7.0",
+        "type": "jar"
+      },
+      "uri": "file:/Users/megha/.m2/repository/org/codehaus/plexus/plexus-classworlds/2.7.0/plexus-classworlds-2.7.0.jar",
+      "packages": [
+        "org.codehaus.classworlds",
+        "org.codehaus.plexus.classworlds",
+        "org.codehaus.plexus.classworlds.launcher",
+        "org.codehaus.plexus.classworlds.realm",
+        "org.codehaus.plexus.classworlds.strategy"
+      ],
+      "resources": [
+        "META-INF/MANIFEST.MF",
+        "META-INF/maven/org.codehaus.plexus/plexus-classworlds/pom.properties",
+        "META-INF/maven/org.codehaus.plexus/plexus-classworlds/pom.xml"
+      ]
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "org.apache.maven.shared",
+        "artifactId": "maven-shared-utils",
+        "version": "3.3.3",
+        "type": "jar"
+      },
+      "uri": "file:/Users/megha/.m2/repository/org/apache/maven/shared/maven-shared-utils/3.3.3/maven-shared-utils-3.3.3.jar",
+      "packages": [
+        "org.apache.maven.shared.utils",
+        "org.apache.maven.shared.utils.cli",
+        "org.apache.maven.shared.utils.cli.javatool",
+        "org.apache.maven.shared.utils.cli.shell",
+        "org.apache.maven.shared.utils.introspection",
+        "org.apache.maven.shared.utils.io",
+        "org.apache.maven.shared.utils.logging",
+        "org.apache.maven.shared.utils.xml",
+        "org.apache.maven.shared.utils.xml.pull"
+      ],
+      "resources": [
+        "META-INF/DEPENDENCIES",
+        "META-INF/LICENSE",
+        "META-INF/MANIFEST.MF",
+        "META-INF/NOTICE",
+        "META-INF/maven/org.apache.maven.shared/maven-shared-utils/pom.properties",
+        "META-INF/maven/org.apache.maven.shared/maven-shared-utils/pom.xml",
+        "org/apache/maven/shared/utils/annotations.xml"
+      ]
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "org.apache.maven.reporting",
+        "artifactId": "maven-reporting-api",
+        "version": "4.0.0-M7",
+        "type": "jar"
+      },
+      "uri": "file:/Users/megha/.m2/repository/org/apache/maven/reporting/maven-reporting-api/4.0.0-M7/maven-reporting-api-4.0.0-M7.jar",
+      "packages": [
+        "org.apache.maven.reporting"
+      ],
+      "resources": [
+        "META-INF/DEPENDENCIES",
+        "META-INF/LICENSE",
+        "META-INF/MANIFEST.MF",
+        "META-INF/NOTICE",
+        "META-INF/maven/org.apache.maven.reporting/maven-reporting-api/pom.properties",
+        "META-INF/maven/org.apache.maven.reporting/maven-reporting-api/pom.xml"
+      ]
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "org.apache.maven.doxia",
+        "artifactId": "doxia-sink-api",
+        "version": "2.0.0",
+        "type": "jar"
+      },
+      "uri": "file:/Users/megha/.m2/repository/org/apache/maven/doxia/doxia-sink-api/2.0.0/doxia-sink-api-2.0.0.jar",
+      "packages": [
+        "org.apache.maven.doxia.sink"
+      ],
+      "resources": [
+        "META-INF/DEPENDENCIES",
+        "META-INF/LICENSE",
+        "META-INF/MANIFEST.MF",
+        "META-INF/NOTICE",
+        "META-INF/maven/org.apache.maven.doxia/doxia-sink-api/pom.properties",
+        "META-INF/maven/org.apache.maven.doxia/doxia-sink-api/pom.xml"
+      ]
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "org.codehaus.plexus",
+        "artifactId": "plexus-utils",
+        "version": "4.0.0",
+        "type": "jar"
+      },
+      "uri": "file:/Users/megha/.m2/repository/org/codehaus/plexus/plexus-utils/4.0.0/plexus-utils-4.0.0.jar",
+      "packages": [
+        "META-INF.versions.10.org.codehaus.plexus.util",
+        "META-INF.versions.11.org.codehaus.plexus.util",
+        "META-INF.versions.9.org.codehaus.plexus.util",
+        "org.codehaus.plexus.util",
+        "org.codehaus.plexus.util.cli",
+        "org.codehaus.plexus.util.cli.shell",
+        "org.codehaus.plexus.util.dag",
+        "org.codehaus.plexus.util.introspection",
+        "org.codehaus.plexus.util.io",
+        "org.codehaus.plexus.util.reflection"
+      ],
+      "resources": [
+        "META-INF/LICENSE",
+        "META-INF/MANIFEST.MF",
+        "META-INF/NOTICE",
+        "META-INF/maven/org.codehaus.plexus/plexus-utils/pom.properties",
+        "META-INF/maven/org.codehaus.plexus/plexus-utils/pom.xml",
+        "licenses/extreme.indiana.edu.license.TXT",
+        "licenses/javolution.license.TXT",
+        "licenses/thoughtworks.TXT"
+      ]
+    }
+  ],
+  "packages": [
+    "org.mule.munit.runner",
+    "org.mule.munit.runner.component",
+    "org.mule.munit.runner.component.factory",
+    "org.mule.munit.runner.component.properties",
+    "org.mule.munit.runner.component.rules",
+    "org.mule.munit.runner.component.state",
+    "org.mule.munit.runner.config",
+    "org.mule.munit.runner.flow",
+    "org.mule.munit.runner.functions",
+    "org.mule.munit.runner.model",
+    "org.mule.munit.runner.model.builders",
+    "org.mule.munit.runner.processors",
+    "org.mule.munit.runner.remote.api.notifiers",
+    "org.mule.munit.runner.remote.api.server"
+  ],
+  "resources": [
+    "META-INF/maven/com.mulesoft.munit/munit-runner/pom.xml",
+    "META-INF/mule-artifact/mule-artifact.json",
+    "META-INF/mule-munit.xsd",
+    "META-INF/mule.schemas",
+    "META-INF/org/mule/runtime/core/config/registry-bootstrap.properties",
+    "META-INF/services/org.mule.runtime.config.api.dsl.model.properties.ConfigurationPropertiesProviderFactory",
+    "META-INF/services/org.mule.runtime.dsl.api.component.ComponentBuildingDefinitionProvider",
+    "META-INF/services/org.mule.runtime.dsl.api.xml.XmlNamespaceInfoProvider",
+    "META-INF/spring.handlers",
+    "META-INF/spring.schemas"
+  ]
+}

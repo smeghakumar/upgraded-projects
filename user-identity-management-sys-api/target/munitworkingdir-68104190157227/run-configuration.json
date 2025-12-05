@@ -1,0 +1,80 @@
+{
+  "runToken": "dc170821-38ef-46f0-a0f6-b36023eefee8",
+  "projectName": "user-identity-management-system",
+  "domainLocation": "",
+  "tags": [],
+  "testNames": [],
+  "testNamesWithSuite": [],
+  "suitePaths": [
+    "user-identity-mgmt-sys-api-test-suite.xml"
+  ],
+  "allSuitePaths": [
+    "user-identity-mgmt-sys-api-test-suite.xml"
+  ],
+  "skipAfterFailure": false,
+  "mmvs": [],
+  "notifierConfigurations": [
+    {
+      "clazz": "org.mule.munit.remote.notifiers.ConsoleNotifier",
+      "parameters": [
+        {
+          "name": "runToken",
+          "type": "java.lang.String",
+          "value": "dc170821-38ef-46f0-a0f6-b36023eefee8"
+        }
+      ]
+    }
+  ],
+  "coverageConfiguration": {
+    "runCoverage": true,
+    "randomizeCoveragePort": true,
+    "suitePaths": [
+      "user-identity-mgmt-sys-api-test-suite.xml"
+    ],
+    "ignoredFiles": [],
+    "ignoredFlowNames": []
+  },
+  "containerConfiguration": {
+    "value": {
+      "mavenConfiguration": {
+        "settingsXmlFilePath": "/Users/megha/.m2/settings.xml",
+        "globalSettingsXmlFilePath": "/Users/megha/maven-3.9.11.2/conf/settings.xml",
+        "mavenRepositoryDirectoryPath": "/Users/megha/.m2/repository",
+        "activeProfiles": [
+          "mulesoft"
+        ],
+        "offlineMode": false,
+        "forcePolicyUpdate": true,
+        "ignoreArtifactDescriptorRepositories": false,
+        "remoteRepositories": [
+          {
+            "id": "mule-public",
+            "url": "https://repository.mulesoft.org/nexus/content/repositories/public"
+          },
+          {
+            "id": "mulesoft-releases",
+            "url": "https://repository.mulesoft.org/releases/"
+          },
+          {
+            "id": "central",
+            "url": "https://repo.maven.apache.org/maven2"
+          }
+        ]
+      },
+      "serverPluginConfigurations": [
+        {
+          "groupId": "com.mulesoft.munit.plugins",
+          "artifactId": "munit-coverage-plugin",
+          "version": "3.6.2",
+          "type": "jar",
+          "classifier": "mule-server-plugin"
+        }
+      ],
+      "runtimeId": "4.10.0",
+      "product": "MULE_EE",
+      "munitWorkingDirectoryPath": "/Users/megha/Documents/Demo/MuleUpgradeProjects/upgraded-projects/archive/user-identity-management-sys-api_work/target/munitworkingdir-68104190157227",
+      "log4JConfigurationFilePath": "/Users/megha/Documents/Demo/MuleUpgradeProjects/upgraded-projects/archive/user-identity-management-sys-api_work/target/test-classes/log4j2-test.xml"
+    }
+  },
+  "clearParameters": false
+}

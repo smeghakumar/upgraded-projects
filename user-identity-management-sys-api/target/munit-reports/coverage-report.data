@@ -1,0 +1,666 @@
+{
+  "resources": [
+    {
+      "name": "user-identity-mgmt-sys-api.xml",
+      "weight": 20.54794520547945,
+      "flows": [
+        {
+          "name": "User-Identity-Mgmt-System-API-console",
+          "type": "FLOW",
+          "locations": [
+            {
+              "path": "User-Identity-Mgmt-System-API-console/errorHandler/0/processors/0",
+              "lineNumber": 109
+            },
+            {
+              "path": "User-Identity-Mgmt-System-API-console/processors/0",
+              "lineNumber": 106
+            }
+          ],
+          "coveredLocations": [
+            {
+              "path": "User-Identity-Mgmt-System-API-console/errorHandler/0/processors/0",
+              "lineNumber": 109
+            },
+            {
+              "path": "User-Identity-Mgmt-System-API-console/processors/0",
+              "lineNumber": 106
+            }
+          ]
+        },
+        {
+          "name": "User-Identity-Mgmt-System-API-main",
+          "type": "FLOW",
+          "locations": [
+            {
+              "path": "User-Identity-Mgmt-System-API-main/errorHandler/0/processors/0",
+              "lineNumber": 17
+            },
+            {
+              "path": "User-Identity-Mgmt-System-API-main/errorHandler/4/processors/0",
+              "lineNumber": 69
+            },
+            {
+              "path": "User-Identity-Mgmt-System-API-main/errorHandler/3/processors/0",
+              "lineNumber": 56
+            },
+            {
+              "path": "User-Identity-Mgmt-System-API-main/processors/0",
+              "lineNumber": 14
+            },
+            {
+              "path": "User-Identity-Mgmt-System-API-main/errorHandler/5/processors/0",
+              "lineNumber": 82
+            },
+            {
+              "path": "User-Identity-Mgmt-System-API-main/errorHandler/1/processors/0",
+              "lineNumber": 30
+            },
+            {
+              "path": "User-Identity-Mgmt-System-API-main/errorHandler/2/processors/0",
+              "lineNumber": 43
+            }
+          ],
+          "coveredLocations": [
+            {
+              "path": "User-Identity-Mgmt-System-API-main/errorHandler/0/processors/0",
+              "lineNumber": 17
+            },
+            {
+              "path": "User-Identity-Mgmt-System-API-main/errorHandler/4/processors/0",
+              "lineNumber": 69
+            },
+            {
+              "path": "User-Identity-Mgmt-System-API-main/errorHandler/3/processors/0",
+              "lineNumber": 56
+            },
+            {
+              "path": "User-Identity-Mgmt-System-API-main/processors/0",
+              "lineNumber": 14
+            },
+            {
+              "path": "User-Identity-Mgmt-System-API-main/errorHandler/5/processors/0",
+              "lineNumber": 82
+            },
+            {
+              "path": "User-Identity-Mgmt-System-API-main/errorHandler/1/processors/0",
+              "lineNumber": 30
+            },
+            {
+              "path": "User-Identity-Mgmt-System-API-main/errorHandler/2/processors/0",
+              "lineNumber": 43
+            }
+          ]
+        },
+        {
+          "name": "put:\\users\\(userId):application\\json:User-Identity-Mgmt-System-API-config",
+          "type": "FLOW",
+          "locations": [
+            {
+              "path": "put:\\users\\(userId):application\\json:User-Identity-Mgmt-System-API-config/processors/0",
+              "lineNumber": 124
+            }
+          ],
+          "coveredLocations": [
+            {
+              "path": "put:\\users\\(userId):application\\json:User-Identity-Mgmt-System-API-config/processors/0",
+              "lineNumber": 124
+            }
+          ]
+        },
+        {
+          "name": "get:\\users\\(userId):User-Identity-Mgmt-System-API-config",
+          "type": "FLOW",
+          "locations": [
+            {
+              "path": "get:\\users\\(userId):User-Identity-Mgmt-System-API-config/processors/0",
+              "lineNumber": 130
+            },
+            {
+              "path": "get:\\users\\(userId):User-Identity-Mgmt-System-API-config/processors/1",
+              "lineNumber": 135
+            }
+          ],
+          "coveredLocations": []
+        },
+        {
+          "name": "post:\\users\\authenticateUser:application\\json:User-Identity-Mgmt-System-API-config",
+          "type": "FLOW",
+          "locations": [
+            {
+              "path": "post:\\users\\authenticateUser:application\\json:User-Identity-Mgmt-System-API-config/processors/0",
+              "lineNumber": 160
+            }
+          ],
+          "coveredLocations": [
+            {
+              "path": "post:\\users\\authenticateUser:application\\json:User-Identity-Mgmt-System-API-config/processors/0",
+              "lineNumber": 160
+            }
+          ]
+        },
+        {
+          "name": "post:\\users\\createUser:application\\json:User-Identity-Mgmt-System-API-config",
+          "type": "FLOW",
+          "locations": [
+            {
+              "path": "post:\\users\\createUser:application\\json:User-Identity-Mgmt-System-API-config/processors/0",
+              "lineNumber": 163
+            }
+          ],
+          "coveredLocations": [
+            {
+              "path": "post:\\users\\createUser:application\\json:User-Identity-Mgmt-System-API-config/processors/0",
+              "lineNumber": 163
+            }
+          ]
+        },
+        {
+          "name": "delete:\\users\\(userId):User-Identity-Mgmt-System-API-config",
+          "type": "FLOW",
+          "locations": [
+            {
+              "path": "delete:\\users\\(userId):User-Identity-Mgmt-System-API-config/processors/0",
+              "lineNumber": 127
+            }
+          ],
+          "coveredLocations": [
+            {
+              "path": "delete:\\users\\(userId):User-Identity-Mgmt-System-API-config/processors/0",
+              "lineNumber": 127
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "implementation.xml",
+      "weight": 58.9041095890411,
+      "flows": [
+        {
+          "name": "deactivate-user-flow",
+          "type": "FLOW",
+          "locations": [
+            {
+              "path": "deactivate-user-flow/processors/2",
+              "lineNumber": 215
+            },
+            {
+              "path": "deactivate-user-flow/processors/1",
+              "lineNumber": 214
+            },
+            {
+              "path": "deactivate-user-flow/processors/4",
+              "lineNumber": 230
+            },
+            {
+              "path": "deactivate-user-flow/processors/0",
+              "lineNumber": 213
+            },
+            {
+              "path": "deactivate-user-flow/processors/5",
+              "lineNumber": 231
+            },
+            {
+              "path": "deactivate-user-flow/processors/3",
+              "lineNumber": 216
+            }
+          ],
+          "coveredLocations": [
+            {
+              "path": "deactivate-user-flow/processors/2",
+              "lineNumber": 215
+            },
+            {
+              "path": "deactivate-user-flow/processors/1",
+              "lineNumber": 214
+            },
+            {
+              "path": "deactivate-user-flow/processors/4",
+              "lineNumber": 230
+            },
+            {
+              "path": "deactivate-user-flow/processors/0",
+              "lineNumber": 213
+            },
+            {
+              "path": "deactivate-user-flow/processors/5",
+              "lineNumber": 231
+            },
+            {
+              "path": "deactivate-user-flow/processors/3",
+              "lineNumber": 216
+            }
+          ]
+        },
+        {
+          "name": "authorization-sub-flow",
+          "type": "SUB_FLOW",
+          "locations": [
+            {
+              "path": "authorization-sub-flow/processors/2",
+              "lineNumber": 147
+            },
+            {
+              "path": "authorization-sub-flow/processors/1",
+              "lineNumber": 146
+            },
+            {
+              "path": "authorization-sub-flow/processors/0",
+              "lineNumber": 132
+            }
+          ],
+          "coveredLocations": [
+            {
+              "path": "authorization-sub-flow/processors/2",
+              "lineNumber": 147
+            },
+            {
+              "path": "authorization-sub-flow/processors/1",
+              "lineNumber": 146
+            },
+            {
+              "path": "authorization-sub-flow/processors/0",
+              "lineNumber": 132
+            }
+          ]
+        },
+        {
+          "name": "user-authentication-flow",
+          "type": "FLOW",
+          "locations": [
+            {
+              "path": "user-authentication-flow/processors/1",
+              "lineNumber": 87
+            },
+            {
+              "path": "user-authentication-flow/processors/3",
+              "lineNumber": 89
+            },
+            {
+              "path": "user-authentication-flow/processors/2",
+              "lineNumber": 88
+            },
+            {
+              "path": "user-authentication-flow/processors/8",
+              "lineNumber": 106
+            },
+            {
+              "path": "user-authentication-flow/processors/5",
+              "lineNumber": 101
+            },
+            {
+              "path": "user-authentication-flow/processors/4",
+              "lineNumber": 90
+            },
+            {
+              "path": "user-authentication-flow/processors/7",
+              "lineNumber": 105
+            },
+            {
+              "path": "user-authentication-flow/processors/0",
+              "lineNumber": 86
+            },
+            {
+              "path": "user-authentication-flow/processors/9",
+              "lineNumber": 124
+            },
+            {
+              "path": "user-authentication-flow/processors/6",
+              "lineNumber": 102
+            },
+            {
+              "path": "user-authentication-flow/processors/10/route/0/processors/0",
+              "lineNumber": 127
+            }
+          ],
+          "coveredLocations": [
+            {
+              "path": "user-authentication-flow/processors/1",
+              "lineNumber": 87
+            },
+            {
+              "path": "user-authentication-flow/processors/3",
+              "lineNumber": 89
+            },
+            {
+              "path": "user-authentication-flow/processors/2",
+              "lineNumber": 88
+            },
+            {
+              "path": "user-authentication-flow/processors/8",
+              "lineNumber": 106
+            },
+            {
+              "path": "user-authentication-flow/processors/5",
+              "lineNumber": 101
+            },
+            {
+              "path": "user-authentication-flow/processors/4",
+              "lineNumber": 90
+            },
+            {
+              "path": "user-authentication-flow/processors/7",
+              "lineNumber": 105
+            },
+            {
+              "path": "user-authentication-flow/processors/0",
+              "lineNumber": 86
+            },
+            {
+              "path": "user-authentication-flow/processors/9",
+              "lineNumber": 124
+            },
+            {
+              "path": "user-authentication-flow/processors/6",
+              "lineNumber": 102
+            },
+            {
+              "path": "user-authentication-flow/processors/10/route/0/processors/0",
+              "lineNumber": 127
+            }
+          ]
+        },
+        {
+          "name": "set-variables-flow",
+          "type": "FLOW",
+          "locations": [
+            {
+              "path": "set-variables-flow/processors/1/route/0/processors/0",
+              "lineNumber": 165
+            },
+            {
+              "path": "set-variables-flow/processors/0",
+              "lineNumber": 162
+            }
+          ],
+          "coveredLocations": [
+            {
+              "path": "set-variables-flow/processors/1/route/0/processors/0",
+              "lineNumber": 165
+            },
+            {
+              "path": "set-variables-flow/processors/0",
+              "lineNumber": 162
+            }
+          ]
+        },
+        {
+          "name": "create-user-flow",
+          "type": "FLOW",
+          "locations": [
+            {
+              "path": "create-user-flow/processors/4",
+              "lineNumber": 50
+            },
+            {
+              "path": "create-user-flow/processors/1",
+              "lineNumber": 26
+            },
+            {
+              "path": "create-user-flow/processors/6",
+              "lineNumber": 59
+            },
+            {
+              "path": "create-user-flow/processors/2",
+              "lineNumber": 27
+            },
+            {
+              "path": "create-user-flow/processors/7",
+              "lineNumber": 60
+            },
+            {
+              "path": "create-user-flow/processors/5",
+              "lineNumber": 51
+            },
+            {
+              "path": "create-user-flow/processors/0",
+              "lineNumber": 25
+            },
+            {
+              "path": "create-user-flow/processors/3",
+              "lineNumber": 49
+            },
+            {
+              "path": "create-user-flow/processors/8",
+              "lineNumber": 83
+            }
+          ],
+          "coveredLocations": [
+            {
+              "path": "create-user-flow/processors/4",
+              "lineNumber": 50
+            },
+            {
+              "path": "create-user-flow/processors/1",
+              "lineNumber": 26
+            },
+            {
+              "path": "create-user-flow/processors/6",
+              "lineNumber": 59
+            },
+            {
+              "path": "create-user-flow/processors/2",
+              "lineNumber": 27
+            },
+            {
+              "path": "create-user-flow/processors/7",
+              "lineNumber": 60
+            },
+            {
+              "path": "create-user-flow/processors/5",
+              "lineNumber": 51
+            },
+            {
+              "path": "create-user-flow/processors/0",
+              "lineNumber": 25
+            },
+            {
+              "path": "create-user-flow/processors/3",
+              "lineNumber": 49
+            },
+            {
+              "path": "create-user-flow/processors/8",
+              "lineNumber": 83
+            }
+          ]
+        },
+        {
+          "name": "validate-client-credentials-flow",
+          "type": "FLOW",
+          "locations": [
+            {
+              "path": "validate-client-credentials-flow/processors/0",
+              "lineNumber": 13
+            },
+            {
+              "path": "validate-client-credentials-flow/processors/2/route/1/processors/0",
+              "lineNumber": 20
+            },
+            {
+              "path": "validate-client-credentials-flow/processors/1",
+              "lineNumber": 14
+            },
+            {
+              "path": "validate-client-credentials-flow/processors/2/route/0/processors/0",
+              "lineNumber": 17
+            }
+          ],
+          "coveredLocations": [
+            {
+              "path": "validate-client-credentials-flow/processors/0",
+              "lineNumber": 13
+            },
+            {
+              "path": "validate-client-credentials-flow/processors/1",
+              "lineNumber": 14
+            },
+            {
+              "path": "validate-client-credentials-flow/processors/2/route/0/processors/0",
+              "lineNumber": 17
+            }
+          ]
+        },
+        {
+          "name": "change-user-password-flow",
+          "type": "FLOW",
+          "locations": [
+            {
+              "path": "change-user-password-flow/processors/5",
+              "lineNumber": 186
+            },
+            {
+              "path": "change-user-password-flow/processors/7",
+              "lineNumber": 200
+            },
+            {
+              "path": "change-user-password-flow/processors/6",
+              "lineNumber": 199
+            },
+            {
+              "path": "change-user-password-flow/processors/2",
+              "lineNumber": 172
+            },
+            {
+              "path": "change-user-password-flow/processors/4",
+              "lineNumber": 185
+            },
+            {
+              "path": "change-user-password-flow/processors/3",
+              "lineNumber": 173
+            },
+            {
+              "path": "change-user-password-flow/processors/1",
+              "lineNumber": 171
+            },
+            {
+              "path": "change-user-password-flow/processors/0",
+              "lineNumber": 170
+            }
+          ],
+          "coveredLocations": [
+            {
+              "path": "change-user-password-flow/processors/5",
+              "lineNumber": 186
+            },
+            {
+              "path": "change-user-password-flow/processors/7",
+              "lineNumber": 200
+            },
+            {
+              "path": "change-user-password-flow/processors/6",
+              "lineNumber": 199
+            },
+            {
+              "path": "change-user-password-flow/processors/2",
+              "lineNumber": 172
+            },
+            {
+              "path": "change-user-password-flow/processors/4",
+              "lineNumber": 185
+            },
+            {
+              "path": "change-user-password-flow/processors/3",
+              "lineNumber": 173
+            },
+            {
+              "path": "change-user-password-flow/processors/1",
+              "lineNumber": 171
+            },
+            {
+              "path": "change-user-password-flow/processors/0",
+              "lineNumber": 170
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "global.xml",
+      "weight": 20.54794520547945,
+      "flows": [
+        {
+          "name": "globalError_Handler",
+          "type": "ERROR_HANDLER",
+          "locations": [
+            {
+              "path": "globalError_Handler/1/processors/0",
+              "lineNumber": 52
+            },
+            {
+              "path": "globalError_Handler/2/processors/0",
+              "lineNumber": 68
+            },
+            {
+              "path": "globalError_Handler/0/processors/2",
+              "lineNumber": 28
+            },
+            {
+              "path": "globalError_Handler/0/processors/3",
+              "lineNumber": 47
+            },
+            {
+              "path": "globalError_Handler/2/processors/2",
+              "lineNumber": 80
+            },
+            {
+              "path": "globalError_Handler/2/processors/1",
+              "lineNumber": 69
+            },
+            {
+              "path": "globalError_Handler/0/processors/0",
+              "lineNumber": 25
+            },
+            {
+              "path": "globalError_Handler/0/processors/1",
+              "lineNumber": 27
+            }
+          ],
+          "coveredLocations": []
+        },
+        {
+          "name": "servicenow-incident-creation-flow",
+          "type": "FLOW",
+          "locations": [
+            {
+              "path": "servicenow-incident-creation-flow/processors/0/route/0/processors/2",
+              "lineNumber": 107
+            },
+            {
+              "path": "servicenow-incident-creation-flow/processors/0/route/0/processors/0",
+              "lineNumber": 96
+            },
+            {
+              "path": "servicenow-incident-creation-flow/processors/0/route/0/processors/1",
+              "lineNumber": 99
+            }
+          ],
+          "coveredLocations": []
+        },
+        {
+          "name": "invoke-generic-error-handling-api",
+          "type": "SUB_FLOW",
+          "locations": [
+            {
+              "path": "invoke-generic-error-handling-api/processors/0",
+              "lineNumber": 119
+            },
+            {
+              "path": "invoke-generic-error-handling-api/processors/2",
+              "lineNumber": 128
+            },
+            {
+              "path": "invoke-generic-error-handling-api/processors/1",
+              "lineNumber": 127
+            },
+            {
+              "path": "invoke-generic-error-handling-api/processors/3",
+              "lineNumber": 129
+            }
+          ],
+          "coveredLocations": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+#Configuration File
+
+http:
+  port: "8081"
+  request:
+    header:
+      clientId: "2f9f2d34-cf0d-44d0-bac3-636182f402db"
+      clientSecret: "921867d0-f78f-4137-aa21-b21bdf0590bc"
+      
+okta:
+  host: "dev-938428.okta.com"
+  port: "443"
+  
+  app:
+    header:
+      authorization:  "SSWS 00QRvAp3JuA_Tj44fnhX73cXXEzieBcCoHL92sM60l"
+
+  user:
+    basepath: "/api/v1/users"
+    
+    authenticate:
+      basepath: "/api/v1/authn"
+      
+    changePassword:
+      basepath: "/credentials/change_password"
+      
+    deactivate:
+      basepath: "/lifecycle/deactivate"
+      
+serviceNow:
+  host: "incident-ticket-creation-api.us-e2.cloudhub.io"
+  path: "/api/incidents"
+
+exceptionHandler:
+  host: "generic-exception-handler-api.us-e2.cloudhub.io"
+  path: "/errors/submit"      

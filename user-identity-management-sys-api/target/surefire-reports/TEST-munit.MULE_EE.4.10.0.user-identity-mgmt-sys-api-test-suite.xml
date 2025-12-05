@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="MULE_EE.4.10.0.user-identity-mgmt-sys-api-test-suite" time="0.619" failures="0" errors="0" skipped="1" tests="12">
+  <properties>
+    <property key="java.specification.version" value="17"/>
+    <property key="sun.jnu.encoding" value="UTF-8"/>
+    <property key="java.class.path" value="/Users/megha/maven-3.9.11.2/boot/plexus-classworlds-2.9.0.jar"/>
+    <property key="java.vm.vendor" value="Oracle Corporation"/>
+    <property key="sun.arch.data.model" value="64"/>
+    <property key="mule.resolve.mule.implementations.loader.dynamically" value="true"/>
+    <property key="java.vendor.url" value="https://java.oracle.com/"/>
+    <property key="user.timezone" value="Europe/London"/>
+    <property key="maven.conf" value="/Users/megha/maven-3.9.11.2/conf"/>
+    <property key="java.vm.specification.version" value="17"/>
+    <property key="os.name" value="Mac OS X"/>
+    <property key="sun.java.launcher" value="SUN_STANDARD"/>
+    <property key="user.country" value="GB"/>
+    <property key="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk-17.jdk/Contents/Home/lib"/>
+    <property key="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean test -Dmunit.coverage.enabled=true -Dmunit.coverage.formats=html,json,console -Dmunit.coverage.runCoverage=true"/>
+    <property key="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property key="jdk.debug" value="release"/>
+    <property key="maven.home" value="/Users/megha/maven-3.9.11.2"/>
+    <property key="sun.cpu.endian" value="little"/>
+    <property key="user.home" value="/Users/megha"/>
+    <property key="user.language" value="en"/>
+    <property key="java.specification.vendor" value="Oracle Corporation"/>
+    <property key="munit.coverage.enabled" value="true"/>
+    <property key="java.version.date" value="2025-07-15"/>
+    <property key="java.home" value="/Library/Java/JavaVirtualMachines/jdk-17.jdk/Contents/Home"/>
+    <property key="file.separator" value="/"/>
+    <property key="java.vm.compressedOopsMode" value="Zero based"/>
+    <property key="line.separator" value="&#xa;"/>
+    <property key="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property key="java.specification.name" value="Java Platform API Specification"/>
+    <property key="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property key="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property key="java.runtime.version" value="17.0.16+12-LTS-247"/>
+    <property key="user.name" value="megha"/>
+    <property key="mule.server.action.repetition.allowed" value="true"/>
+    <property key="path.separator" value=":"/>
+    <property key="os.version" value="26.0.1"/>
+    <property key="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property key="file.encoding" value="UTF-8"/>
+    <property key="guice.disable.misplaced.annotation.check" value="true"/>
+    <property key="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property key="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property key="java.io.tmpdir" value="/var/folders/39/96x6vqy93gl_kb6jtkg_k_w40000gn/T/"/>
+    <property key="java.version" value="17.0.16"/>
+    <property key="user.dir" value="/Users/megha/Documents/Demo/MuleUpgradeProjects/upgraded-projects/archive/user-identity-management-sys-api_work"/>
+    <property key="os.arch" value="x86_64"/>
+    <property key="maven.multiModuleProjectDirectory" value="/Users/megha/Documents/Demo/MuleUpgradeProjects/upgraded-projects/archive/user-identity-management-sys-api_work"/>
+    <property key="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property key="native.encoding" value="UTF-8"/>
+    <property key="munit.coverage.formats" value="html,json,console"/>
+    <property key="java.library.path" value="/Users/megha/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property key="java.vm.info" value="mixed mode, sharing"/>
+    <property key="java.vendor" value="Oracle Corporation"/>
+    <property key="java.vm.version" value="17.0.16+12-LTS-247"/>
+    <property key="classworlds.conf" value="/Users/megha/maven-3.9.11.2/bin/m2.conf"/>
+    <property key="java.specification.maintenance.version" value="1"/>
+    <property key="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property key="library.jansi.path" value="/Users/megha/maven-3.9.11.2/lib/jansi-native"/>
+    <property key="munit.coverage.runCoverage" value="true"/>
+    <property key="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property key="java.class.version" value="61.0"/>
+    <property key="mule.classloader.container.jpmsModuleLayer" value="false"/>
+    <property key="munit.system.properties.file" value="/Users/megha/Documents/Demo/MuleUpgradeProjects/upgraded-projects/archive/user-identity-management-sys-api_work/target/user.system.properties"/>
+    <property key="org.glassfish.grizzly.DEFAULT_MEMORY_MANAGER" value="org.glassfish.grizzly.memory.HeapMemoryManager"/>
+  </properties>
+  <testcase time="0.017" name="user-identity-mgmt-sys-api-test-suite-400" classname="MULE_EE.4.10.0.user-identity-mgmt-sys-api-test-suite"/>
+  <testcase time="0.017" name="user-identity-mgmt-sys-api-test-suite-console-404" classname="MULE_EE.4.10.0.user-identity-mgmt-sys-api-test-suite"/>
+  <testcase time="0.099" name="user-identity-mgmt-sys-api-test-suite-post:\users\createUser:application\json:User-Identity-Mgmt-System-API-configTest" classname="MULE_EE.4.10.0.user-identity-mgmt-sys-api-test-suite"/>
+  <testcase time="0.018" name="user-identity-mgmt-sys-api-test-suite-406" classname="MULE_EE.4.10.0.user-identity-mgmt-sys-api-test-suite"/>
+  <testcase time="0.0" name="user-identity-mgmt-sys-api-test-suite-get:\users\(userId):User-Identity-Mgmt-System-API-configTest" classname="MULE_EE.4.10.0.user-identity-mgmt-sys-api-test-suite">
+    <skipped/>
+  </testcase>
+  <testcase time="0.031" name="user-identity-mgmt-sys-api-test-suite-delete:\users\(userId):User-Identity-Mgmt-System-API-configTest" classname="MULE_EE.4.10.0.user-identity-mgmt-sys-api-test-suite"/>
+  <testcase time="0.04" name="user-identity-mgmt-sys-api-test-suite-put:\users\(userId):application\json:User-Identity-Mgmt-System-API-configTest" classname="MULE_EE.4.10.0.user-identity-mgmt-sys-api-test-suite"/>
+  <testcase time="0.016" name="user-identity-mgmt-sys-api-test-suite-501" classname="MULE_EE.4.10.0.user-identity-mgmt-sys-api-test-suite"/>
+  <testcase time="0.017" name="user-identity-mgmt-sys-api-test-suite-405" classname="MULE_EE.4.10.0.user-identity-mgmt-sys-api-test-suite"/>
+  <testcase time="0.244" name="user-identity-mgmt-sys-api-test-suite-415" classname="MULE_EE.4.10.0.user-identity-mgmt-sys-api-test-suite"/>
+  <testcase time="0.018" name="user-identity-mgmt-sys-api-test-suite-404" classname="MULE_EE.4.10.0.user-identity-mgmt-sys-api-test-suite"/>
+  <testcase time="0.087" name="user-identity-mgmt-sys-api-test-suite-post:\users\authenticateUser:application\json:User-Identity-Mgmt-System-API-configTest" classname="MULE_EE.4.10.0.user-identity-mgmt-sys-api-test-suite"/>
+</testsuite>
